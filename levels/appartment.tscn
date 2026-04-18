@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://cyrcju6ju545l"]
+[gd_scene format=4 uid="uid://cyrcju6ju545l"]
 
 [ext_resource type="Script" uid="uid://bw7st515ve7ax" path="res://levels/player.gd" id="1_l3nmf"]
 [ext_resource type="Shader" uid="uid://b5mwd23qr5g5r" path="res://visual/shaders/text_shader/text_writer.gdshader" id="1_l4bwr"]
@@ -475,6 +475,81 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gbuy4"]
 points = PackedVector3Array(0.2662381, 1.2731259, 0.34397632, 0.2662381, 1.2731259, 0.26696658, -0.2662381, 1.2731259, 0.34397632, 0.2662381, 1.1563301e-05, 0.2985788, -0.2662381, 1.2731259, 0.26696658, 0.2662381, 0.61638033, -0.22161071, -0.2662381, 1.1563301e-05, 0.2985788, 0.2662381, 1.1563301e-05, -0.22161071, -0.2662381, 0.61638033, -0.22161071, -0.2662381, 1.1563301e-05, -0.22161071)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hpw2l"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(1, 14, 14, 10, 18, 7, 4, 11, 5)
+shader_parameter/word_length = 9
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.31800002, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uex6k"]
+points = PackedVector3Array(0.19996086, 1.7966988, 0.5, 0.19996086, 1.7966988, -0.5, -0.19999999, 1.7966988, 0.5, 0.19996086, 0, 0.5, -0.19999999, 1.7966988, -0.5, 0.19996086, 0, -0.5, -0.19999999, 0, 0.5, -0.19999999, 0, -0.5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vs8ut"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vmsnl"]
+_surfaces = [{
+"aabb": AABB(-0.10000003, -0.116346836, -0.2621263, 0.20000005, 0.23269439, 0.5242779),
+"format": 34896613377,
+"index_count": 360,
+"index_data": PackedByteArray("AAABAAIAAQADAAIAAAAEAAEAAQAFAAMABAAFAAEABgADAAUABAAGAAUAAAAGAAQABgAHAAMAAAAHAAYACAAJAAoACQALAAoACAAMAAkACQANAAsADAANAAkADgALAA0ADAAOAA0ACAAOAAwADgAPAAsACAAPAA4AEAARABIAEQATABIAEAAUABEAEQAVABMAFAAVABEAFgATABUAFAAWABUAEAAWABQAFgAXABMAEAAXABYAGAAZABoAGQAbABoAGAAcABkAGQAdABsAHAAdABkAHgAbAB0AHAAeAB0AGAAeABwAHgAfABsAGAAfAB4AIAAhACIAIQAjACIAIAAkACEAIQAlACMAJAAlACEAJgAjACUAJAAmACUAIAAmACQAJgAnACMAIAAnACYAKAApACoAKQArACoAKAAsACkAKQAtACsALAAtACkALgArAC0ALAAuAC0AKAAuACwALgAvACsAKAAvAC4AMAAxADIAMQAzADIAMAA0ADEAMQA1ADMANAA1ADEANgAzADUANAA2ADUAMAA2ADQANgA3ADMAMAA3ADYAOAA5ADoAOQA7ADoAOAA8ADkAOQA9ADsAPAA9ADkAPgA7AD0APAA+AD0AOAA+ADwAPgA/ADsAOAA/AD4AQABBAEIAQQBDAEIAQABEAEEAQQBFAEMARABFAEEARgBDAEUARABGAEUAQABGAEQARgBHAEMAQABHAEYASABJAEoASQBLAEoASABMAEkASQBNAEsATABNAEkATgBLAE0ATABOAE0ASABOAEwATgBPAEsASABPAE4AUABRAFIAUQBTAFIAUABUAFEAUQBVAFMAVABVAFEAVgBTAFUAVABWAFUAUABWAFQAVgBXAFMAUABXAFYAWABZAFoAWQBbAFoAWABcAFkAWQBdAFsAXABdAFkAXgBbAF0AXABeAF0AWABeAFwAXgBfAFsAWABfAF4A"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 96,
+"vertex_data": PackedByteArray("AAAAAHbsAAD/////duwAAAAA//927AAAAAD/////AAD//wAAduwAAP///////wAA//8AAP//AAAAAAAA//8AAAAAAADK1gAA/////8rWAAAAAP//ytYAAAAA//9S6gAA//8AAMrWAAD/////UuoAAP//AABS6gAAAAAAAFLqAAAAAAAAIMEAAP////8gwQAAAAD//yDBAAAAAP//qNQAAP//AAAgwQAA/////6jUAAD//wAAqNQAAAAAAACo1AAAAAAAAJGrAAD/////kasAAAAA//+RqwAAAAD//xm/AAD//wAAkasAAP////8ZvwAA//8AABm/AAAAAAAAGb8AAAAAAAD6lgAA//////qWAAAAAP//+pYAAAAA//+CqgAA//8AAPqWAAD/////gqoAAP//AACCqgAAAAAAAIKqAAAAAAAAtIAAAP////+0gAAAAAD//7SAAAAAAP//PJQAAP//AAC0gAAA/////zyUAAD//wAAPJQAAAAAAAA8lAAAAAAAANprAAD/////2msAAAAA///aawAAAAD//2J/AAD//wAA2msAAP////9ifwAA//8AAGJ/AAAAAAAAYn8AAAAAAADBVQAA/////8FVAAAAAP//wVUAAAAA//9JaQAA//8AAMFVAAD/////SWkAAP//AABJaQAAAAAAAElpAAAAAAAAx0AAAP/////HQAAAAAD//8dAAAAAAP//T1QAAP//AADHQAAA/////09UAAD//wAAT1QAAAAAAABPVAAAAAAAAH0rAAD/////fSsAAAAA//99KwAAAAD//wU/AAD//wAAfSsAAP////8FPwAA//8AAAU/AAAAAAAABT8AAAAAAAAzFQAA/////zMVAAAAAP//MxUAAAAA//+7KAAA//8AADMVAAD/////uygAAP//AAC7KAAAAAAAALsoAAAAAAAAAAAAAP////8AAAAAAAD//wAAAAAAAP//iBMAAP//AAAAAAAA/////4gTAAD//wAAiBMAAAAAAACIEwAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_yjo7f"]
+resource_name = "bookshelf_Cube"
+_surfaces = [{
+"aabb": AABB(-0.10000003, -0.116346836, -0.2621263, 0.20000005, 0.23269439, 0.5242779),
+"attribute_data": PackedByteArray("jcNY3OOld0aU/Ht33GxVq9xsVauMlKk846V3RoVbh6GFW4eh2z2mC4yUqTzTBINwcMChiLTX9/xwwPf8tNehiAjv9/zD16GICO+hiMPX9/yNw1jc46V3RpT8e3fcbFWr3GxVq4yUqTzjpXdGhVuHoYVbh6HbPaYLjJSpPNMEg3BwwKGItNf3/HDA9/y016GICO/3/MPXoYgI76GIw9f3/I3DWNzjpXdGlPx7d9xsVavcbFWrjJSpPOOld0aFW4ehhVuHods9pguMlKk80wSDcHDAoYi01/f8cMD3/LTXoYgI7/f8w9ehiAjvoYjD1/f8jcNY3OOld0aU/Ht33GxVq9xsVauMlKk846V3RoVbh6GFW4eh2z2mC4yUqTzTBINwcMChiLTX9/xwwPf8tNehiAjv9/zD16GICO+hiMPX9/yNw1jc46V3RpT8e3fcbFWr3GxVq4yUqTzjpXdGhVuHoYVbh6HbPaYLjJSpPNMEg3BwwKGItNf3/HDA9/y016GICO/3/MPXoYgI76GIw9f3/I3DWNzjpXdGlPx7d9xsVavcbFWrjJSpPOOld0aFW4ehhVuHods9pguMlKk80wSDcHDAoYi01/f8cMD3/LTXoYgI7/f8w9ehiAjvoYjD1/f8jcNY3OOld0aU/Ht33GxVq9xsVauMlKk846V3RoVbh6GFW4eh2z2mC4yUqTzTBINwcMChiLTX9/xwwPf8tNehiAjv9/zD16GICO+hiMPX9/yNw1jc46V3RpT8e3fcbFWr3GxVq4yUqTzjpXdGhVuHoYVbh6HbPaYLjJSpPNMEg3BwwKGItNf3/HDA9/y016GICO/3/MPXoYgI76GIw9f3/I3DWNzjpXdGlPx7d9xsVavcbFWrjJSpPOOld0aFW4ehhVuHods9pguMlKk80wSDcHDAoYi01/f8cMD3/LTXoYgI7/f8w9ehiAjvoYjD1/f8jcNY3OOld0aU/Ht33GxVq9xsVauMlKk846V3RoVbh6GFW4eh2z2mC4yUqTzTBINwcMChiLTX9/xwwPf8tNehiAjv9/zD16GICO+hiMPX9/yNw1jc46V3RpT8e3fcbFWr3GxVq4yUqTzjpXdGhVuHoYVbh6HbPaYLjJSpPNMEg3BwwKGItNf3/HDA9/y016GICO/3/MPXoYgI76GIw9f3/I3DWNzjpXdGlPx7d9xsVavcbFWrjJSpPOOld0aFW4ehhVuHods9pguMlKk80wSDcHDAoYi01/f8cMD3/LTXoYgI7/f8w9ehiAjvoYjD1/f8"),
+"format": 34896613399,
+"index_count": 360,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUAOAA5ADoAOAA7ADkAPAA9AD4APAA/AD0AQABBAEIAQABDAEEARABFAEYARABHAEUASABJAEoASABLAEkATABNAE4ATABPAE0AUABRAFIAUABTAFEAVABVAFYAVABXAFUAWABZAFoAWABbAFkAXABdAF4AXABfAF0AYABhAGIAYABjAGEAZABlAGYAZABnAGUAaABpAGoAaABrAGkAbABtAG4AbABvAG0AcABxAHIAcABzAHEAdAB1AHYAdAB3AHUAeAB5AHoAeAB7AHkAfAB9AH4AfAB/AH0AgACBAIIAgACDAIEAhACFAIYAhACHAIUAiACJAIoAiACLAIkAjACNAI4AjACPAI0AkACRAJIAkACTAJEAlACVAJYAlACXAJUAmACZAJoAmACbAJkAnACdAJ4AnACfAJ0AoAChAKIAoACjAKEApAClAKYApACnAKUAqACpAKoAqACrAKkArACtAK4ArACvAK0AsACxALIAsACzALEAtAC1ALYAtAC3ALUAuAC5ALoAuAC7ALkAvAC9AL4AvAC/AL0AwADBAMIAwADDAMEAxADFAMYAxADHAMUAyADJAMoAyADLAMkAzADNAM4AzADPAM0A0ADRANIA0ADTANEA1ADVANYA1ADXANUA2ADZANoA2ADbANkA3ADdAN4A3ADfAN0A4ADhAOIA4ADjAOEA5ADlAOYA5ADnAOUA6ADpAOoA6ADrAOkA7ADtAO4A7ADvAO0A"),
+"material": SubResource("StandardMaterial3D_vs8ut"),
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 240,
+"vertex_data": PackedByteArray("AAAAAHbs////////duz//wAA//927P////8AAHbs/////wAAduyjwv///////6PC/////3bso8L//wAA//+jwv//AAD///aUAAD/////9pT////////2lAAAAAD///aUAAAAAHbsVNX//wAA//9U1f//AAB27FTVAAAAAP//VNX/////duxU1QAA/////1TVAAD//3bsVNX///////9U1QAAAADK1v///////8rW//8AAP//ytb/////AADK1v////8AAMrWo8L/////Uuqjwv/////K1qPC//8AAFLqo8L//wAAUur2lAAA//9S6vaU/////1Lq9pQAAAAAUur2lAAAAADK1lTV//8AAFLqVNX//wAAytZU1QAAAABS6lTV/////8rWVNUAAP//UupU1QAA///K1lTV/////1LqVNUAAAAAIMH///////8gwf//AAD//yDB/////wAAIMH/////AAAgwaPC/////6jUo8L/////IMGjwv//AACo1KPC//8AAKjU9pQAAP//qNT2lP////+o1PaUAAAAAKjU9pQAAAAAIMFU1f//AACo1FTV//8AACDBVNUAAAAAqNRU1f////8gwVTVAAD//6jUVNUAAP//IMFU1f////+o1FTVAAAAAJGr////////kav//wAA//+Rq/////8AAJGr/////wAAkaujwv////8Zv6PC/////5Gro8L//wAAGb+jwv//AAAZv/aUAAD//xm/9pT/////Gb/2lAAAAAAZv/aUAAAAAJGrVNX//wAAGb9U1f//AACRq1TVAAAAABm/VNX/////katU1QAA//8Zv1TVAAD//5GrVNX/////Gb9U1QAAAAD6lv////////qW//8AAP//+pb/////AAD6lv////8AAPqWo8L/////gqqjwv/////6lqPC//8AAIKqo8L//wAAgqr2lAAA//+CqvaU/////4Kq9pQAAAAAgqr2lAAAAAD6llTV//8AAIKqVNX//wAA+pZU1QAAAACCqlTV//////qWVNUAAP//gqpU1QAA///6llTV/////4KqVNUAAAAAtID///////+0gP//AAD//7SA/////wAAtID/////AAC0gKPC/////zyUo8L/////tICjwv//AAA8lKPC//8AADyU9pQAAP//PJT2lP////88lPaUAAAAADyU9pQAAAAAtIBU1f//AAA8lFTV//8AALSAVNUAAAAAPJRU1f////+0gFTVAAD//zyUVNUAAP//tIBU1f////88lFTVAAAAANpr////////2mv//wAA///aa/////8AANpr/////wAA2mujwv////9if6PC/////9pro8L//wAAYn+jwv//AABif/aUAAD//2J/9pT/////Yn/2lAAAAABif/aUAAAAANprVNX//wAAYn9U1f//AADaa1TVAAAAAGJ/VNX/////2mtU1QAA//9if1TVAAD//9prVNX/////Yn9U1QAAAADBVf///////8FV//8AAP//wVX/////AADBVf////8AAMFVo8L/////SWmjwv/////BVaPC//8AAElpo8L//wAASWn2lAAA//9JafaU/////0lp9pQAAAAASWn2lAAAAADBVVTV//8AAElpVNX//wAAwVVU1QAAAABJaVTV/////8FVVNUAAP//SWlU1QAA///BVVTV/////0lpVNUAAAAAx0D////////HQP//AAD//8dA/////wAAx0D/////AADHQKPC/////09Uo8L/////x0Cjwv//AABPVKPC//8AAE9U9pQAAP//T1T2lP////9PVPaUAAAAAE9U9pQAAAAAx0BU1f//AABPVFTV//8AAMdAVNUAAAAAT1RU1f/////HQFTVAAD//09UVNUAAP//x0BU1f////9PVFTVAAAAAH0r////////fSv//wAA//99K/////8AAH0r/////wAAfSujwv////8FP6PC/////30ro8L//wAABT+jwv//AAAFP/aUAAD//wU/9pT/////BT/2lAAAAAAFP/aUAAAAAH0rVNX//wAABT9U1f//AAB9K1TVAAAAAAU/VNX/////fStU1QAA//8FP1TVAAD//30rVNX/////BT9U1QAAAAAzFf///////zMV//8AAP//MxX/////AAAzFf////8AADMVo8L/////uyijwv////8zFaPC//8AALsoo8L//wAAuyj2lAAA//+7KPaU/////7so9pQAAAAAuyj2lAAAAAAzFVTV//8AALsoVNX//wAAMxVU1QAAAAC7KFTV/////zMVVNUAAP//uyhU1QAA//8zFVTV/////7soVNUAAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAKPC/////4gTo8L/////AACjwv//AACIE6PC//8AAIgT9pQAAP//iBP2lP////+IE/aUAAAAAIgT9pQAAAAAAABU1f//AACIE1TV//8AAAAAVNUAAAAAiBNU1f////8AAFTVAAD//4gTVNUAAP//AABU1f////+IE1TVqZpU5amaVOWpmlTlqZpU5dxTERbcUxEW3FMRFtxTERb/////////////////////qipU1aoqVNWqKlTVqipU1VTVqipU1aoqVNWqKlTVqiqpmlTlqZpU5amaVOWpmlTl3FMRFtxTERbcUxEW3FMRFv////////////////////+qKlTVqipU1aoqVNWqKlTVVNWqKlTVqipU1aoqVNWqKqmaVOWpmlTlqZpU5amaVOXcUxEW3FMRFtxTERbcUxEW/////////////////////6oqVNWqKlTVqipU1aoqVNVU1aoqVNWqKlTVqipU1aoqqZpU5amaVOWpmlTlqZpU5dxTERbcUxEW3FMRFtxTERb/////////////////////qipU1aoqVNWqKlTVqipU1VTVqipU1aoqVNWqKlTVqiqpmlTlqZpU5amaVOWpmlTl3FMRFtxTERbcUxEW3FMRFv////////////////////+qKlTVqipU1aoqVNWqKlTVVNWqKlTVqipU1aoqVNWqKqmaVOWpmlTlqZpU5amaVOXcUxEW3FMRFtxTERbcUxEW/////////////////////6oqVNWqKlTVqipU1aoqVNVU1aoqVNWqKlTVqipU1aoqqZpU5amaVOWpmlTlqZpU5dxTERbcUxEW3FMRFtxTERb/////////////////////qipU1aoqVNWqKlTVqipU1VTVqipU1aoqVNWqKlTVqiqpmlTlqZpU5amaVOWpmlTl3FMRFtxTERbcUxEW3FMRFv////////////////////+qKlTVqipU1aoqVNWqKlTVVNWqKlTVqipU1aoqVNWqKqmaVOWpmlTlqZpU5amaVOXcUxEW3FMRFtxTERbcUxEW/////////////////////6oqVNWqKlTVqipU1aoqVNVU1aoqVNWqKlTVqipU1aoqqZpU5amaVOWpmlTlqZpU5dxTERbcUxEW3FMRFtxTERb/////////////////////qipU1aoqVNWqKlTVqipU1VTVqipU1aoqVNWqKlTVqiqpmlTlqZpU5amaVOWpmlTl3FMRFtxTERbcUxEW3FMRFv////////////////////+qKlTVqipU1aoqVNWqKlTVVNWqKlTVqipU1aoqVNWqKqmaVOWpmlTlqZpU5amaVOXcUxEW3FMRFtxTERbcUxEW/////////////////////6oqVNWqKlTVqipU1aoqVNVU1aoqVNWqKlTVqipU1aoq")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_vmsnl")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_owtj4"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(1, 14, 14, 10)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.48699996, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_incia"]
 size = Vector3(4.607239, 2.3760376, 3.991211)
 
@@ -750,29 +825,6 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j2ixe"]
 points = PackedVector3Array(0.36620748, 0.52086675, 0.70996785, -0.36620748, 0.52086675, 0.70996785, 0.36620748, -0.0028654635, 0.70996785, 0.36620748, 0.52086675, -0.70996785, -0.36620748, -0.0028654635, 0.70996785, -0.36620748, 0.52086675, -0.70996785, 0.36620748, -0.0028654635, -0.70996785, -0.36620748, -0.0028654635, -0.70996785)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hpw2l"]
-render_priority = 0
-shader = ExtResource("1_l4bwr")
-shader_parameter/spritefont = ExtResource("2_sikar")
-shader_parameter/spritefont_tex_size = Vector2i(416, 176)
-shader_parameter/character_start = Vector2(0, 0)
-shader_parameter/character_size = Vector2(11, 16)
-shader_parameter/character_spacing = Vector2(5, 0)
-shader_parameter/word = PackedInt32Array(1, 14, 14, 10, 18, 7, 4, 11, 5)
-shader_parameter/word_length = 9
-shader_parameter/word_spacing = 2
-shader_parameter/font_color = Color(0.5, 0.31800002, 0.24000001, 1)
-shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
-shader_parameter/offset = Vector2(0.05, 0.03)
-shader_parameter/animate = true
-shader_parameter/uv_characters_per_line = 40.0000005811468
-shader_parameter/uv_character_spacing = 0.0
-shader_parameter/uv_line_spacing = 0.0
-shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uex6k"]
-points = PackedVector3Array(0.19996086, 1.7966988, 0.5, 0.19996086, 1.7966988, -0.5, -0.19999999, 1.7966988, 0.5, 0.19996086, 0, 0.5, -0.19999999, 1.7966988, -0.5, 0.19996086, 0, -0.5, -0.19999999, 0, 0.5, -0.19999999, 0, -0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eqpja"]
 size = Vector3(3.349121, 2.3760376, 4.961853)
@@ -1458,6 +1510,96 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Office/desk/chair" unique_id=1130956618]
 shape = SubResource("ConvexPolygonShape3D_gbuy4")
 
+[node name="bookshelf2" parent="Office" unique_id=1570610625 instance=ExtResource("18_qm0fk")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3272345, -1.1920929e-07, -2.766787)
+
+[node name="bookshelf" parent="Office/bookshelf2" index="0" unique_id=1125813485]
+surface_material_override/0 = SubResource("ShaderMaterial_hpw2l")
+
+[node name="TextWriterHelper" type="Node" parent="Office/bookshelf2/bookshelf" index="0" unique_id=353021904 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOKSHELF"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/bookshelf2" unique_id=2121399089]
+shape = SubResource("ConvexPolygonShape3D_uex6k")
+
+[node name="Books" parent="Office/bookshelf2" index="2" unique_id=50054997]
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="TextWriterHelper" type="Node" parent="Office/bookshelf2/Books" index="0" unique_id=1311453289 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOK"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Books2" type="MeshInstance3D" parent="Office/bookshelf2" unique_id=1759613292]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 1.3303834, 0.040013313)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books3" type="MeshInstance3D" parent="Office/bookshelf2" unique_id=1860323921]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.74703825, -0.190979)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books4" type="MeshInstance3D" parent="Office/bookshelf2" unique_id=1977096598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.20145181, 0.18089652)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books5" type="MeshInstance3D" parent="Office/bookshelf2" unique_id=1043663527]
+transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0.06340575, 0.48672482, -0.18700361)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="bookshelf3" parent="Office" unique_id=237022286 instance=ExtResource("18_qm0fk")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.3272345, -1.1920929e-07, -2.766787)
+
+[node name="bookshelf" parent="Office/bookshelf3" index="0" unique_id=1125813485]
+surface_material_override/0 = SubResource("ShaderMaterial_hpw2l")
+
+[node name="TextWriterHelper" type="Node" parent="Office/bookshelf3/bookshelf" index="0" unique_id=1363709733 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOKSHELF"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/bookshelf3" unique_id=1514500820]
+shape = SubResource("ConvexPolygonShape3D_uex6k")
+
+[node name="Books" parent="Office/bookshelf3" index="2" unique_id=50054997]
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="TextWriterHelper" type="Node" parent="Office/bookshelf3/Books" index="0" unique_id=2056472747 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOK"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Books2" type="MeshInstance3D" parent="Office/bookshelf3" unique_id=1247674112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 1.3303834, 0.040013313)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books3" type="MeshInstance3D" parent="Office/bookshelf3" unique_id=1687925038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.74703825, -0.190979)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books4" type="MeshInstance3D" parent="Office/bookshelf3" unique_id=2066081244]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.20145181, 0.18089652)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books5" type="MeshInstance3D" parent="Office/bookshelf3" unique_id=704680707]
+transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0.06340575, 0.48672482, -0.18700361)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
 [node name="Kitchen" type="Node3D" parent="." unique_id=1116060079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
 script = ExtResource("6_ndm35")
@@ -1672,10 +1814,10 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/sofatable" unique_id=2097973426]
 shape = SubResource("ConvexPolygonShape3D_j2ixe")
 
-[node name="bookshelf" parent="Living Room" unique_id=1016418194 instance=ExtResource("18_qm0fk")]
+[node name="bookshelf" parent="Living Room" unique_id=1056440808 instance=ExtResource("18_qm0fk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3476877, -1.1920929e-07, -1.1531737)
 
-[node name="bookshelf" parent="Living Room/bookshelf" index="0" unique_id=1743695791]
+[node name="bookshelf" parent="Living Room/bookshelf" index="0" unique_id=1125813485]
 surface_material_override/0 = SubResource("ShaderMaterial_hpw2l")
 
 [node name="TextWriterHelper" type="Node" parent="Living Room/bookshelf/bookshelf" index="0" unique_id=1389313408 node_paths=PackedStringArray("mesh")]
@@ -1686,6 +1828,80 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/bookshelf" unique_id=1299079998]
 shape = SubResource("ConvexPolygonShape3D_uex6k")
+
+[node name="Books" parent="Living Room/bookshelf" index="2" unique_id=50054997]
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="TextWriterHelper" type="Node" parent="Living Room/bookshelf/Books" index="0" unique_id=474355882 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOK"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Books2" type="MeshInstance3D" parent="Living Room/bookshelf" unique_id=1546361539]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 1.3303834, 0.040013313)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books3" type="MeshInstance3D" parent="Living Room/bookshelf" unique_id=2054688218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.74703825, -0.190979)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books4" type="MeshInstance3D" parent="Living Room/bookshelf" unique_id=1555404307]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.20145181, 0.18089652)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books5" type="MeshInstance3D" parent="Living Room/bookshelf" unique_id=1030432828]
+transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0.06340575, 0.48672482, -0.18700361)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="bookshelf2" parent="Living Room" unique_id=1917736998 instance=ExtResource("18_qm0fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3476877, -1.1920929e-07, -2.1999712)
+
+[node name="bookshelf" parent="Living Room/bookshelf2" index="0" unique_id=1125813485]
+surface_material_override/0 = SubResource("ShaderMaterial_hpw2l")
+
+[node name="TextWriterHelper" type="Node" parent="Living Room/bookshelf2/bookshelf" index="0" unique_id=377658049 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOKSHELF"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/bookshelf2" unique_id=857481620]
+shape = SubResource("ConvexPolygonShape3D_uex6k")
+
+[node name="Books" parent="Living Room/bookshelf2" index="2" unique_id=50054997]
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="TextWriterHelper" type="Node" parent="Living Room/bookshelf2/Books" index="0" unique_id=945878812 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOK"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Books2" type="MeshInstance3D" parent="Living Room/bookshelf2" unique_id=765107739]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 1.3303834, 0.040013313)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books3" type="MeshInstance3D" parent="Living Room/bookshelf2" unique_id=305470244]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.74703825, -0.190979)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books4" type="MeshInstance3D" parent="Living Room/bookshelf2" unique_id=350126859]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.20145181, 0.18089652)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books5" type="MeshInstance3D" parent="Living Room/bookshelf2" unique_id=1383588973]
+transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0.06340575, 0.48672482, -0.18700361)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
 
 [node name="Bedroom" type="Node3D" parent="." unique_id=667201671]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
@@ -1799,6 +2015,51 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet3" unique_id=877089888]
 shape = SubResource("ConvexPolygonShape3D_hpw2l")
+
+[node name="bookshelf2" parent="Bedroom" unique_id=1389155798 instance=ExtResource("18_qm0fk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.361814, -1.1920929e-07, 0.6933334)
+
+[node name="bookshelf" parent="Bedroom/bookshelf2" index="0" unique_id=1125813485]
+surface_material_override/0 = SubResource("ShaderMaterial_hpw2l")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/bookshelf2/bookshelf" index="0" unique_id=315277060 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOKSHELF"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bookshelf2" unique_id=2078898941]
+shape = SubResource("ConvexPolygonShape3D_uex6k")
+
+[node name="Books" parent="Bedroom/bookshelf2" index="2" unique_id=50054997]
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/bookshelf2/Books" index="0" unique_id=49627626 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOK"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Books2" type="MeshInstance3D" parent="Bedroom/bookshelf2" unique_id=1241763722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 1.3303834, 0.040013313)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books3" type="MeshInstance3D" parent="Bedroom/bookshelf2" unique_id=1203185404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.74703825, -0.190979)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books4" type="MeshInstance3D" parent="Bedroom/bookshelf2" unique_id=1744684226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.06340575, 0.20145181, 0.18089652)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
+
+[node name="Books5" type="MeshInstance3D" parent="Bedroom/bookshelf2" unique_id=849722251]
+transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0.06340575, 0.48672482, -0.18700361)
+mesh = SubResource("ArrayMesh_yjo7f")
+surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
 
 [node name="Bathroom" type="Node3D" parent="." unique_id=1204617187]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -4.2)
@@ -1927,10 +2188,10 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Hallway/shoestand" unique_id=1973040263]
 shape = SubResource("ConvexPolygonShape3D_owtj4")
 
-[node name="hallmirror" parent="Hallway/shoestand" unique_id=1900455857 instance=ExtResource("26_wsgsd")]
+[node name="hallmirror" parent="Hallway/shoestand" unique_id=321747612 instance=ExtResource("26_wsgsd")]
 transform = Transform3D(-4.371138e-08, 0, 1, 0, 1, 0, -1, 0, -4.371138e-08, 0.027638435, 1.1920929e-07, 1.6623442)
 
-[node name="Cube" parent="Hallway/shoestand/hallmirror" index="0" unique_id=1069533688]
+[node name="Cube" parent="Hallway/shoestand/hallmirror" index="0" unique_id=1836694013]
 surface_material_override/0 = SubResource("ShaderMaterial_cgv1t")
 
 [connection signal="body_entered" from="Office/Signal Painting/Area3D" to="Office/Signal Painting" method="_on_area_3d_body_entered"]
@@ -1957,6 +2218,8 @@ surface_material_override/0 = SubResource("ShaderMaterial_cgv1t")
 [editable path="Office/Signal Painting"]
 [editable path="Office/desk"]
 [editable path="Office/desk/chair"]
+[editable path="Office/bookshelf2"]
+[editable path="Office/bookshelf3"]
 [editable path="Kitchen/Fridge"]
 [editable path="Kitchen/Freezer"]
 [editable path="Kitchen/kitchen_cupboards"]
@@ -1968,11 +2231,13 @@ surface_material_override/0 = SubResource("ShaderMaterial_cgv1t")
 [editable path="Living Room/sofa"]
 [editable path="Living Room/sofatable"]
 [editable path="Living Room/bookshelf"]
+[editable path="Living Room/bookshelf2"]
 [editable path="Bedroom/bed"]
 [editable path="Bedroom/bedsidetable"]
 [editable path="Bedroom/closet"]
 [editable path="Bedroom/closet2"]
 [editable path="Bedroom/closet3"]
+[editable path="Bedroom/bookshelf2"]
 [editable path="Bathroom/toilet"]
 [editable path="Bathroom/bathroomfaucet"]
 [editable path="Bathroom/shower"]
