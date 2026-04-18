@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://d82doohsb30g" path="res://visual/models/tvbench.blend" id="15_scpqm"]
 [ext_resource type="PackedScene" uid="uid://brofo6j8ni5si" path="res://visual/models/sofa.blend" id="16_vkan1"]
 [ext_resource type="PackedScene" uid="uid://dkhs6norgqn3u" path="res://visual/models/sofatable.blend" id="17_82452"]
+[ext_resource type="PackedScene" uid="uid://bql480or0r0w8" path="res://visual/models/bookshelf.blend" id="18_qm0fk"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.3
@@ -742,6 +743,29 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j2ixe"]
 points = PackedVector3Array(0.36620748, 0.52086675, 0.70996785, -0.36620748, 0.52086675, 0.70996785, 0.36620748, -0.0028654635, 0.70996785, 0.36620748, 0.52086675, -0.70996785, -0.36620748, -0.0028654635, 0.70996785, -0.36620748, 0.52086675, -0.70996785, 0.36620748, -0.0028654635, -0.70996785, -0.36620748, -0.0028654635, -0.70996785)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hpw2l"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(1, 14, 14, 10, 18, 7, 4, 11, 5)
+shader_parameter/word_length = 9
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.31800002, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uex6k"]
+points = PackedVector3Array(0.19996086, 1.7966988, 0.5, 0.19996086, 1.7966988, -0.5, -0.19999999, 1.7966988, 0.5, 0.19996086, 0, 0.5, -0.19999999, 1.7966988, -0.5, 0.19996086, 0, -0.5, -0.19999999, 0, 0.5, -0.19999999, 0, -0.5)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_eqpja"]
 size = Vector3(3.349121, 2.3760376, 4.961853)
 
@@ -749,6 +773,11 @@ size = Vector3(3.349121, 2.3760376, 4.961853)
 size = Vector3(1.9918213, 2.3760376, 2.513794)
 
 [node name="Appartment" type="Node3D" unique_id=288289078]
+
+[node name="TextWriterHelper" type="Node" parent="." unique_id=1929070200]
+script = ExtResource("2_vj7uu")
+text = "BOOKSHELF"
+metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=401312182 node_paths=PackedStringArray("cam")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 0, 4.5)
@@ -1350,20 +1379,35 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/sofa" unique_id=1687288192]
 shape = SubResource("ConcavePolygonShape3D_vkan1")
 
-[node name="sofatable" parent="Living Room/sofa" unique_id=994675632 instance=ExtResource("17_82452")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.6023381, -1.1920929e-07, 1.5066063)
+[node name="sofatable" parent="Living Room" unique_id=994675632 instance=ExtResource("17_82452")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.46938086, 1.1920929e-07, -0.87781787)
 
-[node name="Sofa Table" parent="Living Room/sofa/sofatable" index="0" unique_id=1338171692]
+[node name="Sofa Table" parent="Living Room/sofatable" index="0" unique_id=1338171692]
 surface_material_override/0 = SubResource("ShaderMaterial_dse8r")
 
-[node name="TextWriterHelper" type="Node" parent="Living Room/sofa/sofatable/Sofa Table" index="0" unique_id=1217975833 node_paths=PackedStringArray("mesh")]
+[node name="TextWriterHelper" type="Node" parent="Living Room/sofatable/Sofa Table" index="0" unique_id=1217975833 node_paths=PackedStringArray("mesh")]
 script = ExtResource("2_vj7uu")
 mesh = NodePath("..")
 text = "TABLE"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/sofa/sofatable" unique_id=2097973426]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/sofatable" unique_id=2097973426]
 shape = SubResource("ConvexPolygonShape3D_j2ixe")
+
+[node name="bookshelf" parent="Living Room" unique_id=1016418194 instance=ExtResource("18_qm0fk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3476877, -1.1920929e-07, -1.1531737)
+
+[node name="bookshelf" parent="Living Room/bookshelf" index="0" unique_id=1743695791]
+surface_material_override/0 = SubResource("ShaderMaterial_hpw2l")
+
+[node name="TextWriterHelper" type="Node" parent="Living Room/bookshelf/bookshelf" index="0" unique_id=1389313408 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BOOKSHELF"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/bookshelf" unique_id=1299079998]
+shape = SubResource("ConvexPolygonShape3D_uex6k")
 
 [node name="Bedroom" type="Node3D" parent="." unique_id=667201671]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
@@ -1440,4 +1484,5 @@ shape = SubResource("BoxShape3D_ndm35")
 [editable path="Kitchen/kitchen_small_bench"]
 [editable path="Living Room/tvbench"]
 [editable path="Living Room/sofa"]
-[editable path="Living Room/sofa/sofatable"]
+[editable path="Living Room/sofatable"]
+[editable path="Living Room/bookshelf"]
