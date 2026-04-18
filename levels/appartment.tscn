@@ -24,6 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://c837dxiy70glj" path="res://visual/models/closet.blend" id="21_3g6b8"]
 [ext_resource type="PackedScene" uid="uid://bcr3i1uwlndyd" path="res://visual/models/shower.blend" id="21_hgy1n"]
 [ext_resource type="PackedScene" uid="uid://chwm5ctv56f8h" path="res://visual/models/bedsidetable.blend" id="23_j2ixe"]
+[ext_resource type="PackedScene" uid="uid://d2xqkhk6dcvhx" path="res://visual/models/shoestand.blend" id="25_dh07s"]
+[ext_resource type="PackedScene" uid="uid://dd3hvq7bcxhsf" path="res://visual/models/hallmirror.blend" id="26_wsgsd"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.3
@@ -980,7 +982,7 @@ shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gnm7j"]
-points = PackedVector3Array(1, 1, 1, 1, 1, -1, -1, 1, 1, 1, -1, 1, 1, -1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1)
+points = PackedVector3Array(-0.08992405, 1.8792351, 0.21068783, -0.08992405, 1.7890314, 0.21068783, -0.08992405, 1.8792351, -0.21068819, -0.2292229, 1.8792351, 0.21068783, -0.2292229, 1.7890314, 0.21068783, -0.08992405, 1.7890314, -0.21068819, -0.2292229, 1.8792351, -0.21068819, -0.2292229, 1.7890314, -0.21068819)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hvw63"]
 render_priority = 0
@@ -1001,6 +1003,52 @@ shader_parameter/uv_characters_per_line = 40.0000005811468
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0rdn8"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 7, 14, 4, -1, 17, 0, 2, 10)
+shader_parameter/word_length = 9
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.24000001, 0.5, 0.40466663, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cgv1t"]
+points = PackedVector3Array(-0.39999998, 7.450581e-09, -0.14999999, -0.39999998, 7.450581e-09, 0.14999999, -0.39999998, 0.28204602, -0.14999999, 0.39992172, 7.450581e-09, -0.14999999, -0.39999998, 0.28204602, 0.14999999, 0.39992172, 7.450581e-09, 0.14999999, 0.39992172, 0.28204602, -0.14999999, 0.39992172, 0.28204602, 0.14999999)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nngwn"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 11, 14, 19, 7, 4, 18, -1, 17, 0, 2, 10)
+shader_parameter/word_length = 12
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.305, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_owtj4"]
+points = PackedVector3Array(-0.4, 1.4045719, -0.16, -0.4, 1.4045719, -0.12501174, -0.4, 1.6121202, -0.16, 0.4, 1.4045719, -0.16, -0.4, 1.5801021, 0.16, -0.23610024, 1.4045719, -0.10086139, -0.4, 1.6121202, 0.16, 0.4, 1.6121202, -0.16, 0.4, 1.4045719, -0.12501174, 0.4, 1.5801021, 0.16, 0.2360219, 1.4045719, -0.10086139, 0.4, 1.6121202, 0.16)
 
 [node name="Appartment" type="Node3D" unique_id=288289078]
 
@@ -1814,8 +1862,7 @@ mesh = NodePath("..")
 text = "LAMP"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=440115006]
-transform = Transform3D(0.06965624, 0, 0, 0, 0.04510187, 0, 0, 0, 0.210688, -0.15956666, 1.4385614, 0)
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=570630608]
 shape = SubResource("ConvexPolygonShape3D_gnm7j")
 
 [node name="shower" parent="Bathroom" unique_id=1377275483 instance=ExtResource("21_hgy1n")]
@@ -1852,6 +1899,39 @@ monitorable = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Area3D" unique_id=2145799358]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018951416, 1.1490173, -1.5510406)
 shape = SubResource("BoxShape3D_ndm35")
+
+[node name="shoestand" parent="Hallway" unique_id=1742711436 instance=ExtResource("25_dh07s")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.8002145, 0, 1.2618465)
+
+[node name="Shoestand" parent="Hallway/shoestand" index="0" unique_id=1235448733]
+surface_material_override/0 = SubResource("ShaderMaterial_0rdn8")
+
+[node name="TextWriterHelper" type="Node" parent="Hallway/shoestand/Shoestand" index="0" unique_id=394368030 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "SHOE RACK"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/shoestand" unique_id=1074502925]
+shape = SubResource("ConvexPolygonShape3D_cgv1t")
+
+[node name="Hat thing" parent="Hallway/shoestand" index="2" unique_id=611524497]
+surface_material_override/0 = SubResource("ShaderMaterial_nngwn")
+
+[node name="TextWriterHelper" type="Node" parent="Hallway/shoestand/Hat thing" index="0" unique_id=1359755602 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "CLOTHES RACK"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Hallway/shoestand" unique_id=1973040263]
+shape = SubResource("ConvexPolygonShape3D_owtj4")
+
+[node name="hallmirror" parent="Hallway/shoestand" unique_id=1900455857 instance=ExtResource("26_wsgsd")]
+transform = Transform3D(-4.371138e-08, 0, 1, 0, 1, 0, -1, 0, -4.371138e-08, 0.027638435, 1.1920929e-07, 1.6623442)
+
+[node name="Cube" parent="Hallway/shoestand/hallmirror" index="0" unique_id=1069533688]
+surface_material_override/0 = SubResource("ShaderMaterial_cgv1t")
 
 [connection signal="body_entered" from="Office/Signal Painting/Area3D" to="Office/Signal Painting" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Office/Signal Painting/Area3D" to="Office/Signal Painting" method="_on_area_3d_body_exited"]
@@ -1896,3 +1976,5 @@ shape = SubResource("BoxShape3D_ndm35")
 [editable path="Bathroom/toilet"]
 [editable path="Bathroom/bathroomfaucet"]
 [editable path="Bathroom/shower"]
+[editable path="Hallway/shoestand"]
+[editable path="Hallway/shoestand/hallmirror"]
