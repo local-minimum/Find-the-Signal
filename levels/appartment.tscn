@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://bql480or0r0w8" path="res://visual/models/bookshelf.blend" id="18_qm0fk"]
 [ext_resource type="PackedScene" uid="uid://bebkgq2snts5y" path="res://visual/models/toilet.blend" id="19_gbuy4"]
 [ext_resource type="PackedScene" uid="uid://b3vtvdcs1g1k4" path="res://visual/models/bathroomfaucet.blend" id="20_yx31h"]
+[ext_resource type="PackedScene" uid="uid://bcr3i1uwlndyd" path="res://visual/models/shower.blend" id="21_hgy1n"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.3
@@ -863,6 +864,26 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gnm7j"]
 points = PackedVector3Array(1, 1, 1, 1, 1, -1, -1, 1, 1, 1, -1, 1, 1, -1, -1, -1, 1, -1, -1, -1, 1, -1, -1, -1)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hvw63"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 7, 14, 22, 4, 17)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.24000001, 0.5, 0.40466663, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
 [node name="Appartment" type="Node3D" unique_id=288289078]
 
 [node name="TextWriterHelper" type="Node" parent="." unique_id=1929070200]
@@ -1529,7 +1550,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010681152, 1.1490173, 0.466
 shape = SubResource("BoxShape3D_3f1wm")
 
 [node name="toilet" parent="Bathroom" unique_id=466880299 instance=ExtResource("19_gbuy4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.45144042, -2.3841858e-07, -0.40194845)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5356224, -2.3841858e-07, -0.40194845)
 
 [node name="Toilet" parent="Bathroom/toilet" index="0" unique_id=1496600105]
 surface_material_override/0 = SubResource("ShaderMaterial_uex6k")
@@ -1543,10 +1564,10 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/toilet" unique_id=184700203]
 shape = SubResource("ConvexPolygonShape3D_dh07s")
 
-[node name="bathroomfaucet" parent="Bathroom" unique_id=1458515695 instance=ExtResource("20_yx31h")]
+[node name="bathroomfaucet" parent="Bathroom" unique_id=1611827853 instance=ExtResource("20_yx31h")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.706818, 5.9604645e-08, 1.0553601)
 
-[node name="Water" parent="Bathroom/bathroomfaucet" index="0" unique_id=1314532690]
+[node name="Water" parent="Bathroom/bathroomfaucet" index="0" unique_id=396312725]
 surface_material_override/0 = SubResource("ShaderMaterial_q8iv1")
 
 [node name="TextWriterHelper" type="Node" parent="Bathroom/bathroomfaucet/Water" index="0" unique_id=1627856920 node_paths=PackedStringArray("mesh")]
@@ -1558,7 +1579,7 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=1733045929]
 shape = SubResource("ConvexPolygonShape3D_25koi")
 
-[node name="Mirror" parent="Bathroom/bathroomfaucet" index="2" unique_id=1214551653]
+[node name="Mirror" parent="Bathroom/bathroomfaucet" index="2" unique_id=897789537]
 surface_material_override/0 = SubResource("ShaderMaterial_cgv1t")
 
 [node name="TextWriterHelper" type="Node" parent="Bathroom/bathroomfaucet/Mirror" index="0" unique_id=998068890 node_paths=PackedStringArray("mesh")]
@@ -1567,7 +1588,7 @@ mesh = NodePath("..")
 text = "MIRROR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Lamp" parent="Bathroom/bathroomfaucet" index="3" unique_id=628302317]
+[node name="Lamp" parent="Bathroom/bathroomfaucet" index="3" unique_id=1989527657]
 surface_material_override/0 = SubResource("ShaderMaterial_gnm7j")
 
 [node name="TextWriterHelper" type="Node" parent="Bathroom/bathroomfaucet/Lamp" index="0" unique_id=42143262 node_paths=PackedStringArray("mesh")]
@@ -1579,6 +1600,27 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=440115006]
 transform = Transform3D(0.06965624, 0, 0, 0, 0.04510187, 0, 0, 0, 0.210688, -0.15956666, 1.4385614, 0)
 shape = SubResource("ConvexPolygonShape3D_gnm7j")
+
+[node name="shower" parent="Bathroom" unique_id=1443526650 instance=ExtResource("21_hgy1n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051290154, 0, 0.30148602)
+
+[node name="curtainholder" parent="Bathroom/shower" index="0" unique_id=1143155277]
+surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/shower/curtainholder" index="0" unique_id=1959973655 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "SHOWER"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="shower holder" parent="Bathroom/shower" index="1" unique_id=637072238]
+surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
+
+[node name="Water Blender" parent="Bathroom/shower" index="2" unique_id=1309159831]
+surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
+
+[node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=436294011]
+surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
 [node name="Hallway" type="Node3D" parent="." unique_id=1366288698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 2.8000002)
@@ -1631,3 +1673,4 @@ shape = SubResource("BoxShape3D_ndm35")
 [editable path="Living Room/bookshelf"]
 [editable path="Bathroom/toilet"]
 [editable path="Bathroom/bathroomfaucet"]
+[editable path="Bathroom/shower"]
