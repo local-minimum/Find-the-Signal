@@ -681,6 +681,24 @@ metadata/_custom_type_script = "uid://4q753223m055"
 transform = Transform3D(0.64278764, 0, -0.76604444, 0, 1, 0, 0.76604444, 0, 0.64278764, -0.45170355, 1.0006874, -1.1920929e-07)
 shape = SubResource("ConvexPolygonShape3D_vkan1")
 
+[node name="Office" type="Node3D" parent="." unique_id=1868381224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 3)
+
+[node name="Kitched" type="Node3D" parent="." unique_id=1116060079]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+
+[node name="Living Room" type="Node3D" parent="." unique_id=354522909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
+
+[node name="Bedroom" type="Node3D" parent="." unique_id=667201671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
+
+[node name="Bathroom" type="Node3D" parent="." unique_id=1204617187]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -4.2)
+
+[node name="Hallway" type="Node3D" parent="." unique_id=1366288698]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 2.8000002)
+
 [editable path="Foundation/doorpost"]
 [editable path="Foundation/doorpost6"]
 [editable path="Foundation/doorpost4"]
