@@ -12,6 +12,8 @@
 [ext_resource type="PackedScene" uid="uid://bou48nt6gbvfa" path="res://visual/models/chair.blend" id="10_eqpja"]
 [ext_resource type="PackedScene" uid="uid://bxw3m8s02sjcf" path="res://visual/models/fridgefreezer.blend" id="11_3f1wm"]
 [ext_resource type="PackedScene" uid="uid://chyts0onlys3m" path="res://visual/models/kitchen_cupboards.blend" id="12_k36cs"]
+[ext_resource type="PackedScene" uid="uid://1y1yv4w5dmik" path="res://visual/models/kitchen_table.blend" id="13_ctgk5"]
+[ext_resource type="PackedScene" uid="uid://bmh8m68fp5jc2" path="res://visual/models/kitchen_small_bench.blend" id="13_k2cr2"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.3
@@ -507,7 +509,7 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_j2ixe"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3g6b8"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
 shader_parameter/spritefont = ExtResource("2_sikar")
@@ -553,7 +555,7 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wsgsd"]
 points = PackedVector3Array(0.28490615, 0.9587549, 0.41928113, 0.21435845, 0.7700723, 0.49815553, -0.22989064, 0.9587549, 0.41928113, 0.28485578, 0.9587549, 1.0749205, 0.21435845, 0.7700723, 0.99598193, -0.1594437, 0.7700723, 0.49815553, -0.22989064, 0.9587549, 1.0749205, -0.1594437, 0.7700723, 0.99598193)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_25koi"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wsgsd"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
 shader_parameter/spritefont = ExtResource("2_sikar")
@@ -575,6 +577,52 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5i0b8"]
 points = PackedVector3Array(-0.35071164, 1.5125055, -1.1681703, 0.2129696, 1.5125055, -1.1681703, -0.35071164, 1.5125055, 1.1681703, -0.35071164, 2.1589491, -1.1681703, 0.2129696, 2.1589491, -1.1681703, 0.2129696, 1.5125055, 1.1681703, -0.35071164, 2.1589491, 1.1681703, 0.2129696, 2.1589491, 1.1681703)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j2ixe"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 0, 1, 11, 4)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.31800002, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hgy1n"]
+points = PackedVector3Array(-2.9325485e-05, 0.8909117, -0.4901855, -2.9325485e-05, 0.9909118, -0.4901855, 0.7090825, 0.8909117, -0.4901855, -0.09571245, 0.8909117, -0.480781, 0.7090825, 0.9909118, -0.4901855, -0.09571245, 0.9909118, -0.480781, 0.7091999, 0.8909117, 0.4900893, -0.1876387, 0.8909117, -0.45295137, 0.7091999, 0.9909118, 0.4900893, -0.1876387, 0.9909118, -0.45295137, -2.9325485e-05, 0.8909117, 0.4900893, -0.27240342, 0.8909117, -0.40765625, -2.9325485e-05, 0.9909118, 0.4900893, -0.27240342, 0.9909118, -0.40765625, -0.09571245, 0.8909117, 0.48068482, -0.34671926, 0.8909117, -0.346623, -0.09571245, 0.9909118, 0.48068482, -0.34671926, 0.9909118, -0.346623, -0.1876387, 0.8909117, 0.45285517, -0.40765122, 0.8909117, -0.27234668, -0.1876387, 0.9909118, 0.45285517, -0.40765122, 0.9909118, -0.27234668, -0.27240342, 0.8909117, 0.40756005, -0.45296863, 0.8909117, -0.18761021, -0.27240342, 0.9909118, 0.40756005, -0.45296863, 0.9909118, -0.18761021, -0.34671926, 0.8909117, 0.3465268, -0.48079306, 0.8909117, -0.09567648, -0.34671926, 0.9909118, 0.3465268, -0.48079306, 0.9909118, -0.09567648, -0.40765122, 0.8909117, 0.27225047, -0.49018526, 0.8909117, -9.608269e-05, -0.40765122, 0.9909118, 0.27225047, -0.49018526, 0.9909118, -9.608269e-05, -0.45296863, 0.8909117, 0.187514, -0.48079306, 0.8909117, 0.09558028, -0.45296863, 0.9909118, 0.187514, -0.48079306, 0.9909118, 0.09558028)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_25koi"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 15, 1, 14, 0, 17, 3)
+shader_parameter/word_length = 8
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.5, 0.49133334, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(-0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s2x3b"]
+points = PackedVector3Array(-0.19999999, 0.00031656772, -0.5, -0.19999999, 1, -0.5, 0.19996086, 0.00031656772, -0.5, -0.19999999, 0.00031656772, 0.5, 0.19996086, 1, -0.5, -0.19999999, 1, 0.5, 0.19996086, 0.00031656772, 0.5, 0.19996086, 1, 0.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2vecc"]
 size = Vector3(4.619995, 2.3760376, 5.9882813)
@@ -1032,11 +1080,11 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Freezer" unique_id=615995513]
 shape = SubResource("ConvexPolygonShape3D_qm0fk")
 
-[node name="kitchen_cupboards" parent="Kitchen" unique_id=1535935822 instance=ExtResource("12_k36cs")]
+[node name="kitchen_cupboards" parent="Kitchen" unique_id=2100157067 instance=ExtResource("12_k36cs")]
 transform = Transform3D(5.9604645e-08, 0, 1, 0, 1, 0, -1, 0, 5.9604645e-08, -1.3842838, -4.7683716e-07, 1.5589943)
 
-[node name="Lower Cupboards" parent="Kitchen/kitchen_cupboards" index="0" unique_id=235082132]
-surface_material_override/0 = SubResource("ShaderMaterial_j2ixe")
+[node name="Lower Cupboards" parent="Kitchen/kitchen_cupboards" index="0" unique_id=1245023392]
+surface_material_override/0 = SubResource("ShaderMaterial_3g6b8")
 
 [node name="TextWriterHelper" type="Node" parent="Kitchen/kitchen_cupboards/Lower Cupboards" index="0" unique_id=575385962 node_paths=PackedStringArray("mesh")]
 script = ExtResource("2_vj7uu")
@@ -1047,7 +1095,7 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_cupboards" unique_id=1432763282]
 shape = SubResource("ConvexPolygonShape3D_3g6b8")
 
-[node name="Sink" parent="Kitchen/kitchen_cupboards" index="2" unique_id=28983730]
+[node name="Sink" parent="Kitchen/kitchen_cupboards" index="2" unique_id=1808242361]
 surface_material_override/0 = SubResource("ShaderMaterial_dh07s")
 
 [node name="TextWriterHelper" type="Node" parent="Kitchen/kitchen_cupboards/Sink" index="0" unique_id=1012171338 node_paths=PackedStringArray("mesh")]
@@ -1060,8 +1108,8 @@ metadata/_custom_type_script = "uid://4q753223m055"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0007851563, 0)
 shape = SubResource("ConvexPolygonShape3D_wsgsd")
 
-[node name="Upper" parent="Kitchen/kitchen_cupboards" index="4" unique_id=1847650796]
-surface_material_override/0 = SubResource("ShaderMaterial_25koi")
+[node name="Upper" parent="Kitchen/kitchen_cupboards" index="4" unique_id=858562609]
+surface_material_override/0 = SubResource("ShaderMaterial_wsgsd")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Kitchen/kitchen_cupboards" unique_id=671791963]
 shape = SubResource("ConvexPolygonShape3D_5i0b8")
@@ -1095,6 +1143,33 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/chair2" unique_id=1236452011]
 shape = SubResource("ConvexPolygonShape3D_gbuy4")
+
+[node name="kitchen_table" parent="Kitchen" unique_id=427097996 instance=ExtResource("13_ctgk5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1748371, 1.1920929e-07, 0.6827159)
+
+[node name="Table" parent="Kitchen/kitchen_table" index="0" unique_id=567726177]
+surface_material_override/0 = SubResource("ShaderMaterial_j2ixe")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/kitchen_table/Table" index="0" unique_id=1894089523 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "TABLE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Table Colider" type="CollisionShape3D" parent="Kitchen/kitchen_table" unique_id=128718086]
+shape = SubResource("ConvexPolygonShape3D_hgy1n")
+
+[node name="Table Leg" parent="Kitchen/kitchen_table" index="2" unique_id=1128711773]
+surface_material_override/0 = SubResource("ShaderMaterial_j2ixe")
+
+[node name="kitchen_small_bench" parent="Kitchen" unique_id=1174155355 instance=ExtResource("13_k2cr2")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.31575012, 2.3841858e-07, -1.7578297)
+
+[node name="Cupboard" parent="Kitchen/kitchen_small_bench" index="0" unique_id=463445107]
+surface_material_override/0 = SubResource("ShaderMaterial_25koi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_small_bench" unique_id=1862276548]
+shape = SubResource("ConvexPolygonShape3D_s2x3b")
 
 [node name="Living Room" type="Node3D" parent="." unique_id=354522909]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
@@ -1181,3 +1256,5 @@ shape = SubResource("BoxShape3D_ndm35")
 [editable path="Kitchen/kitchen_cupboards"]
 [editable path="Kitchen/chair"]
 [editable path="Kitchen/chair2"]
+[editable path="Kitchen/kitchen_table"]
+[editable path="Kitchen/kitchen_small_bench"]
