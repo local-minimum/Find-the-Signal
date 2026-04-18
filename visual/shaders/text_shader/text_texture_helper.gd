@@ -1,5 +1,6 @@
 @tool
 extends Node
+class_name TextWriterHelper
 
 const SPACE: int = -1
 const MAX_TEXT_LENGTH: int = 32
@@ -8,6 +9,14 @@ const MAX_TEXT_LENGTH: int = 32
     set(value):
         mesh = value
         _sync()
+    get():
+        if mesh:
+            return mesh
+        var p: Node = get_parent()
+        if p is MeshInstance3D:
+            return p
+
+        return null
 
 @export var override_mat_idx: int = 0:
     set(value):

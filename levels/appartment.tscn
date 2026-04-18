@@ -1,0 +1,428 @@
+[gd_scene format=3 uid="uid://cyrcju6ju545l"]
+
+[ext_resource type="Shader" uid="uid://b5mwd23qr5g5r" path="res://visual/shaders/text_shader/text_writer.gdshader" id="1_l4bwr"]
+[ext_resource type="Texture2D" uid="uid://ydiallcd2mse" path="res://visual/shaders/text_shader/font/absolute_10.png" id="2_sikar"]
+[ext_resource type="Script" uid="uid://4q753223m055" path="res://visual/shaders/text_shader/text_texture_helper.gd" id="2_vj7uu"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5ww25"]
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vj7uu"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 4, 8, 11, 8, 13, 6)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.48266667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sikar"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(5, 11, 14, 14, 17)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 1
+shader_parameter/font_color = Color(0.24007735, 0.42301592, 0.4964913, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_5ww25"]
+points = PackedVector3Array(-5, -0.05, -5, -5, 0.05, -5, 5, -0.05, -5, -5, -0.05, 5, -5, 0.05, 5, 5, 0.05, -5, 5, -0.05, 5, 5, 0.05, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_vj7uu"]
+size = Vector3(0.2, 2.4, 10)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l3nmf"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27033338, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 80.0000011771948
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 4.0000000596048
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vj7uu"]
+points = PackedVector3Array(-0.1, -1.2, -5, 0.1, -1.2, -5, -0.1, -1.2, 5, -0.1, 1.2, -5, 0.1, 1.2, -5, 0.1, -1.2, 5, -0.1, 1.2, 5, 0.1, 1.2, 5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_sikar"]
+points = PackedVector3Array(-0.1, -1.2, -5, 0.1, -1.2, -5, -0.1, -1.2, 5, -0.1, 1.2, -5, 0.1, 1.2, -5, 0.1, -1.2, 5, -0.1, 1.2, 5, 0.1, 1.2, 5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_l3nmf"]
+points = PackedVector3Array(-0.1, -1.2, -5, 0.1, -1.2, -5, -0.1, -1.2, 5, -0.1, 1.2, -5, 0.1, 1.2, -5, 0.1, -1.2, 5, -0.1, 1.2, 5, 0.1, 1.2, 5)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6lvam"]
+points = PackedVector3Array(-0.1, -1.2, -5, 0.1, -1.2, -5, -0.1, -1.2, 5, -0.1, 1.2, -5, 0.1, 1.2, -5, 0.1, -1.2, 5, -0.1, 1.2, 5, 0.1, 1.2, 5)
+
+[sub_resource type="BoxMesh" id="BoxMesh_sikar"]
+size = Vector3(3.4, 2.4, 0.1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6lvam"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ndm35"]
+points = PackedVector3Array(1.7, 1.2, 0.05, 1.7, 1.2, -0.05, -1.7, 1.2, 0.05, 1.7, -1.2, 0.05, 1.7, -1.2, -0.05, -1.7, 1.2, -0.05, -1.7, -1.2, 0.05, -1.7, -1.2, -0.05)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ndm35"]
+size = Vector3(3, 2.4, 0.1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_incia"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_incia"]
+points = PackedVector3Array(1.5, 1.2, 0.05, 1.5, 1.2, -0.05, -1.5, 1.2, 0.05, 1.5, -1.2, 0.05, 1.5, -1.2, -0.05, -1.5, 1.2, -0.05, -1.5, -1.2, 0.05, -1.5, -1.2, -0.05)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2vecc"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_2vecc"]
+points = PackedVector3Array(1.7, 1.2, 0.05, 1.7, 1.2, -0.05, -1.7, 1.2, 0.05, 1.7, -1.2, 0.05, 1.7, -1.2, -0.05, -1.7, 1.2, -0.05, -1.7, -1.2, 0.05, -1.7, -1.2, -0.05)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k2cr2"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_eqpja"]
+points = PackedVector3Array(1.7, 1.2, 0.05, 1.7, 1.2, -0.05, -1.7, 1.2, 0.05, 1.7, -1.2, 0.05, 1.7, -1.2, -0.05, -1.7, 1.2, -0.05, -1.7, -1.2, 0.05, -1.7, -1.2, -0.05)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eqpja"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3f1wm"]
+points = PackedVector3Array(1.7, 1.2, 0.05, 1.7, 1.2, -0.05, -1.7, 1.2, 0.05, 1.7, -1.2, 0.05, 1.7, -1.2, -0.05, -1.7, 1.2, -0.05, -1.7, -1.2, 0.05, -1.7, -1.2, -0.05)
+
+[sub_resource type="BoxMesh" id="BoxMesh_3f1wm"]
+size = Vector3(2, 2.4, 0.1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k36cs"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_k36cs"]
+points = PackedVector3Array(-1, -1.2, -0.05, -1, -1.2, 0.05, -1, 1.2, -0.05, 1, -1.2, -0.05, 1, -1.2, 0.05, -1, 1.2, 0.05, 1, 1.2, -0.05, 1, 1.2, 0.05)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ctgk5"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ctgk5"]
+points = PackedVector3Array(-1, -1.2, -0.05, -1, -1.2, 0.05, -1, 1.2, -0.05, 1, -1.2, -0.05, 1, -1.2, 0.05, -1, 1.2, 0.05, 1, 1.2, -0.05, 1, 1.2, 0.05)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_scpqm"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27058825, 0.23921569, 0.5019608, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 40.0
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_k2cr2"]
+points = PackedVector3Array(1.7, 1.2, 0.05, 1.7, 1.2, -0.05, -1.7, 1.2, 0.05, 1.7, -1.2, 0.05, 1.7, -1.2, -0.05, -1.7, 1.2, -0.05, -1.7, -1.2, 0.05, -1.7, -1.2, -0.05)
+
+[node name="Appartment" type="StaticBody3D" unique_id=1921732631]
+
+[node name="Ceiling" type="MeshInstance3D" parent="." unique_id=1798091812]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.35, 0)
+visible = false
+mesh = SubResource("BoxMesh_5ww25")
+surface_material_override/0 = SubResource("ShaderMaterial_vj7uu")
+
+[node name="TextWriterHelper" type="Node" parent="Ceiling" unique_id=636566765 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "CEILING"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=476393923]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+mesh = SubResource("BoxMesh_5ww25")
+surface_material_override/0 = SubResource("ShaderMaterial_sikar")
+
+[node name="TextWriterHelper" type="Node" parent="Floor" unique_id=484254014 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "FLOOR"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Floor Collision" type="CollisionShape3D" parent="." unique_id=1524386403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.05, 0)
+shape = SubResource("ConvexPolygonShape3D_5ww25")
+
+[node name="Wall" type="MeshInstance3D" parent="." unique_id=1451940947]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.2, 0)
+mesh = SubResource("BoxMesh_vj7uu")
+surface_material_override/0 = SubResource("ShaderMaterial_l3nmf")
+
+[node name="TextWriterHelper" type="Node" parent="Wall" unique_id=836324672 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "WALL"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Wall Collision" type="CollisionShape3D" parent="." unique_id=1467128059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1.2, 0)
+shape = SubResource("ConvexPolygonShape3D_vj7uu")
+
+[node name="Wall2" type="MeshInstance3D" parent="." unique_id=1329197392]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.2, 0)
+mesh = SubResource("BoxMesh_vj7uu")
+surface_material_override/0 = SubResource("ShaderMaterial_l3nmf")
+
+[node name="Wall Collision2" type="CollisionShape3D" parent="." unique_id=1062427546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 1.2, 0)
+shape = SubResource("ConvexPolygonShape3D_sikar")
+
+[node name="Wall3" type="MeshInstance3D" parent="." unique_id=1312640087]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1.2, -5)
+mesh = SubResource("BoxMesh_vj7uu")
+surface_material_override/0 = SubResource("ShaderMaterial_l3nmf")
+
+[node name="Wall Collision3" type="CollisionShape3D" parent="." unique_id=203379691]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1.2, -5)
+shape = SubResource("ConvexPolygonShape3D_l3nmf")
+
+[node name="Wall4" type="MeshInstance3D" parent="." unique_id=494861030]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1.2, 5)
+mesh = SubResource("BoxMesh_vj7uu")
+surface_material_override/0 = SubResource("ShaderMaterial_l3nmf")
+
+[node name="Wall Collision4" type="CollisionShape3D" parent="." unique_id=1159256101]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 1.2, 5)
+shape = SubResource("ConvexPolygonShape3D_6lvam")
+
+[node name="Inner Wall" type="MeshInstance3D" parent="." unique_id=553092900]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3, 1.2, 0)
+mesh = SubResource("BoxMesh_sikar")
+surface_material_override/0 = SubResource("ShaderMaterial_6lvam")
+
+[node name="TextWriterHelper" type="Node" parent="Inner Wall" unique_id=392589753 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "WALL"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Inner Wall Collision" type="CollisionShape3D" parent="." unique_id=1972078514]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3, 1.2, 0)
+shape = SubResource("ConvexPolygonShape3D_ndm35")
+
+[node name="Inner Wall2" type="MeshInstance3D" parent="." unique_id=1000395927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9000001, 1.2, 0.9999999)
+mesh = SubResource("BoxMesh_ndm35")
+surface_material_override/0 = SubResource("ShaderMaterial_incia")
+
+[node name="Inner Wall Collision2" type="CollisionShape3D" parent="." unique_id=632780919]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9000001, 1.2, 0.9999999)
+shape = SubResource("ConvexPolygonShape3D_incia")
+
+[node name="Inner Wall3" type="MeshInstance3D" parent="." unique_id=2040208017]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, 4)
+mesh = SubResource("BoxMesh_sikar")
+surface_material_override/0 = SubResource("ShaderMaterial_2vecc")
+
+[node name="Inner Wall Collision3" type="CollisionShape3D" parent="." unique_id=1643365014]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, 4)
+shape = SubResource("ConvexPolygonShape3D_2vecc")
+
+[node name="Inner Wall4" type="MeshInstance3D" parent="." unique_id=1245664034]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, -3.9)
+mesh = SubResource("BoxMesh_sikar")
+surface_material_override/0 = SubResource("ShaderMaterial_k2cr2")
+
+[node name="Inner Wall Collision4" type="CollisionShape3D" parent="." unique_id=470884803]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, -3.9)
+shape = SubResource("ConvexPolygonShape3D_eqpja")
+
+[node name="Inner Wall5" type="MeshInstance3D" parent="." unique_id=641516039]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, 5)
+mesh = SubResource("BoxMesh_sikar")
+surface_material_override/0 = SubResource("ShaderMaterial_eqpja")
+
+[node name="Inner Wall Collision5" type="CollisionShape3D" parent="." unique_id=2125191619]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, 5)
+shape = SubResource("ConvexPolygonShape3D_3f1wm")
+
+[node name="Inner Wall6" type="MeshInstance3D" parent="." unique_id=1485542313]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, 1.0999999)
+mesh = SubResource("BoxMesh_3f1wm")
+surface_material_override/0 = SubResource("ShaderMaterial_k36cs")
+
+[node name="Inner Wall Collision6" type="CollisionShape3D" parent="." unique_id=1399700270]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, 1.0999999)
+shape = SubResource("ConvexPolygonShape3D_k36cs")
+
+[node name="Inner Wall7" type="MeshInstance3D" parent="." unique_id=767657808]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, 0.099999905)
+mesh = SubResource("BoxMesh_3f1wm")
+surface_material_override/0 = SubResource("ShaderMaterial_ctgk5")
+
+[node name="Inner Wall Collision7" type="CollisionShape3D" parent="." unique_id=1218879808]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, 0.099999905)
+shape = SubResource("ConvexPolygonShape3D_ctgk5")
+
+[node name="Inner Wall8" type="MeshInstance3D" parent="." unique_id=202212309]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, -4.2)
+mesh = SubResource("BoxMesh_sikar")
+surface_material_override/0 = SubResource("ShaderMaterial_scpqm")
+
+[node name="Inner Wall Collision8" type="CollisionShape3D" parent="." unique_id=145011520]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, -4.2)
+shape = SubResource("ConvexPolygonShape3D_k2cr2")
