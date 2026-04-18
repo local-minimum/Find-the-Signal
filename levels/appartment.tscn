@@ -5,6 +5,9 @@
 [ext_resource type="Texture2D" uid="uid://ydiallcd2mse" path="res://visual/shaders/text_shader/font/absolute_10.png" id="2_sikar"]
 [ext_resource type="Script" uid="uid://4q753223m055" path="res://visual/shaders/text_shader/text_texture_helper.gd" id="2_vj7uu"]
 [ext_resource type="PackedScene" uid="uid://xu6kuijh7vxt" path="res://visual/models/doorpost.blend" id="4_sikar"]
+[ext_resource type="PackedScene" uid="uid://cox1irkpmo6q7" path="res://visual/models/painting_square.blend" id="6_6lvam"]
+[ext_resource type="Script" uid="uid://dhy1gnfvgcswo" path="res://levels/room.gd" id="6_ndm35"]
+[ext_resource type="Script" uid="uid://c0gejjh666mhh" path="res://visual/models/signal_checkpoint.gd" id="8_incia"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.3
@@ -362,10 +365,70 @@ points = PackedVector3Array(-1.0965928, -0.995453, -0.050000012, -1.0965928, -0.
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vkan1"]
 points = PackedVector3Array(-1.0965928, -0.995453, -0.050000012, -1.0965928, -0.995453, 0.050000012, -1.0965928, 0.9954529, -0.050000012, 0, -0.995453, -0.050000012, 0, -0.995453, 0.050000012, -1.0965928, 0.9954529, 0.050000012, 0, 0.9954529, -0.050000012, 0, 0.9954529, 0.050000012)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_82452"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 8, 6, 13, 0, 11, 66)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 10.0000001341108
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qm0fk"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(5, 17, 0, 12, 4)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.33099997, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_incia"]
+radius = 2.8923728
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ndm35"]
+size = Vector3(2.0585327, 2.3760376, 7.514435)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_incia"]
+size = Vector3(4.607239, 2.3760376, 3.991211)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2vecc"]
+size = Vector3(4.619995, 2.3760376, 5.9882813)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_eqpja"]
+size = Vector3(3.349121, 2.3760376, 4.961853)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3f1wm"]
+size = Vector3(1.9918213, 2.3760376, 2.513794)
+
 [node name="Appartment" type="Node3D" unique_id=288289078]
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=401312182 node_paths=PackedStringArray("cam")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 0, 4.5)
+collision_layer = 3
+input_ray_pickable = false
 script = ExtResource("1_l3nmf")
 cam = NodePath("Eyes")
 
@@ -381,6 +444,7 @@ far = 100.0
 
 [node name="Ceiling" type="MeshInstance3D" parent="Foundation" unique_id=1798091812]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.35, 0)
+visible = false
 mesh = SubResource("BoxMesh_5ww25")
 surface_material_override/0 = SubResource("ShaderMaterial_vj7uu")
 
@@ -683,21 +747,138 @@ shape = SubResource("ConvexPolygonShape3D_vkan1")
 
 [node name="Office" type="Node3D" parent="." unique_id=1868381224]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 3)
+script = ExtResource("6_ndm35")
+
+[node name="painting_square" parent="Office" unique_id=705924398 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("6_6lvam")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -1.8681202, 1.2129704, -1.6692866)
+script = ExtResource("8_incia")
+_require_room = NodePath("..")
+_text_write_helper = NodePath("Painting/TextWriterHelper")
+_near_threshold = 0.5
+_spellings = Array[String](["SIGNAL?", "SAIGNAL", "SAINTAL", "SAINTIL", "SAINTILG", "SAINTING", "PAINTING"])
+_word_spacings = Array[int]([2, 2, 2, 2, 3])
+
+[node name="Painting" parent="Office/painting_square" index="0" unique_id=1593500899]
+surface_material_override/0 = SubResource("ShaderMaterial_82452")
+
+[node name="TextWriterHelper" type="Node" parent="Office/painting_square/Painting" index="0" unique_id=857760187 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "SIGNAL?"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Frame" parent="Office/painting_square" index="1" unique_id=1596132864]
+surface_material_override/0 = SubResource("ShaderMaterial_qm0fk")
+
+[node name="TextWriterHelper" type="Node" parent="Office/painting_square/Frame" index="0" unique_id=756443606 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "FRAME"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Area3D" type="Area3D" parent="Office/painting_square" unique_id=2116128287]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/painting_square/Area3D" unique_id=251670242]
+shape = SubResource("SphereShape3D_incia")
+
+[node name="Area3D" type="Area3D" parent="Office" unique_id=640331827]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/Area3D" unique_id=499942367]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27905273, 1.1490173, -0.4873047)
+shape = SubResource("BoxShape3D_ndm35")
 
 [node name="Kitched" type="Node3D" parent="." unique_id=1116060079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+script = ExtResource("6_ndm35")
+
+[node name="Area3D" type="Area3D" parent="Kitched" unique_id=783352939]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitched/Area3D" unique_id=1704000094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2986145, 1.1490173, 0.009277344)
+shape = SubResource("BoxShape3D_incia")
 
 [node name="Living Room" type="Node3D" parent="." unique_id=354522909]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
+script = ExtResource("6_ndm35")
+
+[node name="Area3D" type="Area3D" parent="Living Room" unique_id=1848248076]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/Area3D" unique_id=1432212259]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26483154, 1.1490173, -0.01171875)
+shape = SubResource("BoxShape3D_2vecc")
 
 [node name="Bedroom" type="Node3D" parent="." unique_id=667201671]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
+script = ExtResource("6_ndm35")
+
+[node name="Area3D" type="Area3D" parent="Bedroom" unique_id=642490127]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/Area3D" unique_id=1648268628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27905273, 1.1490173, -1.4888611)
+shape = SubResource("BoxShape3D_eqpja")
 
 [node name="Bathroom" type="Node3D" parent="." unique_id=1204617187]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -4.2)
+script = ExtResource("6_ndm35")
+
+[node name="Area3D" type="Area3D" parent="Bathroom" unique_id=148906796]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/Area3D" unique_id=1595400349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010681152, 1.1490173, 0.4668579)
+shape = SubResource("BoxShape3D_3f1wm")
 
 [node name="Hallway" type="Node3D" parent="." unique_id=1366288698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 2.8000002)
+script = ExtResource("6_ndm35")
+
+[node name="Area3D" type="Area3D" parent="Hallway" unique_id=1386003403]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Area3D" unique_id=2145799358]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018951416, 1.1490173, -1.5510406)
+shape = SubResource("BoxShape3D_ndm35")
+
+[connection signal="body_entered" from="Office/painting_square/Area3D" to="Office/painting_square" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Office/painting_square/Area3D" to="Office/painting_square" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Office/Area3D" to="Office" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Office/Area3D" to="Office" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Kitched/Area3D" to="Kitched" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Kitched/Area3D" to="Kitched" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Living Room/Area3D" to="Living Room" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Living Room/Area3D" to="Living Room" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Bedroom/Area3D" to="Bedroom" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Bedroom/Area3D" to="Bedroom" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Bathroom/Area3D" to="Bathroom" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Bathroom/Area3D" to="Bathroom" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Hallway/Area3D" to="Hallway" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Hallway/Area3D" to="Hallway" method="_on_area_3d_body_exited"]
 
 [editable path="Foundation/doorpost"]
 [editable path="Foundation/doorpost6"]
@@ -705,3 +886,4 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 2.8000002)
 [editable path="Foundation/doorpost5"]
 [editable path="Foundation/doorpost3"]
 [editable path="Foundation/doorpost2"]
+[editable path="Office/painting_square"]

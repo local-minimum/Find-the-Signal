@@ -35,6 +35,27 @@ const MAX_TEXT_LENGTH: int = 32
 
 @export var unsupported_character: String = " "
 
+var word_spacing: int:
+    set(value):
+        if mesh == null:
+            return
+
+        var mat: ShaderMaterial = mesh.get_surface_override_material(override_mat_idx)
+        if mat == null:
+            return
+
+        mat.set_shader_parameter("word_spacing", value)
+
+    get():
+        if mesh == null:
+            return -1
+
+        var mat: ShaderMaterial = mesh.get_surface_override_material(override_mat_idx)
+        if mat == null:
+            return -1
+
+        return mat.get_shader_parameter("word_spacing") as int
+
 func _sync() -> void:
     if mesh == null:
         return
