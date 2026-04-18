@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://4q753223m055" path="res://visual/shaders/text_shader/text_texture_helper.gd" id="2_vj7uu"]
 [ext_resource type="PackedScene" uid="uid://xu6kuijh7vxt" path="res://visual/models/doorpost.blend" id="4_sikar"]
 [ext_resource type="PackedScene" uid="uid://cox1irkpmo6q7" path="res://visual/models/painting_square.blend" id="6_6lvam"]
+[ext_resource type="PackedScene" uid="uid://dq6ocicp0knuq" path="res://visual/models/bed.blend" id="6_fd646"]
 [ext_resource type="Script" uid="uid://dhy1gnfvgcswo" path="res://levels/room.gd" id="6_ndm35"]
 [ext_resource type="Script" uid="uid://c0gejjh666mhh" path="res://visual/models/signal_checkpoint.gd" id="8_incia"]
 [ext_resource type="PackedScene" uid="uid://mwly1mgrl5mm" path="res://visual/models/desk.blend" id="9_2vecc"]
@@ -20,7 +21,9 @@
 [ext_resource type="PackedScene" uid="uid://bql480or0r0w8" path="res://visual/models/bookshelf.blend" id="18_qm0fk"]
 [ext_resource type="PackedScene" uid="uid://bebkgq2snts5y" path="res://visual/models/toilet.blend" id="19_gbuy4"]
 [ext_resource type="PackedScene" uid="uid://b3vtvdcs1g1k4" path="res://visual/models/bathroomfaucet.blend" id="20_yx31h"]
+[ext_resource type="PackedScene" uid="uid://c837dxiy70glj" path="res://visual/models/closet.blend" id="21_3g6b8"]
 [ext_resource type="PackedScene" uid="uid://bcr3i1uwlndyd" path="res://visual/models/shower.blend" id="21_hgy1n"]
+[ext_resource type="PackedScene" uid="uid://chwm5ctv56f8h" path="res://visual/models/bedsidetable.blend" id="23_j2ixe"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.3
@@ -772,6 +775,121 @@ points = PackedVector3Array(0.19996086, 1.7966988, 0.5, 0.19996086, 1.7966988, -
 [sub_resource type="BoxShape3D" id="BoxShape3D_eqpja"]
 size = Vector3(3.349121, 2.3760376, 4.961853)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6u0eq"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(1, 4, 3)
+shader_parameter/word_length = 3
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fd646"]
+data = PackedVector3Array(-0.45, 0.29709998, 1, -0.45, 0.4362, -1, -0.45, 0.4362, 1, -0.45, 0.29709998, 1, -0.45, 0.29709998, -1, -0.45, 0.4362, -1, -0.45, 0.4362, -1, 0.45, 0.8921, -1, 0.45, 0.4362, -1, -0.45, 0.4362, -1, -0.45, 0.8921, -1, 0.45, 0.8921, -1, 0.45, 0.29709998, -1, 0.45, 0.4362, 1, 0.45, 0.4362, -1, 0.45, 0.29709998, -1, 0.45, 0.29709998, 1, 0.45, 0.4362, 1, -0.45, 0.4362, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.29709998, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1, -0.45, 0.29709998, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.45, 0.0026999998, 1, -0.45, 0.4362, 1, -0.45, 0.4362, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.45, 0.4362, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.4362, 1.0468999, -0.45, 0.4362, 1, -0.45, 0.5771, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.29709998, -1, -0.45, 0.0026999998, -1.0633, -0.45, 0.29709998, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.0026999998, -1, -0.45, 0.0026999998, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.29709998, -1.0633, -0.45, 0.4362, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.4362, -1.0633, -0.45, 0.4362, -1, -0.45, 0.4362, -1.0633, -0.45, 0.8921, -1, -0.45, 0.4362, -1, -0.45, 0.4362, -1.0633, -0.45, 0.8921, -1.0633, -0.45, 0.8921, -1, 0.45, 0.4362, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.29709998, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.0026999998, -1, 0.45, 0.29709998, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.0026999998, -1.0633, 0.45, 0.0026999998, -1, 0.45, 0.4362, -1, 0.45, 0.4362, -1.0633, 0.45, 0.29709998, -1.0633, 0.45, 0.4362, -1, 0.45, 0.8921, -1.0633, 0.45, 0.4362, -1.0633, 0.45, 0.4362, -1, 0.45, 0.8921, -1, 0.45, 0.8921, -1.0633, -0.45, 0.8921, -1, 0.45, 0.8921, -1.0633, 0.45, 0.8921, -1, -0.45, 0.8921, -1, -0.45, 0.8921, -1.0633, 0.45, 0.8921, -1.0633, -0.3955, 0.29709998, 1, -0.3955, 0.0026999998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.0026999998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1, 0.45, 0.4362, 1, 0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.5771, 1, 0.45, 0.29709998, 1, 0.45, 0.4362, 1.0468999, 0.45, 0.4362, 1, 0.45, 0.29709998, 1, 0.45, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.29709998, 1, 0.45, 0.0026999998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.29709998, 1, 0.45, 0.0026999998, 1, 0.45, 0.0026999998, 1.0468999, 0.45, 0.5771, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.5771, 1, 0.45, 0.5771, 1, 0.45, 0.5771, 1.0468999, -0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1, -0.45, 0.5771, 1, -0.45, 0.4362, 1, 0.45, 0.4362, 1, 0.45, 0.5771, 1, -0.45, 0.5771, 1, -0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1.0468999, -0.45, 0.4362, 1.0468999, -0.45, 0.5771, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.45, 0.4362, 1.0468999, 0.45, 0.4362, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.3955, 0.0026999998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.3955, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.0026999998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, -0.42999998, 0.4362, 0.9939, -0.45, 0.4362, -1, -0.42999998, 0.4362, -0.9939, -0.42999998, 0.4362, 0.9939, -0.45, 0.4362, 1, -0.45, 0.4362, -1, -0.42999998, 0.4362, -0.9939, 0.45, 0.4362, -1, 0.42999998, 0.4362, -0.9939, -0.42999998, 0.4362, -0.9939, -0.45, 0.4362, -1, 0.45, 0.4362, -1, 0.42999998, 0.4362, -0.9939, 0.45, 0.4362, 1, 0.42999998, 0.4362, 0.9939, 0.42999998, 0.4362, -0.9939, 0.45, 0.4362, -1, 0.45, 0.4362, 1, 0.42999998, 0.4362, 0.9939, -0.45, 0.4362, 1, -0.42999998, 0.4362, 0.9939, 0.42999998, 0.4362, 0.9939, 0.45, 0.4362, 1, -0.45, 0.4362, 1, -0.3955, 0.29709998, -1, -0.45, 0.0026999998, -1, -0.45, 0.29709998, -1, -0.3955, 0.29709998, -1, -0.3955, 0.0026999998, -1, -0.45, 0.0026999998, -1, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1, 0.3955, 0.29709998, 1, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, 0.3955, 0.0026999998, 1, -0.45, 0.29709998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.29709998, 1, -0.45, 0.29709998, 1, -0.45, 0.0026999998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.29709998, -1.0633, -0.3955, 0.0026999998, -1, -0.3955, 0.29709998, -1, -0.3955, 0.29709998, -1.0633, -0.3955, 0.0026999998, -1.0633, -0.3955, 0.0026999998, -1, 0.45, 0.29709998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.29709998, -1, 0.45, 0.29709998, -1, 0.45, 0.0026999998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.29709998, 1, 0.45, 0.0026999998, 1, 0.45, 0.29709998, 1, 0.3955, 0.29709998, 1, 0.3955, 0.0026999998, 1, 0.45, 0.0026999998, 1, 0.3955, 0.29709998, -1, 0.3955, 0.0026999998, -1.0633, 0.3955, 0.29709998, -1.0633, 0.3955, 0.29709998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.0026999998, -1.0633)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wd13f"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(12, 0, 19, 19, 17, 4, 18, 18)
+shader_parameter/word_length = 8
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.24000001, 0.5, 0.40466663, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ule8i"]
+points = PackedVector3Array(0.4299649, 0.5389691, 0.9939293, 0.4299649, 0.43620378, 0.9939293, 0.4299649, 0.5389691, -0.9939293, -0.4299649, 0.5389691, 0.9939293, -0.4299649, 0.43620378, 0.9939293, 0.4299649, 0.43620378, -0.9939293, -0.4299649, 0.5389691, -0.9939293, -0.4299649, 0.43620378, -0.9939293)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qdp00"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(15, 8, 11, 11, 14, 22)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.24000001, 0.25733334, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.1, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 20.0000002831228
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dse8r"]
+points = PackedVector3Array(-0.16107956, 0.54414845, -0.9605097, -0.20978948, 0.54414845, -0.931836, -0.16107956, 0.6106573, -0.9605097, 0.16099742, 0.54414845, -0.9605097, -0.16107956, 0.53408986, -0.931836, -0.20978948, 0.6106573, -0.931836, -0.20978948, 0.54414845, -0.74224144, -0.16107956, 0.62073284, -0.931836, 0.16099742, 0.6106573, -0.9605097, 0.20978948, 0.54414845, -0.931836, 0.16099742, 0.53408986, -0.931836, -0.16107956, 0.53408986, -0.74224144, -0.20978948, 0.6106573, -0.74224144, -0.16107956, 0.54414845, -0.71354353, -0.16107956, 0.62073284, -0.74224144, 0.16099742, 0.62073284, -0.931836, 0.20978948, 0.6106573, -0.931836, 0.20978948, 0.54414845, -0.74224144, 0.16099742, 0.53408986, -0.74224144, -0.16107956, 0.6106573, -0.71354353, 0.16099742, 0.54414845, -0.71354353, 0.16099742, 0.62073284, -0.74224144, 0.20978948, 0.6106573, -0.74224144, 0.16099742, 0.6106573, -0.71354353)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wefy1"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(1, 4, 3, 18, 8, 3, 4, -1, 19, 0, 1, 11, 4)
+shader_parameter/word_length = 13
+shader_parameter/word_spacing = 5
+shader_parameter/font_color = Color(0.5, 0.39166668, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a1dnt"]
+points = PackedVector3Array(-0.18332039, 0, -0.18332039, 0.18332039, 0, -0.18332039, -0.18332039, 0, 0.18332039, -0.18332039, 0.5, -0.18332039, 0.18332039, 0, 0.18332039, 0.18332039, 0.5, -0.18332039, -0.18332039, 0.5, 0.18332039, 0.18332039, 0.5, 0.18332039)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_a1dnt"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 11, 14, 18, 4, 19)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.44800004, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hpw2l"]
+points = PackedVector3Array(0.2574197, 1.2307146, 0.3487898, 0.2843187, 2.0868015, 0.3180493, 0.23169535, 1.2307146, 0.3487898, 0.2574197, 1.0233825, 0.3487898, 0.3, 2.0868015, 0.29994798, -0.28437746, 2.0868015, 0.3180493, 0.2843187, 0.16729547, 0.3180493, 0.23169535, 1.0233825, 0.3487898, 0.3, 2.0868015, -0.3, 0.3, 0.16729547, 0.29994798, -0.3, 2.0868015, 0.29994798, -0.28437746, 0.16729547, 0.3180493, 0.3, 0, 0.23643452, -0.3, 2.0868015, -0.3, 0.3, 0, -0.3, -0.3, 0.16729547, 0.29994798, -0.3, 0, 0.23643452, -0.3, 0, -0.3)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_3f1wm"]
 size = Vector3(1.9918213, 2.3760376, 2.513794)
 
@@ -903,7 +1021,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.875, 0)
 shape = SubResource("CapsuleShape3D_sikar")
 
 [node name="Eyes" type="Camera3D" parent="Player" unique_id=612387499]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5174412, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4435499, 0)
 far = 100.0
 
 [node name="Foundation" type="StaticBody3D" parent="." unique_id=1401427600]
@@ -1535,6 +1653,105 @@ monitorable = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27905273, 1.1490173, -1.4888611)
 shape = SubResource("BoxShape3D_eqpja")
 
+[node name="bed" parent="Bedroom" unique_id=1015874240 instance=ExtResource("6_fd646")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4423013, 0, -2.8315244)
+
+[node name="Bed" parent="Bedroom/bed" index="0" unique_id=1496862961]
+surface_material_override/0 = SubResource("ShaderMaterial_6u0eq")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/bed/Bed" index="0" unique_id=396182371 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BED"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Bedroom/bed" unique_id=852097975]
+shape = SubResource("ConcavePolygonShape3D_fd646")
+
+[node name="Matress" parent="Bedroom/bed" index="2" unique_id=552793993]
+surface_material_override/0 = SubResource("ShaderMaterial_wd13f")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/bed/Matress" index="0" unique_id=720063606 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "MATTRESS"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bed" unique_id=1176189397]
+shape = SubResource("ConvexPolygonShape3D_ule8i")
+
+[node name="Pillow" parent="Bedroom/bed" index="4" unique_id=1877344731]
+surface_material_override/0 = SubResource("ShaderMaterial_qdp00")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/bed/Pillow" index="0" unique_id=14904613 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "PILLOW"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Bedroom/bed" unique_id=333170108]
+shape = SubResource("ConvexPolygonShape3D_dse8r")
+
+[node name="bedsidetable" parent="Bedroom" unique_id=1174490723 instance=ExtResource("23_j2ixe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.77837515, 0.033242345, -3.7137403)
+
+[node name="Bedside Table" parent="Bedroom/bedsidetable" index="0" unique_id=1462166613]
+surface_material_override/0 = SubResource("ShaderMaterial_wefy1")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/bedsidetable/Bedside Table" index="0" unique_id=1040277401 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "BEDSIDE TABLE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bedsidetable" unique_id=1867592489]
+shape = SubResource("ConvexPolygonShape3D_a1dnt")
+
+[node name="closet" parent="Bedroom" unique_id=1389184995 instance=ExtResource("21_3g6b8")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0470667, 1.1920929e-07, -3.5937572)
+
+[node name="Closet" parent="Bedroom/closet" index="0" unique_id=329066114]
+surface_material_override/0 = SubResource("ShaderMaterial_a1dnt")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/closet/Closet" index="0" unique_id=1214887099 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "CLOSET"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet" unique_id=1939787734]
+shape = SubResource("ConvexPolygonShape3D_hpw2l")
+
+[node name="closet2" parent="Bedroom" unique_id=1817248846 instance=ExtResource("21_3g6b8")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0470667, 1.1920929e-07, -2.980831)
+
+[node name="Closet" parent="Bedroom/closet2" index="0" unique_id=329066114]
+surface_material_override/0 = SubResource("ShaderMaterial_a1dnt")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/closet2/Closet" index="0" unique_id=435867548 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "CLOSET"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet2" unique_id=637367316]
+shape = SubResource("ConvexPolygonShape3D_hpw2l")
+
+[node name="closet3" parent="Bedroom" unique_id=525012096 instance=ExtResource("21_3g6b8")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0470667, 1.1920929e-07, -2.36801)
+
+[node name="Closet" parent="Bedroom/closet3" index="0" unique_id=329066114]
+surface_material_override/0 = SubResource("ShaderMaterial_a1dnt")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/closet3/Closet" index="0" unique_id=2053217529 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "CLOSET"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet3" unique_id=877089888]
+shape = SubResource("ConvexPolygonShape3D_hpw2l")
+
 [node name="Bathroom" type="Node3D" parent="." unique_id=1204617187]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -4.2)
 script = ExtResource("6_ndm35")
@@ -1601,10 +1818,10 @@ metadata/_custom_type_script = "uid://4q753223m055"
 transform = Transform3D(0.06965624, 0, 0, 0, 0.04510187, 0, 0, 0, 0.210688, -0.15956666, 1.4385614, 0)
 shape = SubResource("ConvexPolygonShape3D_gnm7j")
 
-[node name="shower" parent="Bathroom" unique_id=1443526650 instance=ExtResource("21_hgy1n")]
+[node name="shower" parent="Bathroom" unique_id=1377275483 instance=ExtResource("21_hgy1n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051290154, 0, 0.30148602)
 
-[node name="curtainholder" parent="Bathroom/shower" index="0" unique_id=1143155277]
+[node name="curtainholder" parent="Bathroom/shower" index="0" unique_id=1996504707]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
 [node name="TextWriterHelper" type="Node" parent="Bathroom/shower/curtainholder" index="0" unique_id=1959973655 node_paths=PackedStringArray("mesh")]
@@ -1613,13 +1830,13 @@ mesh = NodePath("..")
 text = "SHOWER"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="shower holder" parent="Bathroom/shower" index="1" unique_id=637072238]
+[node name="shower holder" parent="Bathroom/shower" index="1" unique_id=1267690115]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
-[node name="Water Blender" parent="Bathroom/shower" index="2" unique_id=1309159831]
+[node name="Water Blender" parent="Bathroom/shower" index="2" unique_id=748520936]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
-[node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=436294011]
+[node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=55889665]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
 [node name="Hallway" type="Node3D" parent="." unique_id=1366288698]
@@ -1671,6 +1888,11 @@ shape = SubResource("BoxShape3D_ndm35")
 [editable path="Living Room/sofa"]
 [editable path="Living Room/sofatable"]
 [editable path="Living Room/bookshelf"]
+[editable path="Bedroom/bed"]
+[editable path="Bedroom/bedsidetable"]
+[editable path="Bedroom/closet"]
+[editable path="Bedroom/closet2"]
+[editable path="Bedroom/closet3"]
 [editable path="Bathroom/toilet"]
 [editable path="Bathroom/bathroomfaucet"]
 [editable path="Bathroom/shower"]
