@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Find the Signal"
+config/name="Is that the Signal?s"
 run/main_scene="uid://cyrcju6ju545l"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
