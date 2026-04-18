@@ -21,6 +21,9 @@ var _joy_look: Vector2
 var _using_joy_look: bool
 
 func _input(event: InputEvent) -> void:
+    if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+        Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+
     if event is InputEventMouseMotion:
         var m_event: InputEventMouseMotion = event
         _process_rel_look(Vector2(-m_event.relative.x * MOUSE_TURN_SPEED, m_event.relative.y * MOUSE_LOOK_SPEED))
