@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://c0gejjh666mhh" path="res://visual/models/signal_checkpoint.gd" id="8_incia"]
 [ext_resource type="PackedScene" uid="uid://mwly1mgrl5mm" path="res://visual/models/desk.blend" id="9_2vecc"]
 [ext_resource type="PackedScene" uid="uid://bou48nt6gbvfa" path="res://visual/models/chair.blend" id="10_eqpja"]
+[ext_resource type="PackedScene" uid="uid://bxw3m8s02sjcf" path="res://visual/models/fridgefreezer.blend" id="11_3f1wm"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.3
@@ -433,6 +434,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_yx31h"]
+points = PackedVector3Array(1.25, 1.0799999, 4.577164, -1.25, 1.0799999, 4.577164, 1.25, 0.99998426, 4.577164, 1.25, 1.0799999, -4.577164, -1.25, 0.99998426, 4.577164, -1.25, 1.0799999, -4.577164, 0.999902, -1, 4.3325353, 1.25, 0.99998426, -4.577164, -1.0001469, -1, 4.3325353, -1.25, 0.99998426, -4.577164, 0.999902, -1, -4.3334312, -1.0001469, -1, -4.3334312)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_yx31h"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -453,8 +457,54 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gbuy4"]
+points = PackedVector3Array(0.2662381, 1.2731259, 0.34397632, 0.2662381, 1.2731259, 0.26696658, -0.2662381, 1.2731259, 0.34397632, 0.2662381, 1.1563301e-05, 0.2985788, -0.2662381, 1.2731259, 0.26696658, 0.2662381, 0.61638033, -0.22161071, -0.2662381, 1.1563301e-05, 0.2985788, 0.2662381, 1.1563301e-05, -0.22161071, -0.2662381, 0.61638033, -0.22161071, -0.2662381, 1.1563301e-05, -0.22161071)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_incia"]
 size = Vector3(4.607239, 2.3760376, 3.991211)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hgy1n"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(5, 17, 8, 3, 6, 4)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.24000001, 0.34399998, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qm0fk"]
+points = PackedVector3Array(-0.4, 0, -0.3, 0.4, 0, -0.3, -0.4, 0, 0.37265784, -0.4, 1.8, -0.3, 0.4, 0, 0.37265784, 0.4, 1.8, -0.3, 0.3085356, 0.3768794, 0.41859442, -0.4, 1.8, 0.37265784, 0.4, 1.8, 0.37265784, 0.35465935, 0.3768794, 0.41859442, 0.3085356, 1.4229443, 0.41859442, 0.35465935, 1.4229443, 0.41859442)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fd646"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(5, 17, 4, 4, 25, 4, 17)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.41766667, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2vecc"]
 size = Vector3(4.619995, 2.3760376, 5.9882813)
@@ -837,10 +887,10 @@ monitorable = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27905273, 1.1490173, -0.4873047)
 shape = SubResource("BoxShape3D_ndm35")
 
-[node name="desk" parent="Office" unique_id=1384995727 instance=ExtResource("9_2vecc")]
+[node name="desk" parent="Office" unique_id=722833057 instance=ExtResource("9_2vecc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3461809, 0, 0.40714765)
 
-[node name="Desk Drawer" parent="Office/desk" index="0" unique_id=1642190494]
+[node name="Desk Drawer" parent="Office/desk" index="0" unique_id=1429892396]
 surface_material_override/0 = SubResource("ShaderMaterial_gbuy4")
 
 [node name="TextWriterHelper" type="Node" parent="Office/desk/Desk Drawer" index="0" unique_id=1901574075 node_paths=PackedStringArray("mesh")]
@@ -849,10 +899,14 @@ mesh = NodePath("..")
 text = "DESK"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="chair" parent="Office/desk" unique_id=35525820 instance=ExtResource("10_eqpja")]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/desk" unique_id=1527018654]
+transform = Transform3D(0.4, 0, 0, 0, 0.5, 0, 0, 0, 0.3, 0, 0.5, 0)
+shape = SubResource("ConvexPolygonShape3D_yx31h")
+
+[node name="chair" parent="Office/desk" unique_id=579024908 instance=ExtResource("10_eqpja")]
 transform = Transform3D(0.13256773, 0, 0.9911739, 0, 1, 0, -0.9911739, 0, 0.13256773, 0.5536568, -1.1920929e-07, 0.010776758)
 
-[node name="Chair" parent="Office/desk/chair" index="0" unique_id=563810997]
+[node name="Chair" parent="Office/desk/chair" index="0" unique_id=654230161]
 surface_material_override/0 = SubResource("ShaderMaterial_yx31h")
 
 [node name="TextWriterHelper" type="Node" parent="Office/desk/chair/Chair" index="0" unique_id=2027074710 node_paths=PackedStringArray("mesh")]
@@ -861,19 +915,52 @@ mesh = NodePath("..")
 text = "CHAIR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Kitched" type="Node3D" parent="." unique_id=1116060079]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/desk/chair" unique_id=1130956618]
+shape = SubResource("ConvexPolygonShape3D_gbuy4")
+
+[node name="Kitchen" type="Node3D" parent="." unique_id=1116060079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
 script = ExtResource("6_ndm35")
 
-[node name="Area3D" type="Area3D" parent="Kitched" unique_id=783352939]
+[node name="Area3D" type="Area3D" parent="Kitchen" unique_id=783352939]
 collision_layer = 0
 collision_mask = 2
 input_ray_pickable = false
 monitorable = false
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitched/Area3D" unique_id=1704000094]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Area3D" unique_id=1704000094]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2986145, 1.1490173, 0.009277344)
 shape = SubResource("BoxShape3D_incia")
+
+[node name="Fridge" parent="Kitchen" unique_id=1333861252 instance=ExtResource("11_3f1wm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0763793, 0, -1.6581892)
+
+[node name="FridgeFreezer" parent="Kitchen/Fridge" index="0" unique_id=1538501703]
+surface_material_override/0 = SubResource("ShaderMaterial_hgy1n")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/Fridge/FridgeFreezer" index="0" unique_id=490497786 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "FRIDGE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Fridge" unique_id=1313115818]
+shape = SubResource("ConvexPolygonShape3D_qm0fk")
+
+[node name="Freezer" parent="Kitchen" unique_id=1541145262 instance=ExtResource("11_3f1wm")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2438784, 0, -1.6581892)
+
+[node name="FridgeFreezer" parent="Kitchen/Freezer" index="0" unique_id=1538501703]
+surface_material_override/0 = SubResource("ShaderMaterial_fd646")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/Freezer/FridgeFreezer" index="0" unique_id=2105284694 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "FREEZER"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Freezer" unique_id=615995513]
+shape = SubResource("ConvexPolygonShape3D_qm0fk")
 
 [node name="Living Room" type="Node3D" parent="." unique_id=354522909]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
@@ -935,8 +1022,8 @@ shape = SubResource("BoxShape3D_ndm35")
 [connection signal="body_exited" from="Office/Signal Painting/Area3D" to="Office/Signal Painting" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Office/Area3D" to="Office" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Office/Area3D" to="Office" method="_on_area_3d_body_exited"]
-[connection signal="body_entered" from="Kitched/Area3D" to="Kitched" method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Kitched/Area3D" to="Kitched" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Kitchen/Area3D" to="Kitchen" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Kitchen/Area3D" to="Kitchen" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Living Room/Area3D" to="Living Room" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Living Room/Area3D" to="Living Room" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Bedroom/Area3D" to="Bedroom" method="_on_area_3d_body_entered"]
@@ -955,3 +1042,5 @@ shape = SubResource("BoxShape3D_ndm35")
 [editable path="Office/Signal Painting"]
 [editable path="Office/desk"]
 [editable path="Office/desk/chair"]
+[editable path="Kitchen/Fridge"]
+[editable path="Kitchen/Freezer"]

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bou48nt6gbvfa"
-path="res://.godot/imported/chair.blend-adc1b41948f4fd231b72e1b89788d048.scn"
+uid="uid://bxw3m8s02sjcf"
+path="res://.godot/imported/fridgefreezer.blend-dea2a6687bd21e98e21e05d5728ef992.scn"
 
 [deps]
 
-source_file="res://visual/models/chair.blend"
-dest_files=["res://.godot/imported/chair.blend-adc1b41948f4fd231b72e1b89788d048.scn"]
+source_file="res://visual/models/fridgefreezer.blend"
+dest_files=["res://.godot/imported/fridgefreezer.blend-dea2a6687bd21e98e21e05d5728ef992.scn"]
 
 [params]
 
