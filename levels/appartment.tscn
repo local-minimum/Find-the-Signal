@@ -42,6 +42,7 @@
 [ext_resource type="PackedScene" uid="uid://boojjnpy3fl6o" path="res://visual/models/doormat.blend" id="40_wd13f"]
 [ext_resource type="PackedScene" uid="uid://b0h5aut8kf4u2" path="res://visual/models/hat.blend" id="41_qdp00"]
 [ext_resource type="PackedScene" uid="uid://cgnragn8pbkbe" path="res://visual/models/umbrella.blend" id="42_wefy1"]
+[ext_resource type="PackedScene" uid="uid://ctfoolc2rulvt" path="res://visual/models/shoe.blend" id="43_a1dnt"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sikar"]
 radius = 0.2
@@ -1577,6 +1578,46 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_wefy1"]
 radius = 1.9013672
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hfraf"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 7, 14, 4)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.28766668, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 19.0000002682216
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o44a7"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 7, 14, 4)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.28766668, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 19.0000002682216
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
 [node name="Appartment" type="Node3D" unique_id=288289078]
 
 [node name="TextWriterHelper" type="Node" parent="." unique_id=1929070200]
@@ -1585,7 +1626,7 @@ text = "BOOKSHELF"
 metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="Player" type="CharacterBody3D" parent="." unique_id=401312182 node_paths=PackedStringArray("cam")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 0, 4.5)
+transform = Transform3D(0.21695077, 0, 0.9761825, 0, 1, 0, -0.9761825, 0, 0.21695077, -2.8108141, 0, 4.3430166)
 collision_layer = 3
 input_ray_pickable = false
 script = ExtResource("1_l3nmf")
@@ -3067,6 +3108,24 @@ input_ray_pickable = false
 transform = Transform3D(0.99999946, -3.3713877e-07, -2.9802322e-08, 1.4342368e-07, 0.9999989, -7.450581e-09, 2.3841858e-07, 5.9604645e-08, 0.99999994, -2.3841858e-07, 0.3729822, 0)
 shape = SubResource("CylinderShape3D_wefy1")
 
+[node name="shoe" parent="Hallway" unique_id=1359297019 instance=ExtResource("43_a1dnt")]
+transform = Transform3D(-0.06318314, 0.21687166, 0.9741534, -0.012437032, 0.9758567, -0.21805754, -0.99792445, -0.02589313, -0.058960434, -0.7859143, 0.26934543, 1.5642381)
+
+[node name="Shoe" parent="Hallway/shoe" index="0" unique_id=1869531144]
+surface_material_override/0 = SubResource("ShaderMaterial_hfraf")
+
+[node name="TextWriterHelper" type="Node" parent="Hallway/shoe/Shoe" index="0" unique_id=1063766887 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "SHOE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="shoe2" parent="Hallway" unique_id=1550259618 instance=ExtResource("43_a1dnt")]
+transform = Transform3D(0.10197162, 0.21756609, 0.9707043, -0.0218139, 0.97604513, -0.2164716, -0.994548, 0.000899123, 0.10427491, -0.7859143, 0.26934543, 1.3746123)
+
+[node name="Shoe" parent="Hallway/shoe2" index="0" unique_id=1869531144]
+surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
+
 [connection signal="body_entered" from="Office/Signal Painting/Area3D" to="Office/Signal Painting" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Office/Signal Painting/Area3D" to="Office/Signal Painting" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Office/Area3D" to="Office" method="_on_area_3d_body_entered"]
@@ -3150,3 +3209,5 @@ shape = SubResource("CylinderShape3D_wefy1")
 [editable path="Hallway/doormat"]
 [editable path="Hallway/hat"]
 [editable path="Hallway/umbrella"]
+[editable path="Hallway/shoe"]
+[editable path="Hallway/shoe2"]
