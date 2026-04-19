@@ -31,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://qad6k61tyv2t" path="res://visual/models/bedlamp.blend" id="22_25koi"]
 [ext_resource type="PackedScene" uid="uid://5insll66fixs" path="res://visual/models/magazine.blend" id="22_hpw2l"]
 [ext_resource type="PackedScene" uid="uid://cg3ta7b0tre5d" path="res://visual/models/banana.blend" id="22_hvw63"]
+[ext_resource type="PackedScene" uid="uid://c0ff4w74ed4np" path="res://visual/models/microwave.blend" id="23_6u0eq"]
 [ext_resource type="PackedScene" uid="uid://chwm5ctv56f8h" path="res://visual/models/bedsidetable.blend" id="23_j2ixe"]
 [ext_resource type="PackedScene" uid="uid://cahak1t3lswug" path="res://visual/models/remote.blend" id="23_uex6k"]
 [ext_resource type="PackedScene" uid="uid://d2xqkhk6dcvhx" path="res://visual/models/shoestand.blend" id="25_dh07s"]
@@ -1063,6 +1064,26 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_hvw63"]
 radius = 1.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sdg87"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(12, 8, 2, 17, 14, 22, 0, 21, 4)
+shader_parameter/word_length = 9
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.40466663, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 19.0000002682216
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2vecc"]
 size = Vector3(4.619995, 2.3760376, 5.9882813)
@@ -2323,6 +2344,18 @@ input_ray_pickable = false
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37298226, 0)
 shape = SubResource("CylinderShape3D_hvw63")
 
+[node name="microwave" parent="Kitchen" unique_id=1994298296 instance=ExtResource("23_6u0eq")]
+transform = Transform3D(0.20393215, 0, 0.9789851, 0, 1, 0, -0.9789851, 0, 0.20393215, -2.1498985, 1.1083943, 1.6107674)
+
+[node name="Microwave" parent="Kitchen/microwave" index="0" unique_id=899695697]
+surface_material_override/0 = SubResource("ShaderMaterial_sdg87")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/microwave/Microwave" index="0" unique_id=1475615299 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "MICROWAVE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
 [node name="Living Room" type="Node3D" parent="." unique_id=354522909]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
 script = ExtResource("6_ndm35")
@@ -2966,6 +2999,7 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [editable path="Kitchen/coffemug4"]
 [editable path="Kitchen/coffemug5"]
 [editable path="Kitchen/banana"]
+[editable path="Kitchen/microwave"]
 [editable path="Living Room/tvbench"]
 [editable path="Living Room/sofa"]
 [editable path="Living Room/sofatable"]
