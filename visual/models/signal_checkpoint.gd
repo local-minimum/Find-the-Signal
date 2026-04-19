@@ -20,7 +20,7 @@ func _planar_dist_to(body: Node3D) -> float:
     return delta.length()
 
 func _on_area_3d_body_entered(body: Node3D) -> void:
-    if body is CharacterBody3D && !completed:
+    if body is CharacterBody3D && !completed && (_require_room == null || _require_room.is_inside):
         _body = body
         _entry_dist = _planar_dist_to(body)
         _text_write_helper.text = _spellings[0]

@@ -40,6 +40,7 @@
 [ext_resource type="PackedScene" uid="uid://clumfsib13gmv" path="res://visual/models/kitchentablelamp.blend" id="28_5i0b8"]
 [ext_resource type="PackedScene" uid="uid://4cr3lth0ail6" path="res://visual/models/hallamp.blend" id="31_geosr"]
 [ext_resource type="PackedScene" uid="uid://1n0qllvsl20s" path="res://visual/models/painting_large.blend" id="32_dse8r"]
+[ext_resource type="PackedScene" uid="uid://bxn6l45vf220w" path="res://visual/models/soapcup.blend" id="38_nngwn"]
 [ext_resource type="PackedScene" uid="uid://boojjnpy3fl6o" path="res://visual/models/doormat.blend" id="40_wd13f"]
 [ext_resource type="PackedScene" uid="uid://b0h5aut8kf4u2" path="res://visual/models/hat.blend" id="41_qdp00"]
 [ext_resource type="PackedScene" uid="uid://cgnragn8pbkbe" path="res://visual/models/umbrella.blend" id="42_wefy1"]
@@ -1585,6 +1586,49 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tspi8"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 15)
+shader_parameter/word_length = 3
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.43933326, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 19.0000002682216
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1bcnc"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 8, 6, 13, 0, 11, 66)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 13.0000001788144
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_nngwn"]
+radius = 1.6269531
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0rdn8"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -3055,6 +3099,45 @@ surface_material_override/0 = SubResource("ShaderMaterial_a1b3c")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bedlamp2" unique_id=2112510267]
 shape = SubResource("ConvexPolygonShape3D_6u0eq")
 
+[node name="painting_large2" parent="Bedroom" unique_id=388892951 instance=ExtResource("32_dse8r")]
+transform = Transform3D(1.39090695e-08, 0, -1.0000001, 0, 1, 0, 1.0000001, 0, 1.39090695e-08, -0.041002035, 1.4053952, -3.8703141)
+
+[node name="Painting" parent="Bedroom/painting_large2" index="0" unique_id=552591523]
+surface_material_override/0 = SubResource("ShaderMaterial_aqi1e")
+surface_material_override/1 = SubResource("ShaderMaterial_qm0fk")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/painting_large2/Painting" index="0" unique_id=1911741701 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "PAINTING"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="painting_large3" parent="Bedroom" unique_id=1770493392 instance=ExtResource("32_dse8r")]
+transform = Transform3D(1.39090695e-08, 0, -1.0000001, 0, 1, 0, 1.0000001, 0, 1.39090695e-08, -0.69279575, 1.4053952, -3.8703141)
+
+[node name="Painting" parent="Bedroom/painting_large3" index="0" unique_id=552591523]
+surface_material_override/0 = SubResource("ShaderMaterial_aqi1e")
+surface_material_override/1 = SubResource("ShaderMaterial_qm0fk")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/painting_large3/Painting" index="0" unique_id=1324155609 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "PAINTING"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="painting_large4" parent="Bedroom" unique_id=944496035 instance=ExtResource("32_dse8r")]
+transform = Transform3D(1.39090695e-08, 0, -1.0000001, 0, 1, 0, 1.0000001, 0, 1.39090695e-08, -1.3877182, 1.4053952, -3.8703141)
+
+[node name="Painting" parent="Bedroom/painting_large4" index="0" unique_id=552591523]
+surface_material_override/0 = SubResource("ShaderMaterial_aqi1e")
+surface_material_override/1 = SubResource("ShaderMaterial_qm0fk")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/painting_large4/Painting" index="0" unique_id=1041503373 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "PAINTING"
+metadata/_custom_type_script = "uid://4q753223m055"
+
 [node name="Bathroom" type="Node3D" parent="." unique_id=1204617187]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -4.2)
 script = ExtResource("6_ndm35")
@@ -3140,6 +3223,40 @@ surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
 [node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=55889665]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
+
+[node name="soapcup" parent="Bathroom" unique_id=1024570158 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("38_nngwn")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.62984216, 1.0035625, -0.6214838)
+script = ExtResource("8_incia")
+_require_room = NodePath("..")
+_text_write_helper = NodePath("Shampoo/TextWriterHelper")
+_spellings = Array[String](["SIGNAL?", "SAGNIL?", "SAMNIL?", "SHAMNIL", "SHAMNIO", "SHAMNOO", "SHAMPOO"])
+
+[node name="Soap Cup" parent="Bathroom/soapcup" index="0" unique_id=282002631]
+surface_material_override/0 = SubResource("ShaderMaterial_tspi8")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/soapcup/Soap Cup" index="0" unique_id=1294487478 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "CUP"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Shampoo" parent="Bathroom/soapcup" index="1" unique_id=555263326]
+surface_material_override/0 = SubResource("ShaderMaterial_1bcnc")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/soapcup/Shampoo" index="0" unique_id=191549699 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "SIGNAL?"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Area3D" type="Area3D" parent="Bathroom/soapcup" unique_id=1494118648]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/soapcup/Area3D" unique_id=1476089195]
+transform = Transform3D(-0.40707144, 0, 0.9133963, 0, 1, 0, -0.9133963, 0, -0.40707144, 0, 0.37298214, 0)
+shape = SubResource("CylinderShape3D_nngwn")
 
 [node name="Hallway" type="Node3D" parent="." unique_id=1366288698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 2.8000002)
@@ -3324,6 +3441,8 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [connection signal="body_exited" from="Bedroom/Area3D" to="Bedroom" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Bathroom/Area3D" to="Bathroom" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Bathroom/Area3D" to="Bathroom" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Bathroom/soapcup/Area3D" to="Bathroom/soapcup" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Bathroom/soapcup/Area3D" to="Bathroom/soapcup" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Hallway/Area3D" to="Hallway" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Hallway/Area3D" to="Hallway" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Hallway/umbrella/Area3D" to="Hallway/umbrella" method="_on_area_3d_body_entered"]
@@ -3382,9 +3501,13 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [editable path="Bedroom/bookshelf2"]
 [editable path="Bedroom/bedlamp"]
 [editable path="Bedroom/bedlamp2"]
+[editable path="Bedroom/painting_large2"]
+[editable path="Bedroom/painting_large3"]
+[editable path="Bedroom/painting_large4"]
 [editable path="Bathroom/toilet"]
 [editable path="Bathroom/bathroomfaucet"]
 [editable path="Bathroom/shower"]
+[editable path="Bathroom/soapcup"]
 [editable path="Hallway/shoestand"]
 [editable path="Hallway/shoestand/hallmirror"]
 [editable path="Hallway/hallamp"]
