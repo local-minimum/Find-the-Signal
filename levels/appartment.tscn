@@ -22,12 +22,15 @@
 [ext_resource type="PackedScene" uid="uid://bql480or0r0w8" path="res://visual/models/bookshelf.blend" id="18_qm0fk"]
 [ext_resource type="PackedScene" uid="uid://8tw2o1fx11vg" path="res://visual/models/fruitbowl.blend" id="19_cgv1t"]
 [ext_resource type="PackedScene" uid="uid://bebkgq2snts5y" path="res://visual/models/toilet.blend" id="19_gbuy4"]
+[ext_resource type="PackedScene" uid="uid://ck4qkkoffwrh6" path="res://visual/models/vase.blend" id="20_gnm7j"]
 [ext_resource type="PackedScene" uid="uid://b3vtvdcs1g1k4" path="res://visual/models/bathroomfaucet.blend" id="20_yx31h"]
 [ext_resource type="PackedScene" uid="uid://c837dxiy70glj" path="res://visual/models/closet.blend" id="21_3g6b8"]
 [ext_resource type="PackedScene" uid="uid://bcr3i1uwlndyd" path="res://visual/models/shower.blend" id="21_hgy1n"]
+[ext_resource type="PackedScene" uid="uid://dy50xavr0qc0u" path="res://visual/models/coffemug.blend" id="21_q8iv1"]
 [ext_resource type="PackedScene" uid="uid://cb7f2fc11ql60" path="res://visual/models/livingroomlamp.blend" id="21_ule8i"]
 [ext_resource type="PackedScene" uid="uid://qad6k61tyv2t" path="res://visual/models/bedlamp.blend" id="22_25koi"]
 [ext_resource type="PackedScene" uid="uid://5insll66fixs" path="res://visual/models/magazine.blend" id="22_hpw2l"]
+[ext_resource type="PackedScene" uid="uid://cg3ta7b0tre5d" path="res://visual/models/banana.blend" id="22_hvw63"]
 [ext_resource type="PackedScene" uid="uid://chwm5ctv56f8h" path="res://visual/models/bedsidetable.blend" id="23_j2ixe"]
 [ext_resource type="PackedScene" uid="uid://cahak1t3lswug" path="res://visual/models/remote.blend" id="23_uex6k"]
 [ext_resource type="PackedScene" uid="uid://d2xqkhk6dcvhx" path="res://visual/models/shoestand.blend" id="25_dh07s"]
@@ -559,6 +562,86 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_uex6k"]
 points = PackedVector3Array(0.19996086, 1.7966988, 0.5, 0.19996086, 1.7966988, -0.5, -0.19999999, 1.7966988, 0.5, 0.19996086, 0, 0.5, -0.19999999, 1.7966988, -0.5, 0.19996086, 0, -0.5, -0.19999999, 0, 0.5, -0.19999999, 0, -0.5)
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qsdo8"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(21, 0, 18, 4)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 17.0000002384192
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_00pg1"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 20, 11, 8, 15)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.48266667, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 13.0000001788144
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8yue1"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 20, 11, 8, 15)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.48266667, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 13.0000001788144
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_updwn"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 20, 11, 8, 15)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.48266667, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 13.0000001788144
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_incia"]
 size = Vector3(4.607239, 2.3760376, 3.991211)
 
@@ -918,6 +1001,69 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oculd"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(12, 20, 6)
+shader_parameter/word_length = 3
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.34833336, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 7.0000000894072
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_by15u"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(12, 20, 6)
+shader_parameter/word_length = 3
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.34833336, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 7.0000000894072
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qxbha"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 8, 6, 13, 0, 11, 66)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.33533335, 0.5, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 11.000000149012
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_hvw63"]
+radius = 1.5
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_2vecc"]
 size = Vector3(4.619995, 2.3760376, 5.9882813)
 
@@ -1037,7 +1183,7 @@ shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_uex6k"]
-radius = 0.9506836
+radius = 1.4169922
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_eqpja"]
 size = Vector3(3.349121, 2.3760376, 4.961853)
@@ -1840,6 +1986,33 @@ transform = Transform3D(1, 0, 0, 0, -1, 0, 0, 0, 1, 0.06340575, 0.48672482, -0.1
 mesh = SubResource("ArrayMesh_yjo7f")
 surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
 
+[node name="vase" parent="Office" unique_id=629835185 instance=ExtResource("20_gnm7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4832015, 1.1409118, 1.4729486)
+
+[node name="Vase" parent="Office/vase" index="0" unique_id=1347247409]
+surface_material_override/0 = SubResource("ShaderMaterial_qsdo8")
+
+[node name="TextWriterHelper" type="Node" parent="Office/vase/Vase" index="0" unique_id=390402079 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "VASE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Tulip" parent="Office/vase" index="1" unique_id=1736307395]
+surface_material_override/0 = SubResource("ShaderMaterial_00pg1")
+
+[node name="TextWriterHelper" type="Node" parent="Office/vase/Tulip" index="0" unique_id=1455080547 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "TULIP"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Tulip_001" parent="Office/vase" index="2" unique_id=369706255]
+surface_material_override/0 = SubResource("ShaderMaterial_8yue1")
+
+[node name="Tulip_002" parent="Office/vase" index="3" unique_id=1622964651]
+surface_material_override/0 = SubResource("ShaderMaterial_updwn")
+
 [node name="Kitchen" type="Node3D" parent="." unique_id=1116060079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
 script = ExtResource("6_ndm35")
@@ -2043,6 +2216,112 @@ surface_material_override/0 = SubResource("ShaderMaterial_pfvgk")
 
 [node name="Apple_003" parent="Kitchen/fruitbowl" index="4" unique_id=1266123482]
 surface_material_override/0 = SubResource("ShaderMaterial_y0q2p")
+
+[node name="vase" parent="Kitchen" unique_id=648736261 instance=ExtResource("20_gnm7j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7576303, 1.1409118, 0.6401205)
+
+[node name="Vase" parent="Kitchen/vase" index="0" unique_id=1347247409]
+surface_material_override/0 = SubResource("ShaderMaterial_qsdo8")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/vase/Vase" index="0" unique_id=807535451 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "VASE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Tulip" parent="Kitchen/vase" index="1" unique_id=1736307395]
+surface_material_override/0 = SubResource("ShaderMaterial_00pg1")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/vase/Tulip" index="0" unique_id=326720070 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "TULIP"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Tulip_001" parent="Kitchen/vase" index="2" unique_id=369706255]
+surface_material_override/0 = SubResource("ShaderMaterial_8yue1")
+
+[node name="Tulip_002" parent="Kitchen/vase" index="3" unique_id=1622964651]
+surface_material_override/0 = SubResource("ShaderMaterial_updwn")
+
+[node name="coffemug" parent="Kitchen" unique_id=759679566 instance=ExtResource("21_q8iv1")]
+transform = Transform3D(0.8910778, 0, 0.45385054, 0, 1, 0, -0.45385054, 0, 0.8910778, 1.4869771, 1.0459118, 0.8566444)
+
+[node name="Cylinder" parent="Kitchen/coffemug" index="0" unique_id=1355868046]
+surface_material_override/0 = SubResource("ShaderMaterial_oculd")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/coffemug/Cylinder" index="0" unique_id=152483184 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "MUG"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Cylinder_001" parent="Kitchen/coffemug" index="1" unique_id=1725403774]
+surface_material_override/0 = SubResource("ShaderMaterial_by15u")
+
+[node name="coffemug2" parent="Kitchen" unique_id=1158781533 instance=ExtResource("21_q8iv1")]
+transform = Transform3D(-0.8279526, 0, -0.560798, 0, 1, 0, 0.560798, 0, -0.8279526, 1.2894483, 1.0459118, 0.4783697)
+
+[node name="Cylinder" parent="Kitchen/coffemug2" index="0" unique_id=1355868046]
+surface_material_override/0 = SubResource("ShaderMaterial_oculd")
+
+[node name="Cylinder_001" parent="Kitchen/coffemug2" index="1" unique_id=1725403774]
+surface_material_override/0 = SubResource("ShaderMaterial_by15u")
+
+[node name="coffemug3" parent="Kitchen" unique_id=835035623 instance=ExtResource("21_q8iv1")]
+transform = Transform3D(-0.8279526, 0, -0.560798, 0, 1, 0, 0.560798, 0, -0.8279526, -1.0470684, 1.0166765, 1.6012487)
+
+[node name="Cylinder" parent="Kitchen/coffemug3" index="0" unique_id=1355868046]
+surface_material_override/0 = SubResource("ShaderMaterial_oculd")
+
+[node name="Cylinder_001" parent="Kitchen/coffemug3" index="1" unique_id=1725403774]
+surface_material_override/0 = SubResource("ShaderMaterial_by15u")
+
+[node name="coffemug4" parent="Kitchen" unique_id=179459421 instance=ExtResource("21_q8iv1")]
+transform = Transform3D(-0.8279526, 0, -0.560798, 0, 1, 0, 0.560798, 0, -0.8279526, -1.0470684, 1.0166765, 1.6012487)
+
+[node name="Cylinder" parent="Kitchen/coffemug4" index="0" unique_id=1355868046]
+surface_material_override/0 = SubResource("ShaderMaterial_oculd")
+
+[node name="Cylinder_001" parent="Kitchen/coffemug4" index="1" unique_id=1725403774]
+surface_material_override/0 = SubResource("ShaderMaterial_by15u")
+
+[node name="coffemug5" parent="Kitchen" unique_id=491915238 instance=ExtResource("21_q8iv1")]
+transform = Transform3D(0.17241058, 0, -0.9850251, 0, 1, 0, 0.9850251, 0, 0.17241058, -1.0470684, 1.0809581, 1.6012487)
+
+[node name="Cylinder" parent="Kitchen/coffemug5" index="0" unique_id=1355868046]
+surface_material_override/0 = SubResource("ShaderMaterial_oculd")
+
+[node name="Cylinder_001" parent="Kitchen/coffemug5" index="1" unique_id=1725403774]
+surface_material_override/0 = SubResource("ShaderMaterial_by15u")
+
+[node name="banana" parent="Kitchen" unique_id=755217060 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("22_hvw63")]
+transform = Transform3D(3.1149348e-08, 0.71261406, -0.7015563, 1, -4.371139e-08, 0, -3.0666e-08, -0.7015563, -0.71261406, 1.1525269, 1.0099673, 0.67369175)
+script = ExtResource("8_incia")
+_require_room = NodePath("..")
+_text_write_helper = NodePath("Banana/TextWriterHelper")
+_near_threshold = 0.9
+_spellings = Array[String](["SIGNAL?", "SAGNAL?", "SAGNALA", "SANALA", "SANANA", "BANANA"])
+
+[node name="Banana" parent="Kitchen/banana" index="0" unique_id=336904905]
+transform = Transform3D(1, -8.7414676e-08, 8.4143714e-10, -8.7414676e-08, -0.9998145, 0.019249767, -8.414318e-10, -0.019249767, -0.9998145, 0, -0.06838274, 0.23409033)
+surface_material_override/0 = SubResource("ShaderMaterial_qxbha")
+
+[node name="TextWriterHelper" type="Node" parent="Kitchen/banana/Banana" index="0" unique_id=1136182766 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "SIGNAL?"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/banana" unique_id=1530781024]
+transform = Transform3D(3.1149348e-08, 1, -3.0665998e-08, 0.712614, -4.3711385e-08, -0.70155627, -0.70155627, -1.7763566e-15, -0.712614, 0, 0, 0)
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/banana/Area3D2" unique_id=748877351]
+transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37298226, 0)
+shape = SubResource("CylinderShape3D_hvw63")
 
 [node name="Living Room" type="Node3D" parent="." unique_id=354522909]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
@@ -2644,6 +2923,8 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [connection signal="body_exited" from="Office/Area3D" to="Office" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Kitchen/Area3D" to="Kitchen" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Kitchen/Area3D" to="Kitchen" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Kitchen/banana/Area3D2" to="Kitchen/banana" method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="Kitchen/banana/Area3D2" to="Kitchen/banana" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Living Room/Area3D" to="Living Room" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Living Room/Area3D" to="Living Room" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Living Room/remote/Area3D" to="Living Room/remote" method="_on_area_3d_body_entered"]
@@ -2666,6 +2947,7 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [editable path="Office/desk/chair"]
 [editable path="Office/bookshelf2"]
 [editable path="Office/bookshelf3"]
+[editable path="Office/vase"]
 [editable path="Kitchen/Fridge"]
 [editable path="Kitchen/Freezer"]
 [editable path="Kitchen/kitchen_cupboards"]
@@ -2677,6 +2959,13 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [editable path="Kitchen/kitchentablelamp"]
 [editable path="Kitchen/kitchenlamp"]
 [editable path="Kitchen/fruitbowl"]
+[editable path="Kitchen/vase"]
+[editable path="Kitchen/coffemug"]
+[editable path="Kitchen/coffemug2"]
+[editable path="Kitchen/coffemug3"]
+[editable path="Kitchen/coffemug4"]
+[editable path="Kitchen/coffemug5"]
+[editable path="Kitchen/banana"]
 [editable path="Living Room/tvbench"]
 [editable path="Living Room/sofa"]
 [editable path="Living Room/sofatable"]
