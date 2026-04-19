@@ -82,10 +82,17 @@
 [ext_resource type="AudioStream" uid="uid://bxgkk7ijjkni5" path="res://audio/mirror.mp3" id="58_sdg87"]
 [ext_resource type="AudioStream" uid="uid://bflrwh2c33fhu" path="res://audio/remote.mp3" id="59_030sl"]
 [ext_resource type="AudioStream" uid="uid://cegehgtn4xhjw" path="res://audio/doormat.mp3" id="61_eh8ux"]
+[ext_resource type="AudioStream" uid="uid://dp8o752ta4w5v" path="res://audio/bed.mp3" id="63_flvpg"]
 [ext_resource type="AudioStream" uid="uid://bmv6es5dah0hb" path="res://audio/umbrella.mp3" id="63_mmmw5"]
+[ext_resource type="AudioStream" uid="uid://cbubyiw1td6ep" path="res://audio/matress.mp3" id="64_awymf"]
+[ext_resource type="AudioStream" uid="uid://dhydavflevao0" path="res://audio/dresser.mp3" id="65_75mpg"]
 [ext_resource type="AudioStream" uid="uid://c5pp367n5aosr" path="res://audio/hat.mp3" id="65_c6544"]
+[ext_resource type="AudioStream" uid="uid://c84au01dk84nl" path="res://audio/pillow.mp3" id="65_dusx7"]
 [ext_resource type="AudioStream" uid="uid://caghphg0e8k61" path="res://audio/toilet.mp3" id="67_cegsb"]
+[ext_resource type="AudioStream" uid="uid://bhor3shjgftkc" path="res://audio/alarmclock.mp3" id="67_fffcv"]
 [ext_resource type="AudioStream" uid="uid://corrfau38w3xv" path="res://audio/shoe.mp3" id="67_hfraf"]
+[ext_resource type="AudioStream" uid="uid://dh525lxwa55gh" path="res://audio/bedsidetable.mp3" id="67_xdkwc"]
+[ext_resource type="AudioStream" uid="uid://bji4l5miwr20n" path="res://audio/closet.mp3" id="69_tw61u"]
 [ext_resource type="AudioStream" uid="uid://exvf5j0gwydo" path="res://audio/curtain.mp3" id="71_18tso"]
 [ext_resource type="AudioStream" uid="uid://r734db3edo8n" path="res://audio/shower.mp3" id="71_cfcrq"]
 [ext_resource type="AudioStream" uid="uid://ctypc3rdwe3qf" path="res://audio/paper.mp3" id="73_4y17l"]
@@ -1522,6 +1529,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_q2ts7"]
+size = Vector3(0.9142903, 0.809416, 2.1077588)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wd13f"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1542,6 +1552,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_jtfew"]
+size = Vector3(0.9142903, 0.1136089, 2.1077588)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qdp00"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1561,6 +1574,9 @@ shader_parameter/uv_characters_per_line = 20.0000002831228
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_78ykh"]
+size = Vector3(0.43316242, 0.1136089, 0.25106078)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fd646"]
 data = PackedVector3Array(-0.45, 0.29709998, 1, -0.45, 0.4362, -1, -0.45, 0.4362, 1, -0.45, 0.29709998, 1, -0.45, 0.29709998, -1, -0.45, 0.4362, -1, -0.45, 0.4362, -1, 0.45, 0.8921, -1, 0.45, 0.4362, -1, -0.45, 0.4362, -1, -0.45, 0.8921, -1, 0.45, 0.8921, -1, 0.45, 0.29709998, -1, 0.45, 0.4362, 1, 0.45, 0.4362, -1, 0.45, 0.29709998, -1, 0.45, 0.29709998, 1, 0.45, 0.4362, 1, -0.45, 0.4362, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.29709998, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1, -0.45, 0.29709998, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.45, 0.0026999998, 1, -0.45, 0.4362, 1, -0.45, 0.4362, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.45, 0.4362, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.4362, 1.0468999, -0.45, 0.4362, 1, -0.45, 0.5771, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.29709998, -1, -0.45, 0.0026999998, -1.0633, -0.45, 0.29709998, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.0026999998, -1, -0.45, 0.0026999998, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.29709998, -1.0633, -0.45, 0.4362, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.4362, -1.0633, -0.45, 0.4362, -1, -0.45, 0.4362, -1.0633, -0.45, 0.8921, -1, -0.45, 0.4362, -1, -0.45, 0.4362, -1.0633, -0.45, 0.8921, -1.0633, -0.45, 0.8921, -1, 0.45, 0.4362, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.29709998, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.0026999998, -1, 0.45, 0.29709998, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.0026999998, -1.0633, 0.45, 0.0026999998, -1, 0.45, 0.4362, -1, 0.45, 0.4362, -1.0633, 0.45, 0.29709998, -1.0633, 0.45, 0.4362, -1, 0.45, 0.8921, -1.0633, 0.45, 0.4362, -1.0633, 0.45, 0.4362, -1, 0.45, 0.8921, -1, 0.45, 0.8921, -1.0633, -0.45, 0.8921, -1, 0.45, 0.8921, -1.0633, 0.45, 0.8921, -1, -0.45, 0.8921, -1, -0.45, 0.8921, -1.0633, 0.45, 0.8921, -1.0633, -0.3955, 0.29709998, 1, -0.3955, 0.0026999998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.0026999998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1, 0.45, 0.4362, 1, 0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.5771, 1, 0.45, 0.29709998, 1, 0.45, 0.4362, 1.0468999, 0.45, 0.4362, 1, 0.45, 0.29709998, 1, 0.45, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.29709998, 1, 0.45, 0.0026999998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.29709998, 1, 0.45, 0.0026999998, 1, 0.45, 0.0026999998, 1.0468999, 0.45, 0.5771, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.5771, 1, 0.45, 0.5771, 1, 0.45, 0.5771, 1.0468999, -0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1, -0.45, 0.5771, 1, -0.45, 0.4362, 1, 0.45, 0.4362, 1, 0.45, 0.5771, 1, -0.45, 0.5771, 1, -0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1.0468999, -0.45, 0.4362, 1.0468999, -0.45, 0.5771, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.45, 0.4362, 1.0468999, 0.45, 0.4362, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.3955, 0.0026999998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.3955, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.0026999998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, -0.42999998, 0.4362, 0.9939, -0.45, 0.4362, -1, -0.42999998, 0.4362, -0.9939, -0.42999998, 0.4362, 0.9939, -0.45, 0.4362, 1, -0.45, 0.4362, -1, -0.42999998, 0.4362, -0.9939, 0.45, 0.4362, -1, 0.42999998, 0.4362, -0.9939, -0.42999998, 0.4362, -0.9939, -0.45, 0.4362, -1, 0.45, 0.4362, -1, 0.42999998, 0.4362, -0.9939, 0.45, 0.4362, 1, 0.42999998, 0.4362, 0.9939, 0.42999998, 0.4362, -0.9939, 0.45, 0.4362, -1, 0.45, 0.4362, 1, 0.42999998, 0.4362, 0.9939, -0.45, 0.4362, 1, -0.42999998, 0.4362, 0.9939, 0.42999998, 0.4362, 0.9939, 0.45, 0.4362, 1, -0.45, 0.4362, 1, -0.3955, 0.29709998, -1, -0.45, 0.0026999998, -1, -0.45, 0.29709998, -1, -0.3955, 0.29709998, -1, -0.3955, 0.0026999998, -1, -0.45, 0.0026999998, -1, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1, 0.3955, 0.29709998, 1, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, 0.3955, 0.0026999998, 1, -0.45, 0.29709998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.29709998, 1, -0.45, 0.29709998, 1, -0.45, 0.0026999998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.29709998, -1.0633, -0.3955, 0.0026999998, -1, -0.3955, 0.29709998, -1, -0.3955, 0.29709998, -1.0633, -0.3955, 0.0026999998, -1.0633, -0.3955, 0.0026999998, -1, 0.45, 0.29709998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.29709998, -1, 0.45, 0.29709998, -1, 0.45, 0.0026999998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.29709998, 1, 0.45, 0.0026999998, 1, 0.45, 0.29709998, 1, 0.3955, 0.29709998, 1, 0.3955, 0.0026999998, 1, 0.45, 0.0026999998, 1, 0.3955, 0.29709998, -1, 0.3955, 0.0026999998, -1.0633, 0.3955, 0.29709998, -1.0633, 0.3955, 0.29709998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.0026999998, -1.0633)
@@ -1594,6 +1610,9 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_a1dnt"]
 points = PackedVector3Array(-0.18332039, 0, -0.18332039, 0.18332039, 0, -0.18332039, -0.18332039, 0, 0.18332039, -0.18332039, 0.5, -0.18332039, 0.18332039, 0, 0.18332039, 0.18332039, 0.5, -0.18332039, -0.18332039, 0.5, 0.18332039, 0.18332039, 0.5, 0.18332039)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_p3n4h"]
+size = Vector3(0.4074992, 0.5299891, 0.37113586)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_a1dnt"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1616,6 +1635,9 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hpw2l"]
 points = PackedVector3Array(0.2574197, 1.2307146, 0.3487898, 0.2843187, 2.0868015, 0.3180493, 0.23169535, 1.2307146, 0.3487898, 0.2574197, 1.0233825, 0.3487898, 0.3, 2.0868015, 0.29994798, -0.28437746, 2.0868015, 0.3180493, 0.2843187, 0.16729547, 0.3180493, 0.23169535, 1.0233825, 0.3487898, 0.3, 2.0868015, -0.3, 0.3, 0.16729547, 0.29994798, -0.3, 2.0868015, 0.29994798, -0.28437746, 0.16729547, 0.3180493, 0.3, 0, 0.23643452, -0.3, 2.0868015, -0.3, 0.3, 0, -0.3, -0.3, 0.16729547, 0.29994798, -0.3, 0, 0.23643452, -0.3, 0, -0.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sq5fl"]
+size = Vector3(0.60025483, 2.2373562, 0.6279715)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_aqi1e"]
 points = PackedVector3Array(-0.1, -0.2, -1.9580126e-05, -0.092404075, -0.2, -0.0382733, -0.092404075, -0.2, 0.038253717, -0.1, 0.022802174, -1.9580126e-05, -0.07071261, -0.2, -0.07071261, -0.092404075, 0.022802174, -0.0382733, -0.07071261, -0.2, 0.07069302, -0.092404075, 0.022802174, 0.038253717, -0.053876273, 0.17321472, -1.9580126e-05, -0.0382733, -0.2, -0.092404075, -0.07071261, 0.022802174, -0.07071261, -0.049765076, 0.17321472, -0.020614728, -0.038097106, 0.17321472, -0.038097106, -0.0382733, -0.2, 0.092384495, -0.07071261, 0.022802174, 0.07069302, -0.038097106, 0.17321472, 0.038077526, -0.049765076, 0.17321472, 0.02059514, -0.03236101, 0.18624409, 0.013390757, -0.035023496, 0.18624409, -1.9580126e-05, -0.03236101, 0.18624409, -0.013410337, -1.9580126e-05, -0.2, -0.1, -0.0382733, 0.022802174, -0.092404075, -0.024765074, 0.18624409, -0.024765074, -0.013410337, 0.18624409, -0.03236101, -0.020614728, 0.17321472, -0.049765076, -1.9580126e-05, -0.2, 0.1, -0.0382733, 0.022802174, 0.092384495, -0.020614728, 0.17321472, 0.049745493, -0.013410337, 0.18624409, 0.032341428, -0.024765074, 0.18624409, 0.024745494, -0.012901336, 0.19145583, 0.012881748, -0.016855918, 0.19145583, 0.0069694594, -0.01824589, 0.19145583, -1.9580126e-05, -0.016855918, 0.19145583, -0.0069890395, -0.012901336, 0.19145583, -0.012901336, 0.038253717, -0.2, -0.092404075, -1.9580126e-05, 0.022802174, -0.1, -1.9580126e-05, 0.17321472, -0.053876273, -0.0069890395, 0.19145583, -0.016855918, -1.9580126e-05, 0.19145583, -0.01824589, -1.9580126e-05, 0.18624409, -0.035023496, 0.038253717, -0.2, 0.092384495, -1.9580126e-05, 0.022802174, 0.1, -1.9580126e-05, 0.17321472, 0.053837113, -1.9580126e-05, 0.18624409, 0.035003908, -0.0069890395, 0.19145583, 0.01683633, 0.07069302, -0.2, -0.07071261, 0.038253717, 0.022802174, -0.092404075, 0.013390757, 0.18624409, -0.03236101, 0.02059514, 0.17321472, -0.049765076, 0.0069694594, 0.19145583, -0.016855918, 0.07069302, -0.2, 0.07069302, 0.038253717, 0.022802174, 0.092384495, 0.02059514, 0.17321472, 0.049745493, 0.013390757, 0.18624409, 0.032341428, 0.0069694594, 0.19145583, 0.01683633, -1.9580126e-05, 0.19145583, 0.01820673, 0.092384495, -0.2, -0.0382733, 0.07069302, 0.022802174, -0.07071261, 0.038077526, 0.17321472, -0.038097106, 0.012881748, 0.19145583, -0.012901336, 0.024745494, 0.18624409, -0.024765074, 0.092384495, -0.2, 0.038253717, 0.07069302, 0.022802174, 0.07069302, 0.038077526, 0.17321472, 0.038077526, 0.024745494, 0.18624409, 0.024745494, 0.012881748, 0.19145583, 0.012881748, 0.1, -0.2, -1.9580126e-05, 0.092384495, 0.022802174, -0.0382733, 0.032341428, 0.18624409, -0.013410337, 0.049745493, 0.17321472, -0.020614728, 0.01683633, 0.19145583, -0.0069890395, 0.092384495, 0.022802174, 0.038253717, 0.049745493, 0.17321472, 0.02059514, 0.032341428, 0.18624409, 0.013390757, 0.01683633, 0.19145583, 0.0069694594, 0.1, 0.022802174, -1.9580126e-05, 0.035003908, 0.18624409, -1.9580126e-05, 0.053837113, 0.17321472, -1.9580126e-05, 0.01820673, 0.19145583, -1.9580126e-05)
@@ -1662,6 +1684,9 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_aqi1e"]
 radius = 1.8544922
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7d5gt"]
+size = Vector3(0.1268877, 0.31823045, 0.27222595)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3f1wm"]
 size = Vector3(1.9918213, 2.3760376, 2.513794)
@@ -3407,15 +3432,6 @@ monitorable = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114266634, -0.08860618, 0.031597853)
 shape = SubResource("BoxShape3D_oculd")
 
-[node name="kitchen_small_bench2" parent="Kitchen" unique_id=1138905455 instance=ExtResource("13_k2cr2")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.31575012, 2.3841858e-07, -1.7578297)
-
-[node name="Cupboard" parent="Kitchen/kitchen_small_bench2" index="0" unique_id=463445107]
-surface_material_override/0 = SubResource("ShaderMaterial_25koi")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_small_bench2" unique_id=658472810]
-shape = SubResource("ConvexPolygonShape3D_s2x3b")
-
 [node name="kitchentablelamp" parent="Kitchen" unique_id=2074536262 instance=ExtResource("28_5i0b8")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.3041282, 1.6375624, 0.68864155)
 
@@ -3502,7 +3518,7 @@ metadata/_custom_type_script = "uid://4q753223m055"
 surface_material_override/0 = SubResource("ShaderMaterial_if3nq")
 
 [node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/fruitbowl/Apple_001" index="0" unique_id=30363550 node_paths=PackedStringArray("room", "area")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10723615, 0.6344207, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.017509222, -0.009662867, 0)
 stream = ExtResource("42_6tfwr")
 max_distance = 3.0
 bus = &"Wispers"
@@ -3517,7 +3533,7 @@ input_ray_pickable = false
 monitorable = false
 
 [node name="CollisionShape3D" parent="Kitchen/fruitbowl/Apple_001/Signal Player/Area3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10448527, -0.6386241, -0.007012844)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017774582, 0.019544363, -0.007012844)
 shape = SubResource("BoxShape3D_4y17l")
 
 [node name="Apple_002" parent="Kitchen/fruitbowl" index="3" unique_id=519505411]
@@ -3527,7 +3543,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_pfvgk")
 surface_material_override/0 = SubResource("ShaderMaterial_y0q2p")
 
 [node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/fruitbowl" unique_id=1731241447 node_paths=PackedStringArray("room", "area")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10723615, 0.6344207, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0077297688, -0.023650646, 0)
 stream = ExtResource("42_dha8w")
 max_distance = 3.0
 bus = &"Wispers"
@@ -3542,7 +3558,7 @@ input_ray_pickable = false
 monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/fruitbowl/Signal Player/Area3D" unique_id=422319183]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10889506, -0.6386241, -0.00041151047)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008756161, 0.0143015385, -0.00041151047)
 shape = SubResource("BoxShape3D_xtb4u")
 
 [node name="vase" parent="Kitchen" unique_id=648736261 instance=ExtResource("20_gnm7j")]
@@ -4365,6 +4381,25 @@ mesh = NodePath("..")
 text = "BED"
 metadata/_custom_type_script = "uid://4q753223m055"
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bed/Bed" index="1" unique_id=1149602050 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, -2.9802319e-08, 0, 1, 0, 2.9802319e-08, 0, 1, 0, 0.5024597, 0)
+stream = ExtResource("63_flvpg")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" parent="Bedroom/bed/Bed/Signal Player" index="0"]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" parent="Bedroom/bed/Bed/Signal Player/Area3D" index="0"]
+transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1.0000019, -0.0015377998, -0.10680735, -0.008946657)
+shape = SubResource("BoxShape3D_q2ts7")
+
 [node name="Matress" parent="Bedroom/bed" index="1" unique_id=552793993]
 surface_material_override/0 = SubResource("ShaderMaterial_wd13f")
 
@@ -4374,6 +4409,25 @@ mesh = NodePath("..")
 text = "MATTRESS"
 metadata/_custom_type_script = "uid://4q753223m055"
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bed/Matress" index="1" unique_id=1675273587 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, -2.9802319e-08, 0, 1, 0, 2.9802319e-08, 0, 1, 0, 0.5024597, 0)
+stream = ExtResource("64_awymf")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" type="Area3D" parent="Bedroom/bed/Matress/Signal Player" unique_id=1713721371]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bed/Matress/Signal Player/Area3D2" unique_id=1835034738]
+transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1.0000019, -0.0015377998, -0.0049203634, -0.008946657)
+shape = SubResource("BoxShape3D_jtfew")
+
 [node name="Pillow" parent="Bedroom/bed" index="2" unique_id=1877344731]
 surface_material_override/0 = SubResource("ShaderMaterial_qdp00")
 
@@ -4382,6 +4436,25 @@ script = ExtResource("2_vj7uu")
 mesh = NodePath("..")
 text = "PILLOW"
 metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bed/Pillow" index="1" unique_id=755305254 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, -2.9802319e-08, 0, 1, 0, 2.9802319e-08, 0, 1, 0, 0.61281073, -0.85816574)
+stream = ExtResource("65_dusx7")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" parent="Bedroom/bed/Pillow/Signal Player" index="1"]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" parent="Bedroom/bed/Pillow/Signal Player/Area3D2" index="0"]
+transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1.0000019, -0.010111332, -0.045742154, 0.0081009865)
+shape = SubResource("BoxShape3D_78ykh")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Bedroom/bed" unique_id=852097975]
 shape = SubResource("ConcavePolygonShape3D_fd646")
@@ -4407,6 +4480,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bedsidetable" unique_id=1867592489]
 shape = SubResource("ConvexPolygonShape3D_a1dnt")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bedsidetable" unique_id=1143730209 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, -2.9802319e-08, 0, 1, 0, 2.9802319e-08, 0, 1, 0, 0.4565841, 0.060571194)
+stream = ExtResource("67_xdkwc")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D3")
+
+[node name="Area3D3" type="Area3D" parent="Bedroom/bedsidetable/Signal Player" unique_id=23312858]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bedsidetable/Signal Player/Area3D3" unique_id=1707477350]
+transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1.0000019, 0.002720356, -0.21922415, -0.051936626)
+shape = SubResource("BoxShape3D_p3n4h")
+
 [node name="closet" parent="Bedroom" unique_id=1389184995 instance=ExtResource("21_3g6b8")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0470667, 1.1920929e-07, -3.5937572)
 
@@ -4421,6 +4513,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet" unique_id=1939787734]
 shape = SubResource("ConvexPolygonShape3D_hpw2l")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/closet" unique_id=884314251 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1823857, 0.3081627)
+stream = ExtResource("69_tw61u")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Bedroom/closet/Signal Player" unique_id=1403392666]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet/Signal Player/Area3D" unique_id=1351825527]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047450066, -0.21249688, -0.29470146)
+shape = SubResource("BoxShape3D_sq5fl")
 
 [node name="closet2" parent="Bedroom" unique_id=1817248846 instance=ExtResource("21_3g6b8")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0470667, 1.1920929e-07, -2.980831)
@@ -4437,6 +4548,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet2" unique_id=637367316]
 shape = SubResource("ConvexPolygonShape3D_hpw2l")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/closet2" unique_id=493293239 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1823857, 0.3081627)
+stream = ExtResource("69_tw61u")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Bedroom/closet2/Signal Player" unique_id=616683218]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet2/Signal Player/Area3D" unique_id=503471329]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047450066, -0.21249688, -0.29470146)
+shape = SubResource("BoxShape3D_sq5fl")
+
 [node name="closet3" parent="Bedroom" unique_id=525012096 instance=ExtResource("21_3g6b8")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.0470667, 1.1920929e-07, -2.36801)
 
@@ -4451,6 +4581,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet3" unique_id=877089888]
 shape = SubResource("ConvexPolygonShape3D_hpw2l")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/closet3" unique_id=1032542784 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1823857, 0.3081627)
+stream = ExtResource("69_tw61u")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Bedroom/closet3/Signal Player" unique_id=1262703402]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/closet3/Signal Player/Area3D" unique_id=890600700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047450066, -0.21249688, -0.29470146)
+shape = SubResource("BoxShape3D_sq5fl")
 
 [node name="bookshelf2" parent="Bedroom" unique_id=391135115 instance=ExtResource("18_qm0fk")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -0.53327274, -1.1920929e-07, 0.6933334)
@@ -4658,6 +4807,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/kitchen_small_bench" unique_id=1418092388]
 shape = SubResource("ConvexPolygonShape3D_s2x3b")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/kitchen_small_bench" unique_id=246038438 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10723615, 0.6344207, 0)
+stream = ExtResource("65_75mpg")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Bedroom/kitchen_small_bench/Signal Player" unique_id=611232854]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/kitchen_small_bench/Signal Player/Area3D" unique_id=1226930651]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114266634, -0.08860618, 0.031597853)
+shape = SubResource("BoxShape3D_oculd")
+
 [node name="vase" parent="Bedroom" unique_id=1627757197 instance=ExtResource("20_gnm7j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6937976, 1.1540045, -0.58651555)
 
@@ -4704,13 +4872,14 @@ monitorable = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047974586, 0.009341836, -0.023260593)
 shape = SubResource("BoxShape3D_qxbha")
 
-[node name="alarmclock" parent="Bedroom" unique_id=1296056739 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("35_aqi1e")]
+[node name="alarmclock" parent="Bedroom" unique_id=1296056739 node_paths=PackedStringArray("_require_room", "_text_write_helper", "_whisperer") instance=ExtResource("35_aqi1e")]
 transform = Transform3D(0.635957, 0, 0.77172446, 0, 1, 0, -0.77172446, 0, 0.635957, -1.7377076, 1.1731694, -1.2471857)
 script = ExtResource("8_incia")
 _require_room = NodePath("..")
 _text_write_helper = NodePath("Alarm Clock/TextWriterHelper")
 _near_threshold = 0.5
 _spellings = Array[String](["SIGNAL?", "SIAGNL?", "SLAGNL?", "SLAGNLO?", "SLARNLO?", "SLARNLOC", "ALARNLOC", "ALARMLOC", "ALARMLOCK", "ALARM LOCK", "ALARM CLOCK"])
+_whisperer = NodePath("Signal Player")
 
 [node name="Alarm Clock" parent="Bedroom/alarmclock" index="0" unique_id=751942778]
 surface_material_override/0 = SubResource("ShaderMaterial_xtb4u")
@@ -4729,6 +4898,26 @@ input_ray_pickable = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/alarmclock/Area3D" unique_id=2105491357]
 transform = Transform3D(0.3286686, 0, -0.9444458, 0, 1, 0, 0.9444458, 0, 0.3286686, 0, 0.37298214, 0)
 shape = SubResource("CylinderShape3D_aqi1e")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/alarmclock" unique_id=922637745 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1.0000001, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 1.0000001, 0, 0, 0)
+stream = ExtResource("10_wn8e3")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+replacement_whisper = ExtResource("67_fffcv")
+
+[node name="Area3D" type="Area3D" parent="Bedroom/alarmclock/Signal Player" unique_id=2128709510]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/alarmclock/Signal Player/Area3D" unique_id=1390706970]
+transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1.0000019, 4.1365623e-05, -0.022257566, -2.2888184e-05)
+shape = SubResource("BoxShape3D_7d5gt")
 
 [node name="Bathroom" type="Node3D" parent="." unique_id=1204617187 node_paths=PackedStringArray("appartment")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, -4.2)
@@ -5592,7 +5781,6 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [editable path="Kitchen/chair2"]
 [editable path="Kitchen/kitchen_table"]
 [editable path="Kitchen/kitchen_small_bench"]
-[editable path="Kitchen/kitchen_small_bench2"]
 [editable path="Kitchen/kitchentablelamp"]
 [editable path="Kitchen/kitchenlamp"]
 [editable path="Kitchen/fruitbowl"]
