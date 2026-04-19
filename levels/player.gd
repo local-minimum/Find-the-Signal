@@ -6,7 +6,7 @@ extends CharacterBody3D
 const SPEED: float = 2.0
 const JUMP_VELOCITY: float = 1.5
 
-const MOUSE_TURN_SPEED: float = PI * 0.001
+const MOUSE_TURN_SPEED: float = PI * 0.002
 const MOUSE_LOOK_SPEED: float = PI * 0.001
 const JOY_TURN_SPEED: float = PI * 0.75
 const JOY_LOOK_SPEED: float = PI * 0.5

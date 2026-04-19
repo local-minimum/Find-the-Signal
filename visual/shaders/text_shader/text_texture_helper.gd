@@ -75,14 +75,15 @@ func _sync() -> void:
     for ch: String in text:
         if ch == " ":
             packed[idx] = SPACE
+        else:
+            var id: int = alphabet.find(ch)
+            if id < 0:
+                push_warning("'%s' not in alphabet" % [ch])
 
-        var id: int = alphabet.find(ch)
-        if id < 0:
-            push_warning("'%s' not in alphabet" % [ch])
+                id = alphabet.find(unsupported_character[0])
 
-            id = alphabet.find(unsupported_character[0])
+            packed[idx] = id
 
-        packed[idx] = id
         idx += 1
 
         if idx >= MAX_TEXT_LENGTH:

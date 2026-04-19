@@ -6,8 +6,22 @@ class_name SignalCheckpoint
 @export var _near_threshold: float = 0.2
 @export var _spellings: Array[String] = ["SIGNAL?"]
 @export var _word_spacings: Array[int] = [2]
+@export var _whisperer: WisperPlayer
 
-var completed: bool
+var completed: bool:
+    set(value):
+        completed = value
+        if value:
+            if _whisperer:
+                _whisperer.change_to_whisper()
+            else:
+                push_warning("This signal %s doesn't have a whisper" % self)
+
+            if _require_room:
+                _require_room.appartment.signals_found += 1
+            else:
+                push_warning("This signal %s doesn't have a room" % self)
+
 var _entry_dist: float
 var _body: Node3D
 
