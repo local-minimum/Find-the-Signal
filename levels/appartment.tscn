@@ -54,14 +54,24 @@
 [ext_resource type="AudioStream" uid="uid://db8w266df6lbn" path="res://audio/lamp.mp3" id="29_by15u"]
 [ext_resource type="PackedScene" uid="uid://4cr3lth0ail6" path="res://visual/models/hallamp.blend" id="31_geosr"]
 [ext_resource type="PackedScene" uid="uid://1n0qllvsl20s" path="res://visual/models/painting_large.blend" id="32_dse8r"]
+[ext_resource type="AudioStream" uid="uid://c3cim00gqupys" path="res://audio/fridge.mp3" id="32_ewhqw"]
+[ext_resource type="AudioStream" uid="uid://bibkbh36287bw" path="res://audio/sink.mp3" id="33_6xypi"]
+[ext_resource type="AudioStream" uid="uid://xnw83wnrifg2" path="res://audio/freezer.mp3" id="33_dha8w"]
+[ext_resource type="AudioStream" uid="uid://drtw4k6bsvsxq" path="res://audio/cupboard.mp3" id="33_tspi8"]
+[ext_resource type="AudioStream" uid="uid://dcqx8bfpnnlha" path="res://audio/countertop.mp3" id="34_1bcnc"]
 [ext_resource type="PackedScene" uid="uid://cb7buehhwkbej" path="res://visual/models/alarmclock.blend" id="35_aqi1e"]
+[ext_resource type="AudioStream" uid="uid://oj7vnarwyaui" path="res://audio/mug.mp3" id="38_cv5i2"]
 [ext_resource type="PackedScene" uid="uid://bxn6l45vf220w" path="res://visual/models/soapcup.blend" id="38_nngwn"]
 [ext_resource type="PackedScene" uid="uid://daxf7crukjpwp" path="res://visual/models/toiletpaperholder.blend" id="39_owtj4"]
+[ext_resource type="AudioStream" uid="uid://dldgua3c7vpgg" path="res://audio/microwave.mp3" id="40_7eic1"]
 [ext_resource type="PackedScene" uid="uid://c0vuc18p5yvu" path="res://visual/models/towelholder.blend" id="40_a1b3c"]
 [ext_resource type="PackedScene" uid="uid://boojjnpy3fl6o" path="res://visual/models/doormat.blend" id="40_wd13f"]
 [ext_resource type="PackedScene" uid="uid://b0h5aut8kf4u2" path="res://visual/models/hat.blend" id="41_qdp00"]
+[ext_resource type="AudioStream" uid="uid://evbo3swat8y3" path="res://audio/apple.mp3" id="42_6tfwr"]
+[ext_resource type="AudioStream" uid="uid://bs2mvp58jdmff" path="res://audio/bowl.mp3" id="42_dha8w"]
 [ext_resource type="PackedScene" uid="uid://cgnragn8pbkbe" path="res://visual/models/umbrella.blend" id="42_wefy1"]
 [ext_resource type="PackedScene" uid="uid://ctfoolc2rulvt" path="res://visual/models/shoe.blend" id="43_a1dnt"]
+[ext_resource type="AudioStream" uid="uid://bdsb45k36konv" path="res://audio/banana.mp3" id="47_4yv4g"]
 [ext_resource type="AudioStream" uid="uid://cdn3kxnwuxc3l" path="res://audio/shoerack.mp3" id="57_242ya"]
 [ext_resource type="AudioStream" uid="uid://b1pj2dpc35eln" path="res://audio/clothesrack.mp3" id="58_o44a7"]
 [ext_resource type="AudioStream" uid="uid://bxgkk7ijjkni5" path="res://audio/mirror.mp3" id="58_sdg87"]
@@ -902,6 +912,9 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qm0fk"]
 points = PackedVector3Array(-0.4, 0, -0.3, 0.4, 0, -0.3, -0.4, 0, 0.37265784, -0.4, 1.8, -0.3, 0.4, 0, 0.37265784, 0.4, 1.8, -0.3, 0.3085356, 0.3768794, 0.41859442, -0.4, 1.8, 0.37265784, 0.4, 1.8, 0.37265784, 0.35465935, 0.3768794, 0.41859442, 0.3085356, 1.4229443, 0.41859442, 0.35465935, 1.4229443, 0.41859442)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_o4lce"]
+size = Vector3(0.7907932, 1.7917106, 0.70166934)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fd646"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -962,6 +975,12 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_43kuu"]
+size = Vector3(0.8004472, 0.8830863, 2.463592)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v2lqs"]
+size = Vector3(0.8004472, 0.10065439, 2.463592)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dh07s"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -981,6 +1000,9 @@ shader_parameter/uv_characters_per_line = 16.000000223518
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7e67s"]
+size = Vector3(0.57403904, 0.1652763, 0.6822351)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wsgsd"]
 render_priority = 0
@@ -1158,6 +1180,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_4y17l"]
+size = Vector3(0.11721774, 0.08794482, 0.13035217)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pfvgk"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1197,6 +1222,9 @@ shader_parameter/uv_characters_per_line = 11.000000149012
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xtb4u"]
+size = Vector3(0.20031628, 0.08794482, 0.20256099)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oculd"]
 render_priority = 0
@@ -1238,6 +1266,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_2bv2k"]
+size = Vector3(0.07483593, 0.19915426, 0.08714854)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qxbha"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1261,6 +1292,9 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_hvw63"]
 radius = 1.5
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_cegsb"]
+size = Vector3(0.07483593, 0.19915426, 0.08714854)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_sdg87"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1280,6 +1314,9 @@ shader_parameter/uv_characters_per_line = 19.0000002682216
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hf5d8"]
+size = Vector3(0.3823788, 0.30048192, 0.49447426)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tfcne"]
 render_priority = 0
@@ -1689,6 +1726,9 @@ points = PackedVector3Array(0.26365054, 0.6808371, 0.35090038, -0.039087266, 0.7
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gnm7j"]
 points = PackedVector3Array(-0.08992405, 1.8792351, 0.21068783, -0.08992405, 1.7890314, 0.21068783, -0.08992405, 1.8792351, -0.21068819, -0.2292229, 1.8792351, 0.21068783, -0.2292229, 1.7890314, 0.21068783, -0.08992405, 1.7890314, -0.21068819, -0.2292229, 1.8792351, -0.21068819, -0.2292229, 1.7890314, -0.21068819)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_030sl"]
+size = Vector3(0.5161294, 0.7552473, 0.71157444)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_hvw63"]
 render_priority = 0
@@ -3002,6 +3042,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Fridge" unique_id=1313115818]
 shape = SubResource("ConvexPolygonShape3D_qm0fk")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/Fridge" unique_id=519349296 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0.71254945, 0)
+stream = ExtResource("32_ewhqw")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/Fridge/Signal Player" unique_id=480514559]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Fridge/Signal Player/Area3D" unique_id=2031564595]
+transform = Transform3D(1.0000035, 0, -6.109476e-07, 0, 1, 0, 6.109476e-07, 0, 1.0000035, 6.759167e-05, 0.19406629, 0.04550743)
+shape = SubResource("BoxShape3D_o4lce")
+
 [node name="Freezer" parent="Kitchen" unique_id=1541145262 instance=ExtResource("11_3f1wm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2438784, 0, -1.6581892)
 
@@ -3016,6 +3075,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Freezer" unique_id=615995513]
 shape = SubResource("ConvexPolygonShape3D_qm0fk")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/Freezer" unique_id=795266529 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0.71254945, 0)
+stream = ExtResource("33_dha8w")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/Freezer/Signal Player" unique_id=1757536662]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/Freezer/Signal Player/Area3D" unique_id=1752411065]
+transform = Transform3D(1.0000035, 0, -6.109476e-07, 0, 1, 0, 6.109476e-07, 0, 1.0000035, 6.759167e-05, 0.19406629, 0.04550743)
+shape = SubResource("BoxShape3D_o4lce")
 
 [node name="kitchen_cupboards" parent="Kitchen" unique_id=919149903 instance=ExtResource("12_k36cs")]
 transform = Transform3D(5.9604645e-08, 0, 1, 0, 1, 0, -1, 0, 5.9604645e-08, -1.3842838, -4.7683716e-07, 1.5589943)
@@ -3037,6 +3115,44 @@ override_mat_idx = 1
 text = "COUNTERTOP"
 metadata/_custom_type_script = "uid://4q753223m055"
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards" index="2" unique_id=1386519262 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0.09313631, 0.31478733, 0.04430282)
+stream = ExtResource("33_tspi8")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" parent="Kitchen/kitchen_cupboards/Lower Cupboards/Signal Player" index="1"]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards/Signal Player/Area3D2" index="0"]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.083313465, 0.12931299, -0.08866441)
+shape = SubResource("BoxShape3D_43kuu")
+
+[node name="Signal Player2" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards" index="3" unique_id=861866132 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0.09313631, 0.9088876, 0.04430282)
+stream = ExtResource("34_1bcnc")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D3")
+
+[node name="Area3D3" type="Area3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards/Signal Player2" unique_id=1694248489]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards/Signal Player2/Area3D3" unique_id=363934566]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.083313465, 0.031134248, -0.08866441)
+shape = SubResource("BoxShape3D_v2lqs")
+
 [node name="Sink" parent="Kitchen/kitchen_cupboards" index="1" unique_id=2134639018]
 surface_material_override/0 = SubResource("ShaderMaterial_dh07s")
 
@@ -3046,8 +3162,46 @@ mesh = NodePath("..")
 text = "SINK"
 metadata/_custom_type_script = "uid://4q753223m055"
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Sink" index="1" unique_id=372693734 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, -0.119710445, 0.86461127, 0.77729416)
+stream = ExtResource("33_6xypi")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" parent="Kitchen/kitchen_cupboards/Sink/Signal Player" index="1"]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" parent="Kitchen/kitchen_cupboards/Sink/Signal Player/Area3D2" index="0"]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, 0.15733194, 0.017056227, -0.031145096)
+shape = SubResource("BoxShape3D_7e67s")
+
 [node name="Upper" parent="Kitchen/kitchen_cupboards" index="2" unique_id=70712342]
 surface_material_override/0 = SubResource("ShaderMaterial_wsgsd")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Upper" index="0" unique_id=947160283 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0.09313631, 1.8736582, 0.04430282)
+stream = ExtResource("33_tspi8")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D3")
+
+[node name="Area3D3" type="Area3D" parent="Kitchen/kitchen_cupboards/Upper/Signal Player" unique_id=137748508]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_cupboards/Upper/Signal Player/Area3D3" unique_id=1574861051]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.083313465, 0.12931299, -0.08866441)
+shape = SubResource("BoxShape3D_43kuu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_cupboards" unique_id=1432763282]
 shape = SubResource("ConvexPolygonShape3D_3g6b8")
@@ -3074,6 +3228,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/chair" unique_id=2112917003]
 shape = SubResource("ConvexPolygonShape3D_gbuy4")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/chair" unique_id=1362304532 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0.71254945, 0)
+stream = ExtResource("14_qsdo8")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/chair/Signal Player" unique_id=322390279]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/chair/Signal Player/Area3D" unique_id=1849383898]
+transform = Transform3D(1.0000035, 0, -6.109476e-07, 0, 1, 0, 6.109476e-07, 0, 1.0000035, -0.0467968, -0.016035438, 0.10532665)
+shape = SubResource("BoxShape3D_00pg1")
+
 [node name="chair2" parent="Kitchen" unique_id=715260640 instance=ExtResource("10_eqpja")]
 transform = Transform3D(-0.9970968, 0, 0.07614477, 0, 1, 0, -0.07614477, 0, -0.9970968, 1.3144612, -1.1920929e-07, -0.05510378)
 
@@ -3088,6 +3261,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/chair2" unique_id=1236452011]
 shape = SubResource("ConvexPolygonShape3D_gbuy4")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/chair2" unique_id=87708478 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0.71254945, 0)
+stream = ExtResource("14_qsdo8")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/chair2/Signal Player" unique_id=1698023498]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/chair2/Signal Player/Area3D" unique_id=1545672437]
+transform = Transform3D(1.0000035, 0, -6.109476e-07, 0, 1, 0, 6.109476e-07, 0, 1.0000035, -0.0467968, -0.016035438, 0.10532665)
+shape = SubResource("BoxShape3D_00pg1")
 
 [node name="kitchen_table" parent="Kitchen" unique_id=427097996 instance=ExtResource("13_ctgk5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1748371, 1.1920929e-07, 0.6827159)
@@ -3115,6 +3307,25 @@ surface_material_override/0 = SubResource("ShaderMaterial_25koi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_small_bench" unique_id=1862276548]
 shape = SubResource("ConvexPolygonShape3D_s2x3b")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_small_bench" unique_id=53902802 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10723615, 0.6344207, 0)
+stream = ExtResource("33_tspi8")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/kitchen_small_bench/Signal Player" unique_id=713202206]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_small_bench/Signal Player/Area3D" unique_id=523541194]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.114266634, -0.08860618, 0.031597853)
+shape = SubResource("BoxShape3D_oculd")
 
 [node name="kitchen_small_bench2" parent="Kitchen" unique_id=1138905455 instance=ExtResource("13_k2cr2")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.31575012, 2.3841858e-07, -1.7578297)
@@ -3210,11 +3421,49 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="Apple_001" parent="Kitchen/fruitbowl" index="2" unique_id=923682788]
 surface_material_override/0 = SubResource("ShaderMaterial_if3nq")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/fruitbowl/Apple_001" index="0" unique_id=30363550 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10723615, 0.6344207, 0)
+stream = ExtResource("42_6tfwr")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" parent="Kitchen/fruitbowl/Apple_001/Signal Player" index="0"]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" parent="Kitchen/fruitbowl/Apple_001/Signal Player/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10448527, -0.6386241, -0.007012844)
+shape = SubResource("BoxShape3D_4y17l")
+
 [node name="Apple_002" parent="Kitchen/fruitbowl" index="3" unique_id=519505411]
 surface_material_override/0 = SubResource("ShaderMaterial_pfvgk")
 
 [node name="Apple_003" parent="Kitchen/fruitbowl" index="4" unique_id=1266123482]
 surface_material_override/0 = SubResource("ShaderMaterial_y0q2p")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/fruitbowl" unique_id=1731241447 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10723615, 0.6344207, 0)
+stream = ExtResource("42_dha8w")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/fruitbowl/Signal Player" unique_id=1850344286]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/fruitbowl/Signal Player/Area3D" unique_id=422319183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.10889506, -0.6386241, -0.00041151047)
+shape = SubResource("BoxShape3D_xtb4u")
 
 [node name="vase" parent="Kitchen" unique_id=648736261 instance=ExtResource("20_gnm7j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.7576303, 1.1409118, 0.6401205)
@@ -3277,6 +3526,25 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="Cylinder_001" parent="Kitchen/coffemug" index="1" unique_id=1725403774]
 surface_material_override/0 = SubResource("ShaderMaterial_by15u")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/coffemug" unique_id=2088199725 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(0.99999994, 5.5879354e-09, 1.8626451e-08, 0, 0.9999999, 1.6763806e-08, 0, 1.8626451e-09, 0.9999998, 0.09313631, 0.0069174767, 0.00550282)
+stream = ExtResource("38_cv5i2")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/coffemug/Signal Player" unique_id=227082715]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/coffemug/Signal Player/Area3D2" unique_id=1005609716]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.09226942, -0.01016891, 0.00018978119)
+shape = SubResource("BoxShape3D_2bv2k")
+
 [node name="coffemug2" parent="Kitchen" unique_id=1158781533 instance=ExtResource("21_q8iv1")]
 transform = Transform3D(-0.8279526, 0, -0.560798, 0, 1, 0, 0.560798, 0, -0.8279526, 1.2894483, 1.0459118, 0.4783697)
 
@@ -3285,6 +3553,25 @@ surface_material_override/0 = SubResource("ShaderMaterial_oculd")
 
 [node name="Cylinder_001" parent="Kitchen/coffemug2" index="1" unique_id=1725403774]
 surface_material_override/0 = SubResource("ShaderMaterial_by15u")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/coffemug2" unique_id=940366327 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(0.99999994, 5.5879354e-09, 1.8626451e-08, 0, 0.9999999, 1.6763806e-08, 0, 1.8626451e-09, 0.9999998, 0.09313631, 0.0069174767, 0.00550282)
+stream = ExtResource("38_cv5i2")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/coffemug2/Signal Player" unique_id=1515955520]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/coffemug2/Signal Player/Area3D2" unique_id=1810871706]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.09226942, -0.01016891, 0.00018978119)
+shape = SubResource("BoxShape3D_2bv2k")
 
 [node name="coffemug3" parent="Kitchen" unique_id=835035623 instance=ExtResource("21_q8iv1")]
 transform = Transform3D(-0.8279526, 0, -0.560798, 0, 1, 0, 0.560798, 0, -0.8279526, -1.0470684, 1.0166765, 1.6012487)
@@ -3295,14 +3582,52 @@ surface_material_override/0 = SubResource("ShaderMaterial_oculd")
 [node name="Cylinder_001" parent="Kitchen/coffemug3" index="1" unique_id=1725403774]
 surface_material_override/0 = SubResource("ShaderMaterial_by15u")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/coffemug3" unique_id=411416480 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(0.99999994, 5.5879354e-09, 1.8626451e-08, 0, 0.9999999, 1.6763806e-08, 0, 1.8626451e-09, 0.9999998, 0.09313631, 0.0069174767, 0.00550282)
+stream = ExtResource("38_cv5i2")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/coffemug3/Signal Player" unique_id=251212943]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/coffemug3/Signal Player/Area3D2" unique_id=1069140846]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.09226942, -0.01016891, 0.00018978119)
+shape = SubResource("BoxShape3D_2bv2k")
+
 [node name="coffemug4" parent="Kitchen" unique_id=179459421 instance=ExtResource("21_q8iv1")]
-transform = Transform3D(-0.8279526, 0, -0.560798, 0, 1, 0, 0.560798, 0, -0.8279526, -1.0470684, 1.0166765, 1.6012487)
+transform = Transform3D(-0.8279526, 0, -0.560798, 0, 1, 0, 0.560798, 0, -0.8279526, -1.0470684, 1.1512944, 1.6012487)
 
 [node name="Cylinder" parent="Kitchen/coffemug4" index="0" unique_id=1355868046]
 surface_material_override/0 = SubResource("ShaderMaterial_oculd")
 
 [node name="Cylinder_001" parent="Kitchen/coffemug4" index="1" unique_id=1725403774]
 surface_material_override/0 = SubResource("ShaderMaterial_by15u")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/coffemug4" unique_id=404668225 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(0.99999994, 5.5879354e-09, 1.8626451e-08, 0, 0.9999999, 1.6763806e-08, 0, 1.8626451e-09, 0.9999998, 0.09313631, 0.0069174767, 0.00550282)
+stream = ExtResource("38_cv5i2")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/coffemug4/Signal Player" unique_id=1180959207]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/coffemug4/Signal Player/Area3D2" unique_id=1831168548]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.09226942, -0.01016891, 0.00018978119)
+shape = SubResource("BoxShape3D_2bv2k")
 
 [node name="coffemug5" parent="Kitchen" unique_id=491915238 instance=ExtResource("21_q8iv1")]
 transform = Transform3D(0.17241058, 0, -0.9850251, 0, 1, 0, 0.9850251, 0, 0.17241058, -1.0470684, 1.0809581, 1.6012487)
@@ -3313,13 +3638,33 @@ surface_material_override/0 = SubResource("ShaderMaterial_oculd")
 [node name="Cylinder_001" parent="Kitchen/coffemug5" index="1" unique_id=1725403774]
 surface_material_override/0 = SubResource("ShaderMaterial_by15u")
 
-[node name="banana" parent="Kitchen" unique_id=755217060 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("22_hvw63")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/coffemug5" unique_id=1494314910 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(0.99999994, 5.5879354e-09, 1.8626451e-08, 0, 0.9999999, 1.6763806e-08, 0, 1.8626451e-09, 0.9999998, 0.09313631, 0.0069174767, 0.00550282)
+stream = ExtResource("38_cv5i2")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/coffemug5/Signal Player" unique_id=851438599]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/coffemug5/Signal Player/Area3D2" unique_id=201972393]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.09226942, -0.01016891, 0.00018978119)
+shape = SubResource("BoxShape3D_2bv2k")
+
+[node name="banana" parent="Kitchen" unique_id=755217060 node_paths=PackedStringArray("_require_room", "_text_write_helper", "_whisperer") instance=ExtResource("22_hvw63")]
 transform = Transform3D(3.1149348e-08, 0.71261406, -0.7015563, 1, -4.371139e-08, 0, -3.0666e-08, -0.7015563, -0.71261406, 1.1525269, 1.0099673, 0.67369175)
 script = ExtResource("8_incia")
 _require_room = NodePath("..")
 _text_write_helper = NodePath("Banana/TextWriterHelper")
 _near_threshold = 0.9
 _spellings = Array[String](["SIGNAL?", "SAGNAL?", "SAGNALA", "SANALA", "SANANA", "BANANA"])
+_whisperer = NodePath("Signal Player")
 
 [node name="Banana" parent="Kitchen/banana" index="0" unique_id=336904905]
 transform = Transform3D(1, -8.7414676e-08, 8.4143714e-10, -8.7414676e-08, -0.9998145, 0.019249767, -8.414318e-10, -0.019249767, -0.9998145, 0, -0.06838274, 0.23409033)
@@ -3341,6 +3686,26 @@ input_ray_pickable = false
 transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.37298226, 0)
 shape = SubResource("CylinderShape3D_hvw63")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/banana" unique_id=1363470215 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.10723615, 0.6344207, 0)
+stream = ExtResource("10_wn8e3")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D2")
+replacement_whisper = ExtResource("47_4yv4g")
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/banana/Signal Player" unique_id=1863231708]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/banana/Signal Player/Area3D2" unique_id=1553120357]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 5.684342e-14, 0.99999994, 5.364418e-07, -1.7881393e-07, 5.9604645e-08, 1.0000013, 0.10844374, -0.68934774, 0.21511841)
+shape = SubResource("BoxShape3D_cegsb")
+
 [node name="microwave" parent="Kitchen" unique_id=1994298296 instance=ExtResource("23_6u0eq")]
 transform = Transform3D(0.20393215, 0, 0.9789851, 0, 1, 0, -0.9789851, 0, 0.20393215, -2.1498985, 1.1083943, 1.6107674)
 
@@ -3352,6 +3717,25 @@ script = ExtResource("2_vj7uu")
 mesh = NodePath("..")
 text = "MICROWAVE"
 metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/microwave" unique_id=821229074 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(0.99999994, 5.5879354e-09, 1.8626451e-08, 0, 0.9999999, 1.6763806e-08, 0, 1.8626451e-09, 0.9999998, 0.09313631, 0.0069174767, 0.00550282)
+stream = ExtResource("40_7eic1")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D2")
+
+[node name="Area3D2" type="Area3D" parent="Kitchen/microwave/Signal Player" unique_id=166276821]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/microwave/Signal Player/Area3D2" unique_id=1401277661]
+transform = Transform3D(0.99999946, -7.450579e-09, -1.3411045e-07, 1.0241807e-14, 0.9999999, 4.9266964e-07, 0, 9.103678e-08, 1.0000013, -0.10208464, 0.005082965, -8.869171e-05)
+shape = SubResource("BoxShape3D_hf5d8")
 
 [node name="magazine4" parent="Kitchen" unique_id=1562009490 instance=ExtResource("22_hpw2l")]
 transform = Transform3D(-0.5187286, 0, -0.85493904, 0, 1, 0, 0.85493904, 0, -0.5187286, -0.052756786, 1.0070643, -1.7802377)
@@ -4142,6 +4526,25 @@ shape = SubResource("ConvexPolygonShape3D_25koi")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=570630608]
 shape = SubResource("ConvexPolygonShape3D_gnm7j")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/bathroomfaucet" unique_id=787406454 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0.029675841, 0.86461127, -0.02346015)
+stream = ExtResource("33_6xypi")
+max_distance = 3.0
+bus = &"Wispers"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D3")
+
+[node name="Area3D3" type="Area3D" parent="Bathroom/bathroomfaucet/Signal Player" unique_id=1330454545]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/bathroomfaucet/Signal Player/Area3D3" unique_id=723296099]
+transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.019555926, -0.32626563, 0.009212494)
+shape = SubResource("BoxShape3D_030sl")
+
 [node name="shower" parent="Bathroom" unique_id=1363028735 instance=ExtResource("21_hgy1n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051290154, 0, 0.30148602)
 
@@ -4556,13 +4959,14 @@ monitorable = false
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0019133091, -0.0063756704, 0.049665213)
 shape = SubResource("BoxShape3D_dha8w")
 
-[node name="umbrella" parent="Hallway" unique_id=103978942 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("42_wefy1")]
+[node name="umbrella" parent="Hallway" unique_id=103978942 node_paths=PackedStringArray("_require_room", "_text_write_helper", "_whisperer") instance=ExtResource("42_wefy1")]
 transform = Transform3D(0.91306573, 0.18437171, -0.36375526, -0.19793107, 0.9802159, 0, 0.35655874, 0.07199848, 0.93149453, 0.8344456, 0.49428183, 1.7800694)
 script = ExtResource("8_incia")
 _require_room = NodePath("..")
 _text_write_helper = NodePath("Ubrella/TextWriterHelper")
 _near_threshold = 0.5
 _spellings = Array[String](["SIGNAL?", "SIGNALL", "SIBNALL", "SIBNELLA", "UIBNELLA", "UMBNELLA", "UMBRELLA", "UMBRELLA"])
+_whisperer = NodePath("Signal Player")
 
 [node name="Ubrella" parent="Hallway/umbrella" index="0" unique_id=1054375483]
 transform = Transform3D(-0.9999822, 0.0059978105, -0.000680089, 0.0058887955, 0.9940935, 0.108367465, 0.0013261139, 0.10836168, -0.99411035, 0.022859573, -0.0072944164, 0.07427311)
