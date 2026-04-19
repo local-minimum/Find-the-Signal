@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cox1irkpmo6q7" path="res://visual/models/painting_square.blend" id="6_6lvam"]
 [ext_resource type="PackedScene" uid="uid://dq6ocicp0knuq" path="res://visual/models/bed.blend" id="6_fd646"]
 [ext_resource type="Script" uid="uid://dhy1gnfvgcswo" path="res://levels/room.gd" id="6_ndm35"]
+[ext_resource type="AudioStream" uid="uid://dxibj1q71epwh" path="res://audio/door.mp3" id="7_qxbha"]
 [ext_resource type="Script" uid="uid://c0gejjh666mhh" path="res://visual/models/signal_checkpoint.gd" id="8_incia"]
 [ext_resource type="PackedScene" uid="uid://mwly1mgrl5mm" path="res://visual/models/desk.blend" id="9_2vecc"]
 [ext_resource type="Script" uid="uid://yw8ehpxriakk" path="res://levels/wisper_player.gd" id="10_bpw3g"]
@@ -412,6 +413,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_sdg87"]
+size = Vector3(1.1201905, 1.9955428, 0.11166229)
+
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sikar"]
 data = PackedVector3Array(0.5527, 0, 0.099999994, 0.5527, 2.3999999, -0.099999994, 0.5527, 2.3999999, 0.099999994, 0.5527, 0, 0.099999994, 0.5527, 0, -0.099999994, 0.5527, 2.3999999, -0.099999994, 0.5527, 0, -0.099999994, 0.7527, 2.3999999, -0.099999994, 0.5527, 2.3999999, -0.099999994, 0.5527, 0, -0.099999994, 0.7527, 0, -0.099999994, 0.7527, 2.3999999, -0.099999994, 0.7527, 0, -0.099999994, 0.7527, 2.3999999, 0.099999994, 0.7527, 2.3999999, -0.099999994, 0.7527, 0, -0.099999994, 0.7527, 0, 0.099999994, 0.7527, 2.3999999, 0.099999994, 0.7527, 0, 0.099999994, 0.5527, 2.3999999, 0.099999994, 0.7527, 2.3999999, 0.099999994, 0.7527, 0, 0.099999994, 0.5527, 0, 0.099999994, 0.5527, 2.3999999, 0.099999994, -0.5527, 0, 0.099999994, -0.5527, 2.3999999, -0.099999994, -0.5527, 0, -0.099999994, -0.5527, 0, 0.099999994, -0.5527, 2.3999999, 0.099999994, -0.5527, 2.3999999, -0.099999994, -0.5527, 0, -0.099999994, -0.7527, 2.3999999, -0.099999994, -0.7527, 0, -0.099999994, -0.5527, 0, -0.099999994, -0.5527, 2.3999999, -0.099999994, -0.7527, 2.3999999, -0.099999994, -0.7527, 0, -0.099999994, -0.7527, 2.3999999, 0.099999994, -0.7527, 0, 0.099999994, -0.7527, 0, -0.099999994, -0.7527, 2.3999999, -0.099999994, -0.7527, 2.3999999, 0.099999994, -0.7527, 0, 0.099999994, -0.5527, 2.3999999, 0.099999994, -0.5527, 0, 0.099999994, -0.7527, 0, 0.099999994, -0.7527, 2.3999999, 0.099999994, -0.5527, 2.3999999, 0.099999994)
 
@@ -468,7 +472,7 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 radius = 2.8923728
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_bpw3g"]
-size = Vector3(0.25727624, 0.3788994, 0.3107788)
+size = Vector3(0.23353884, 1.9955428, 0.11166229)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8yue1"]
 size = Vector3(3.3940659, 2.3760376, 4.86689)
@@ -859,6 +863,9 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_6u0eq"]
 points = PackedVector3Array(-0.1, -0.2, -1.9580126e-05, -0.092404075, -0.2, -0.0382733, -0.092404075, -0.2, 0.038253717, -0.1, 0.022802174, -1.9580126e-05, -0.07071261, -0.2, -0.07071261, -0.092404075, 0.022802174, -0.0382733, -0.07071261, -0.2, 0.07069302, -0.092404075, 0.022802174, 0.038253717, -0.053876273, 0.17321472, -1.9580126e-05, -0.0382733, -0.2, -0.092404075, -0.07071261, 0.022802174, -0.07071261, -0.049765076, 0.17321472, -0.020614728, -0.038097106, 0.17321472, -0.038097106, -0.0382733, -0.2, 0.092384495, -0.07071261, 0.022802174, 0.07069302, -0.038097106, 0.17321472, 0.038077526, -0.049765076, 0.17321472, 0.02059514, -0.03236101, 0.18624409, 0.013390757, -0.035023496, 0.18624409, -1.9580126e-05, -0.03236101, 0.18624409, -0.013410337, -1.9580126e-05, -0.2, -0.1, -0.0382733, 0.022802174, -0.092404075, -0.024765074, 0.18624409, -0.024765074, -0.013410337, 0.18624409, -0.03236101, -0.020614728, 0.17321472, -0.049765076, -1.9580126e-05, -0.2, 0.1, -0.0382733, 0.022802174, 0.092384495, -0.020614728, 0.17321472, 0.049745493, -0.013410337, 0.18624409, 0.032341428, -0.024765074, 0.18624409, 0.024745494, -0.012901336, 0.19145583, 0.012881748, -0.016855918, 0.19145583, 0.0069694594, -0.01824589, 0.19145583, -1.9580126e-05, -0.016855918, 0.19145583, -0.0069890395, -0.012901336, 0.19145583, -0.012901336, 0.038253717, -0.2, -0.092404075, -1.9580126e-05, 0.022802174, -0.1, -1.9580126e-05, 0.17321472, -0.053876273, -0.0069890395, 0.19145583, -0.016855918, -1.9580126e-05, 0.19145583, -0.01824589, -1.9580126e-05, 0.18624409, -0.035023496, 0.038253717, -0.2, 0.092384495, -1.9580126e-05, 0.022802174, 0.1, -1.9580126e-05, 0.17321472, 0.053837113, -1.9580126e-05, 0.18624409, 0.035003908, -0.0069890395, 0.19145583, 0.01683633, 0.07069302, -0.2, -0.07071261, 0.038253717, 0.022802174, -0.092404075, 0.013390757, 0.18624409, -0.03236101, 0.02059514, 0.17321472, -0.049765076, 0.0069694594, 0.19145583, -0.016855918, 0.07069302, -0.2, 0.07069302, 0.038253717, 0.022802174, 0.092384495, 0.02059514, 0.17321472, 0.049745493, 0.013390757, 0.18624409, 0.032341428, 0.0069694594, 0.19145583, 0.01683633, -1.9580126e-05, 0.19145583, 0.01820673, 0.092384495, -0.2, -0.0382733, 0.07069302, 0.022802174, -0.07071261, 0.038077526, 0.17321472, -0.038097106, 0.012881748, 0.19145583, -0.012901336, 0.024745494, 0.18624409, -0.024765074, 0.092384495, -0.2, 0.038253717, 0.07069302, 0.022802174, 0.07069302, 0.038077526, 0.17321472, 0.038077526, 0.024745494, 0.18624409, 0.024745494, 0.012881748, 0.19145583, 0.012881748, 0.1, -0.2, -1.9580126e-05, 0.092384495, 0.022802174, -0.0382733, 0.049745493, 0.17321472, -0.020614728, 0.032341428, 0.18624409, -0.013410337, 0.01683633, 0.19145583, -0.0069890395, 0.092384495, 0.022802174, 0.038253717, 0.049745493, 0.17321472, 0.02059514, 0.032341428, 0.18624409, 0.013390757, 0.01683633, 0.19145583, 0.0069694594, 0.1, 0.022802174, -1.9580126e-05, 0.053837113, 0.17321472, -1.9580126e-05, 0.035003908, 0.18624409, -1.9580126e-05, 0.01820673, 0.19145583, -1.9580126e-05)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_mmmw5"]
+size = Vector3(0.23353884, 0.38716868, 0.17301865)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_incia"]
 size = Vector3(4.607239, 2.3760376, 3.991211)
 
@@ -1075,6 +1082,12 @@ shadow_mesh = SubResource("ArrayMesh_dwtab")
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_hvw63"]
 points = PackedVector3Array(0.08685865, 0.7274065, 0.33377737, -0.086876966, 0.7274065, 0.33377737, 0.08685865, 0.015516788, 0.33377737, 0.089442976, 0.7274065, 0.3333199, -0.08946128, 0.7274065, 0.3333199, -0.086876966, 0.015516788, 0.33377737, 0.089442976, 0.015516788, 0.3333199, 0.09162406, 0.7274065, 0.33181667, -0.091642365, 0.7274065, 0.33181667, -0.08946128, 0.015516788, 0.3333199, 0.09162406, 0.015516788, 0.33181667, 0.09309033, 0.7274065, 0.32965988, -0.09310865, 0.7274065, 0.32965988, -0.091642365, 0.015516788, 0.33181667, 0.09309033, 0.015516788, 0.32965988, 0.09360353, 0.7274065, 0.32704562, -0.09362184, 0.7274065, 0.32704562, -0.09310865, 0.015516788, 0.32965988, 0.09360353, 0.015516788, 0.32704562, 0.09360353, 0.7274065, -0.32711095, -0.09362184, 0.7274065, -0.32711095, -0.09362184, 0.015516788, 0.32704562, 0.09360353, 0.015516788, -0.32711095, 0.09309033, 0.7274065, -0.3297252, -0.09310865, 0.7274065, -0.3297252, -0.09362184, 0.015516788, -0.32711095, 0.09309033, 0.015516788, -0.3297252, 0.09162406, 0.7274065, -0.331882, -0.091642365, 0.7274065, -0.331882, -0.09310865, 0.015516788, -0.3297252, 0.09162406, 0.015516788, -0.331882, 0.089442976, 0.7274065, -0.3333852, -0.08946128, 0.7274065, -0.3333852, -0.091642365, 0.015516788, -0.331882, 0.089442976, 0.015516788, -0.3333852, 0.08685865, 0.7274065, -0.3338427, -0.086876966, 0.7274065, -0.3338427, -0.08946128, 0.015516788, -0.3333852, 0.08685865, 0.015516788, -0.3338427, -0.086876966, 0.015516788, -0.3338427)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_o44a7"]
+size = Vector3(0.23353884, 0.07872576, 0.69584256)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hfraf"]
+size = Vector3(1.081456, 0.11217303, 0.36995497)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wn8e3"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1281,6 +1294,9 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="BoxShape3D" id="BoxShape3D_2vecc"]
 size = Vector3(4.619995, 2.3760376, 5.9882813)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_eh8ux"]
+size = Vector3(1.8927917, 2.3760376, 1.5966797)
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_5i0b8"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1375,6 +1391,9 @@ points = PackedVector3Array(0.36620748, 0.52086675, 0.70996785, -0.36620748, 0.5
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_wd13f"]
 points = PackedVector3Array(-0.38330373, -0.14535545, -7.504225e-05, -0.37594983, -0.14535545, 0.074739724, -0.38330373, -0.11918071, -7.504225e-05, -0.37594983, -0.14535545, -0.07481477, -0.36589447, -0.17005417, -0.072788686, -0.37302327, -0.17005417, -7.504225e-05, -0.36589447, -0.17005417, 0.07271364, -0.35418826, -0.14535545, 0.14662793, -0.37594983, -0.11918071, 0.074739724, -0.37594983, -0.11918071, -0.07481477, -0.0438233, 0.82488114, 0.00862959, -0.044648737, 0.82488114, -7.504225e-05, -0.0438233, 0.82488114, -0.008779675, -0.35418826, -0.14535545, -0.14670298, -0.3446582, -0.17005417, -0.14280091, -0.32169598, -0.1802879, -0.13327083, -0.34143147, -0.1802879, -0.06798613, -0.34818506, -0.1802879, -7.504225e-05, -0.3446582, -0.17005417, 0.14272586, -0.34143147, -0.1802879, 0.067836046, -0.32169598, -0.1802879, 0.13319579, -0.31876943, -0.14535545, 0.21288815, -0.35418826, -0.11918071, 0.14662793, -0.35418826, -0.11918071, -0.14670298, -0.041271955, 0.82488114, 0.017034054, -0.041271955, 0.82488114, -0.017109096, -0.31876943, -0.14535545, -0.2129632, -0.31013983, -0.17005417, -0.20726016, -0.28950387, -0.1802879, -0.19345282, -0.31013983, -0.17005417, 0.20718512, -0.28950387, -0.1802879, 0.19337776, -0.26376522, -0.17005417, 0.26369014, -0.27104408, -0.14535545, 0.270969, -0.31876943, -0.11918071, 0.21288815, -0.03714475, 0.82488114, 0.024763167, -0.31876943, -0.11918071, -0.2129632, -0.03714475, 0.82488114, -0.02483821, -0.27104408, -0.14535545, -0.27104408, -0.26376522, -0.17005417, -0.26376522, -0.24620587, -0.1802879, -0.24620587, -0.24620587, -0.1802879, 0.2461308, -0.20726016, -0.17005417, 0.31006476, -0.2129632, -0.14535545, 0.31869438, -0.19345282, -0.1802879, 0.2894288, -0.27104408, -0.11918071, 0.270969, -0.031591803, 0.82488114, 0.03151673, -0.27104408, -0.11918071, -0.27104408, -0.031591803, 0.82488114, -0.031591803, -0.2129632, -0.14535545, -0.31876943, -0.20726016, -0.17005417, -0.31013983, -0.19345282, -0.1802879, -0.28950387, -0.14280091, -0.17005417, 0.34458312, -0.14670298, -0.14535545, 0.3541132, -0.2129632, -0.11918071, 0.31869438, -0.13327083, -0.1802879, 0.32154587, -0.02483821, 0.82488114, 0.037069708, -0.2129632, -0.11918071, -0.31876943, -0.02483821, 0.82488114, -0.03714475, -0.14670298, -0.14535545, -0.35418826, -0.14280091, -0.17005417, -0.3446582, -0.13327083, -0.1802879, -0.32169598, -0.06798613, -0.1802879, 0.34135643, -0.072788686, -0.17005417, 0.36581942, -0.07481477, -0.14535545, 0.3758748, -0.14670298, -0.11918071, 0.3541132, -0.017109096, 0.82488114, 0.041196883, -0.14670298, -0.11918071, -0.35418826, -0.017109096, 0.82488114, -0.041271955, -0.07481477, -0.14535545, -0.37594983, -0.072788686, -0.17005417, -0.36589447, -0.06798613, -0.1802879, -0.34143147, -7.504225e-05, -0.1802879, 0.34803495, -7.504225e-05, -0.17005417, 0.3729482, -7.504225e-05, -0.14535545, 0.38330373, -0.07481477, -0.11918071, 0.3758748, -0.008779675, 0.82488114, 0.04374823, -0.07481477, -0.11918071, -0.37594983, -0.008779675, 0.82488114, -0.0438233, -7.504225e-05, -0.14535545, -0.38330373, -7.504225e-05, -0.17005417, -0.37302327, -7.504225e-05, -0.1802879, -0.34818506, 0.067836046, -0.1802879, 0.34135643, 0.07271364, -0.17005417, 0.36581942, 0.074739724, -0.14535545, 0.3758748, -7.504225e-05, -0.11918071, 0.38330373, -7.504225e-05, 0.82488114, 0.044573694, -7.504225e-05, -0.11918071, -0.38330373, -7.504225e-05, 0.82488114, -0.044648737, 0.074739724, -0.14535545, -0.37594983, 0.07271364, -0.17005417, -0.36589447, 0.067836046, -0.1802879, -0.34143147, 0.13319579, -0.1802879, 0.32154587, 0.14272586, -0.17005417, 0.34458312, 0.14662793, -0.14535545, 0.3541132, 0.074739724, -0.11918071, 0.3758748, 0.00862959, 0.82488114, 0.04374823, 0.074739724, -0.11918071, -0.37594983, 0.00862959, 0.82488114, -0.0438233, 0.14662793, -0.14535545, -0.35418826, 0.14272586, -0.17005417, -0.3446582, 0.13319579, -0.1802879, -0.32169598, 0.19337776, -0.1802879, 0.2894288, 0.20718512, -0.17005417, 0.31006476, 0.21288815, -0.14535545, 0.31869438, 0.14662793, -0.11918071, 0.3541132, 0.017034054, 0.82488114, 0.041196883, 0.14662793, -0.11918071, -0.35418826, 0.017034054, 0.82488114, -0.041271955, 0.21288815, -0.14535545, -0.31876943, 0.20718512, -0.17005417, -0.31013983, 0.19337776, -0.1802879, -0.28950387, 0.2461308, -0.1802879, 0.2461308, 0.26369014, -0.17005417, 0.26369014, 0.270969, -0.14535545, 0.270969, 0.21288815, -0.11918071, 0.31869438, 0.024763167, 0.82488114, 0.037069708, 0.21288815, -0.11918071, -0.31876943, 0.024763167, 0.82488114, -0.03714475, 0.270969, -0.14535545, -0.27104408, 0.26369014, -0.17005417, -0.26376522, 0.2461308, -0.1802879, -0.24620587, 0.2894288, -0.1802879, 0.19337776, 0.31006476, -0.17005417, 0.20718512, 0.31869438, -0.14535545, 0.21288815, 0.270969, -0.11918071, 0.270969, 0.03151673, 0.82488114, 0.03151673, 0.270969, -0.11918071, -0.27104408, 0.03151673, 0.82488114, -0.031591803, 0.31869438, -0.14535545, -0.2129632, 0.31006476, -0.17005417, -0.20726016, 0.2894288, -0.1802879, -0.19345282, 0.32154587, -0.1802879, 0.13319579, 0.34458312, -0.17005417, 0.14272586, 0.3541132, -0.14535545, 0.14662793, 0.31869438, -0.11918071, 0.21288815, 0.037069708, 0.82488114, 0.024763167, 0.31869438, -0.11918071, -0.2129632, 0.037069708, 0.82488114, -0.02483821, 0.3541132, -0.14535545, -0.14670298, 0.34458312, -0.17005417, -0.14280091, 0.32154587, -0.1802879, -0.13327083, 0.34135643, -0.1802879, 0.067836046, 0.36581942, -0.17005417, 0.07271364, 0.3758748, -0.14535545, 0.074739724, 0.3541132, -0.11918071, 0.14662793, 0.041196883, 0.82488114, 0.017034054, 0.3541132, -0.11918071, -0.14670298, 0.041196883, 0.82488114, -0.017109096, 0.3758748, -0.14535545, -0.07481477, 0.36581942, -0.17005417, -0.072788686, 0.34135643, -0.1802879, -0.06798613, 0.34803495, -0.1802879, -7.504225e-05, 0.3729482, -0.17005417, -7.504225e-05, 0.38330373, -0.14535545, -7.504225e-05, 0.3758748, -0.11918071, 0.074739724, 0.04374823, 0.82488114, 0.00862959, 0.3758748, -0.11918071, -0.07481477, 0.04374823, 0.82488114, -0.008779675, 0.38330373, -0.11918071, -7.504225e-05, 0.044573694, 0.82488114, -7.504225e-05)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c6544"]
+size = Vector3(0.7829941, 0.5822562, 0.68404186)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bpw3g"]
 render_priority = 0
@@ -1649,6 +1668,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_7eic1"]
+size = Vector3(0.18802339, 0.10948748, 0.46549588)
+
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_25koi"]
 points = PackedVector3Array(0.26365054, 0.6808371, 0.35090038, -0.039087266, 0.7521825, 0.027209044, -0.24120897, 0.6808371, 0.35090038, 0.26365054, 0.61575, 0.35090038, 0.26365054, 0.6808371, -0.35096905, -0.039087266, 0.7521825, -0.027277738, -0.17281374, 0.75174075, 0.027209044, -0.24120897, 0.6808371, -0.35096905, -0.24120897, 0.61575, 0.35090038, 0.24116513, 0, 0.32314166, 0.26365054, 0.61575, -0.35096905, -0.17281374, 0.75174075, -0.027277738, -0.24120897, 0.61575, -0.35096905, -0.24120897, 0, 0.32314166, 0.24116513, 0, -0.32321033, -0.24120897, 0, -0.32321033)
 
@@ -1803,8 +1825,8 @@ shader_parameter/spritefont_tex_size = Vector2i(416, 176)
 shader_parameter/character_start = Vector2(0, 0)
 shader_parameter/character_size = Vector2(11, 16)
 shader_parameter/character_spacing = Vector2(5, 0)
-shader_parameter/word = PackedInt32Array(2, 20, 15)
-shader_parameter/word_length = 3
+shader_parameter/word = PackedInt32Array(7, 14, 11, 3, 4, 17)
+shader_parameter/word_length = 6
 shader_parameter/word_spacing = 2
 shader_parameter/font_color = Color(0.5, 0.24000001, 0.43933326, 1)
 shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
@@ -1939,7 +1961,7 @@ shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ndm35"]
-size = Vector3(2.0585327, 2.3760376, 7.514435)
+size = Vector3(1.9717255, 2.3760376, 5.9134674)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0rdn8"]
 render_priority = 0
@@ -1989,6 +2011,9 @@ points = PackedVector3Array(-0.4, 1.4045719, -0.16, -0.4, 1.4045719, -0.12501174
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qdp00"]
 points = PackedVector3Array(-5.453825e-05, -6.3441694e-06, -0.2785234, -5.453825e-05, 0.082915194, -0.2785234, 0.054308772, -6.3441694e-06, -0.27317974, 0.047711045, -0.02628376, -0.24008192, -5.453825e-05, -0.02628376, -0.24477124, -0.047765568, -0.02628376, -0.24008192, -0.05436331, -6.3441694e-06, -0.27317974, -0.05436331, 0.082915194, -0.27317974, 0.054308772, 0.082915194, -0.27317974, 0.10654557, -6.3441694e-06, -0.25736696, 0.033643097, -0.046023376, -0.16930601, -5.453825e-05, -0.046023376, -0.17263216, 0.093622684, -0.02628376, -0.22617757, -0.03369762, -0.046023376, -0.16930601, -0.09367721, -0.02628376, -0.22617757, -0.106600076, -6.3441694e-06, -0.25736696, -0.106600076, 0.082915194, -0.25736696, 0.10654557, 0.082915194, -0.25736696, 0.1546928, -6.3441694e-06, -0.23163025, 0.06603208, -0.046023376, -0.15949118, 0.13593554, -0.02628376, -0.20354891, 0.095858276, -0.046023376, -0.14356932, -0.066086605, -0.046023376, -0.15949118, -0.095912814, -0.046023376, -0.14356932, -0.13599008, -0.02628376, -0.20354891, -0.15474734, -6.3441694e-06, -0.23163025, -0.15474734, 0.082915194, -0.23163025, 0.1546928, 0.082915194, -0.23163025, 0.19689661, -6.3441694e-06, -0.19695115, 0.17301384, -0.02628376, -0.1731229, 0.12203118, -0.046023376, -0.12208572, -0.12208572, -0.046023376, -0.12208572, -0.1731229, -0.02628376, -0.1731229, -0.19695115, -6.3441694e-06, -0.19695115, -0.19695115, 0.082915194, -0.19695115, 0.19689661, 0.082915194, -0.19695115, 0.23157573, -6.3441694e-06, -0.15474734, 0.20349437, -0.02628376, -0.13599008, 0.14351478, -0.046023376, -0.095912814, -0.14356932, -0.046023376, -0.095912814, -0.20354891, -0.02628376, -0.13599008, -0.23163025, -6.3441694e-06, -0.15474734, -0.23163025, 0.082915194, -0.15474734, 0.23157573, 0.082915194, -0.15474734, 0.25731242, -6.3441694e-06, -0.106600076, 0.2260685, -0.02628376, -0.09367721, 0.15943664, -0.046023376, -0.066086605, -0.15949118, -0.046023376, -0.066086605, -0.22617757, -0.02628376, -0.09367721, -0.25736696, -6.3441694e-06, -0.106600076, -0.25736696, 0.082915194, -0.106600076, 0.25731242, 0.082915194, -0.106600076, 0.27312523, -6.3441694e-06, -0.05436331, 0.24002737, -0.02628376, -0.047765568, 0.16925147, -0.046023376, -0.03369762, -0.16930601, -0.046023376, -0.03369762, -0.24008192, -0.02628376, -0.047765568, -0.27317974, -6.3441694e-06, -0.05436331, -0.27317974, 0.082915194, -0.05436331, 0.27312523, 0.082915194, -0.05436331, 0.2785234, -6.3441694e-06, -5.453825e-05, 0.2447167, -0.02628376, -5.453825e-05, 0.17257762, -0.046023376, -5.453825e-05, -0.17263216, -0.046023376, -5.453825e-05, -0.24477124, -0.02628376, -5.453825e-05, -0.2785234, -6.3441694e-06, -5.453825e-05, -0.2785234, 0.082915194, -5.453825e-05, 0.2785234, 0.082915194, -5.453825e-05, 0.27312523, -6.3441694e-06, 0.054308772, 0.24002737, -0.02628376, 0.047711045, 0.16925147, -0.046023376, 0.033643097, -0.16930601, -0.046023376, 0.033643097, -0.24008192, -0.02628376, 0.047711045, -0.27317974, -6.3441694e-06, 0.054308772, -0.27317974, 0.082915194, 0.054308772, 0.27312523, 0.082915194, 0.054308772, 0.25731242, -6.3441694e-06, 0.10654557, 0.2260685, -0.02628376, 0.093622684, 0.15943664, -0.046023376, 0.06603208, -0.22617757, -0.02628376, 0.093622684, -0.15949118, -0.046023376, 0.06603208, -0.25736696, -6.3441694e-06, 0.10654557, -0.25736696, 0.082915194, 0.10654557, 0.25731242, 0.082915194, 0.10654557, 0.23157573, -6.3441694e-06, 0.1546928, 0.20349437, -0.02628376, 0.13593554, 0.14351478, -0.046023376, 0.095858276, -0.14356932, -0.046023376, 0.095858276, -0.20354891, -0.02628376, 0.13593554, -0.23163025, -6.3441694e-06, 0.1546928, -0.23163025, 0.082915194, 0.1546928, 0.23157573, 0.082915194, 0.1546928, 0.19689661, -6.3441694e-06, 0.19689661, 0.17301384, -0.02628376, 0.17301384, 0.12203118, -0.046023376, 0.12203118, -0.12208572, -0.046023376, 0.12203118, -0.1731229, -0.02628376, 0.17301384, -0.19695115, -6.3441694e-06, 0.19689661, -0.19695115, 0.082915194, 0.19689661, 0.19689661, 0.082915194, 0.19689661, 0.1546928, -6.3441694e-06, 0.23157573, 0.13593554, -0.02628376, 0.20349437, 0.095858276, -0.046023376, 0.14351478, -0.095912814, -0.046023376, 0.14351478, -0.13599008, -0.02628376, 0.20349437, -0.15474734, -6.3441694e-06, 0.23157573, -0.15474734, 0.082915194, 0.23157573, 0.1546928, 0.082915194, 0.23157573, 0.10654557, -6.3441694e-06, 0.25731242, 0.093622684, -0.02628376, 0.2260685, 0.06603208, -0.046023376, 0.15943664, -0.066086605, -0.046023376, 0.15943664, -0.09367721, -0.02628376, 0.2260685, -0.106600076, -6.3441694e-06, 0.25731242, -0.106600076, 0.082915194, 0.25731242, 0.10654557, 0.082915194, 0.25731242, 0.054308772, -6.3441694e-06, 0.27312523, 0.047711045, -0.02628376, 0.24002737, 0.033643097, -0.046023376, 0.16925147, -0.03369762, -0.046023376, 0.16925147, -0.047765568, -0.02628376, 0.24002737, -0.05436331, -6.3441694e-06, 0.27312523, -0.05436331, 0.082915194, 0.27312523, 0.054308772, 0.082915194, 0.27312523, -5.453825e-05, -6.3441694e-06, 0.2785234, -5.453825e-05, -0.02628376, 0.2447167, -5.453825e-05, -0.046023376, 0.17257762, -5.453825e-05, 0.082915194, 0.2785234)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_242ya"]
+size = Vector3(0.6163681, 0.17418474, 0.17301865)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mmmw5"]
 render_priority = 0
@@ -2307,6 +2332,25 @@ mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost/Door" index="1" unique_id=1268251144 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
+stream = ExtResource("7_qxbha")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../../../Office")
+area = NodePath("Area3D")
+
+[node name="Area3D" parent="Foundation/doorpost/Door/Signal Player" index="0"]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" parent="Foundation/doorpost/Door/Signal Player/Area3D" index="0"]
+transform = Transform3D(0.999164, 0, -0.040881664, 0, 1, 0, 0.040881664, 0, 0.999164, 0.03201747, -0.0016435385, 0.013593912)
+shape = SubResource("BoxShape3D_sdg87")
+
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost" unique_id=586314475]
 shape = SubResource("ConcavePolygonShape3D_sikar")
 
@@ -2332,6 +2376,15 @@ script = ExtResource("2_vj7uu")
 mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost6/Door" index="1" unique_id=334564272 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
+stream = ExtResource("7_qxbha")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../../../Hallway")
+area = NodePath("Area3D")
 
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=576888300]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2401,6 +2454,15 @@ mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost3/Door" index="1" unique_id=130276502 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
+stream = ExtResource("7_qxbha")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../../../Living Room")
+area = NodePath("Area3D")
+
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost3" unique_id=2067569618]
 shape = SubResource("ConcavePolygonShape3D_sikar")
 
@@ -2426,6 +2488,15 @@ script = ExtResource("2_vj7uu")
 mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost2/Door" index="1" unique_id=705122218 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
+stream = ExtResource("7_qxbha")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../../../Bedroom")
+area = NodePath("Area3D")
 
 [node name="Door Post Colider" type="CollisionShape3D" parent="Foundation/doorpost2" unique_id=1379248593]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2909,8 +2980,8 @@ input_ray_pickable = false
 monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Office/bedlamp2/Signal Player/Area3D" unique_id=458285473]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.011132717, 0.007968545, 0.03478408)
-shape = SubResource("BoxShape3D_bpw3g")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0004606247, -0.020454645, 0.0041058064)
+shape = SubResource("BoxShape3D_mmmw5")
 
 [node name="Kitchen" type="Node3D" parent="." unique_id=1116060079 node_paths=PackedStringArray("appartment")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
@@ -3084,11 +3155,47 @@ surface_material_override/0 = SubResource("ShaderMaterial_a1b3c")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Kitchen/kitchentablelamp" unique_id=682638676]
 shape = SubResource("ConvexPolygonShape3D_hvw63")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchentablelamp" unique_id=883515791 node_paths=PackedStringArray("room", "area")]
+stream = ExtResource("29_by15u")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/kitchentablelamp/Signal Player" unique_id=112377882]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchentablelamp/Signal Player/Area3D" unique_id=923783379]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0004606247, -0.012341738, 0.0013995171)
+shape = SubResource("BoxShape3D_o44a7")
+
 [node name="kitchenlamp" parent="Kitchen" unique_id=2009000336 instance=ExtResource("17_s2x3b")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2736363, 2.2487812, -0.21568465)
 
 [node name="Lamp" parent="Kitchen/kitchenlamp" index="0" unique_id=70976580]
 surface_material_override/0 = SubResource("ShaderMaterial_a1b3c")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchenlamp" unique_id=1940890350 node_paths=PackedStringArray("room", "area")]
+stream = ExtResource("29_by15u")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/kitchenlamp/Signal Player" unique_id=747759889]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchenlamp/Signal Player/Area3D" unique_id=1693531704]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0075523853, 0.0009639263, 0.0067920685)
+shape = SubResource("BoxShape3D_hfraf")
 
 [node name="fruitbowl" parent="Kitchen" unique_id=102157004 instance=ExtResource("19_cgv1t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.59218454, 1.0555198, -1.7006017)
@@ -3146,6 +3253,25 @@ surface_material_override/0 = SubResource("ShaderMaterial_8yue1")
 
 [node name="Tulip_002" parent="Kitchen/vase" index="3" unique_id=1622964651]
 surface_material_override/0 = SubResource("ShaderMaterial_updwn")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/vase" unique_id=1111675795 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0840143, 0)
+stream = ExtResource("19_oculd")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Kitchen/vase/Signal Player" unique_id=1765436031]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/vase/Signal Player/Area3D" unique_id=255048887]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047974586, 0.009341836, -0.023260593)
+shape = SubResource("BoxShape3D_qxbha")
 
 [node name="coffemug" parent="Kitchen" unique_id=759679566 instance=ExtResource("21_q8iv1")]
 transform = Transform3D(0.8910778, 0, 0.45385054, 0, 1, 0, -0.45385054, 0, 0.8910778, 1.4869771, 1.0459118, 0.8566444)
@@ -3258,6 +3384,10 @@ monitorable = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/Area3D" unique_id=1432212259]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.26483154, 1.1490173, -0.01171875)
 shape = SubResource("BoxShape3D_2vecc")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Living Room/Area3D" unique_id=133524532]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.4912872, 1.1490173, 0.39697266)
+shape = SubResource("BoxShape3D_eh8ux")
 
 [node name="tvbench" parent="Living Room" unique_id=213554092 instance=ExtResource("15_scpqm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0802709, 1.1920929e-07, 2.740707)
@@ -3414,6 +3544,24 @@ surface_material_override/0 = SubResource("ShaderMaterial_a1b3c")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/livingroomlamp" unique_id=1223380764]
 shape = SubResource("ConvexPolygonShape3D_wd13f")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Living Room/livingroomlamp" unique_id=728093935 node_paths=PackedStringArray("room", "area")]
+stream = ExtResource("29_by15u")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Living Room/livingroomlamp/Signal Player" unique_id=819363063]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/livingroomlamp/Signal Player/Area3D" unique_id=1315090587]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.006215334, 0.07708907, 0.023820877)
+shape = SubResource("BoxShape3D_c6544")
 
 [node name="magazine" parent="Living Room" unique_id=2123453555 instance=ExtResource("22_hpw2l")]
 transform = Transform3D(0.93882406, 0, 0.34439713, 0, 1, 0, -0.34439713, 0, 0.93882406, 0.06463623, 0.52336687, -1.0489082)
@@ -3646,6 +3794,24 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bedlamp" unique_id=992391004]
 shape = SubResource("ConvexPolygonShape3D_aqi1e")
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bedlamp" unique_id=721870037 node_paths=PackedStringArray("room", "area")]
+stream = ExtResource("29_by15u")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Bedroom/bedlamp/Signal Player" unique_id=1407049579]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bedlamp/Signal Player/Area3D" unique_id=1679741838]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0004606247, -0.020454645, 0.0041058064)
+shape = SubResource("BoxShape3D_mmmw5")
+
 [node name="painting_large2" parent="Bedroom" unique_id=388892951 instance=ExtResource("32_dse8r")]
 transform = Transform3D(1.39090695e-08, 0, -1.0000001, 0, 1, 0, 1.0000001, 0, 1.39090695e-08, -0.041002035, 1.4053952, -3.8703141)
 
@@ -3726,6 +3892,25 @@ surface_material_override/0 = SubResource("ShaderMaterial_8yue1")
 
 [node name="Tulip_002" parent="Bedroom/vase" index="3" unique_id=1622964651]
 surface_material_override/0 = SubResource("ShaderMaterial_updwn")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/vase" unique_id=1691643606 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0840143, 0)
+stream = ExtResource("19_oculd")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Bedroom/vase/Signal Player" unique_id=62333427]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/vase/Signal Player/Area3D" unique_id=1614415797]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0047974586, 0.009341836, -0.023260593)
+shape = SubResource("BoxShape3D_qxbha")
 
 [node name="alarmclock" parent="Bedroom" unique_id=1296056739 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("35_aqi1e")]
 transform = Transform3D(0.635957, 0, 0.77172446, 0, 1, 0, -0.77172446, 0, 0.635957, -1.7377076, 1.1731694, -1.2471857)
@@ -3813,6 +3998,25 @@ mesh = NodePath("..")
 text = "LAMP"
 metadata/_custom_type_script = "uid://4q753223m055"
 
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/bathroomfaucet/Lamp" index="1" unique_id=1385365159 node_paths=PackedStringArray("room", "area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8171904, 0)
+stream = ExtResource("29_by15u")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" parent="Bathroom/bathroomfaucet/Lamp/Signal Player" index="0"]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" parent="Bathroom/bathroomfaucet/Lamp/Signal Player/Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15257776, 0.00010943413, 0.001502037)
+shape = SubResource("BoxShape3D_7eic1")
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=1733045929]
 shape = SubResource("ConvexPolygonShape3D_25koi")
 
@@ -3877,7 +4081,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_tspi8")
 [node name="TextWriterHelper" type="Node" parent="Bathroom/soapcup/Soap Cup" index="0" unique_id=1294487478 node_paths=PackedStringArray("mesh")]
 script = ExtResource("2_vj7uu")
 mesh = NodePath("..")
-text = "CUP"
+text = "HOLDER"
 metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="Shampoo" parent="Bathroom/soapcup" index="1" unique_id=555263326]
@@ -3955,7 +4159,7 @@ input_ray_pickable = false
 monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/Area3D" unique_id=2145799358]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018951416, 1.1490173, -1.5510406)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.004890442, 1.1490173, -0.75055695)
 shape = SubResource("BoxShape3D_ndm35")
 
 [node name="shoestand" parent="Hallway" unique_id=1742711436 instance=ExtResource("25_dh07s")]
@@ -4000,6 +4204,24 @@ surface_material_override/0 = SubResource("ShaderMaterial_a1b3c")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/hallamp" unique_id=1730878679]
 shape = SubResource("ConvexPolygonShape3D_qdp00")
+
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Hallway/hallamp" unique_id=652575455 node_paths=PackedStringArray("room", "area")]
+stream = ExtResource("29_by15u")
+max_distance = 3.0
+bus = &"Signal"
+script = ExtResource("10_bpw3g")
+room = NodePath("../..")
+area = NodePath("Area3D")
+
+[node name="Area3D" type="Area3D" parent="Hallway/hallamp/Signal Player" unique_id=864461926]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/hallamp/Signal Player/Area3D" unique_id=916172586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014266372, 0.003292799, 0.0041058064)
+shape = SubResource("BoxShape3D_242ya")
 
 [node name="painting_large" parent="Hallway" unique_id=720103917 instance=ExtResource("32_dse8r")]
 transform = Transform3D(-1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, -1.0000001, 0.92500025, 1.44277, -1.2534817)
