@@ -41,6 +41,8 @@
 [ext_resource type="PackedScene" uid="uid://4cr3lth0ail6" path="res://visual/models/hallamp.blend" id="31_geosr"]
 [ext_resource type="PackedScene" uid="uid://1n0qllvsl20s" path="res://visual/models/painting_large.blend" id="32_dse8r"]
 [ext_resource type="PackedScene" uid="uid://bxn6l45vf220w" path="res://visual/models/soapcup.blend" id="38_nngwn"]
+[ext_resource type="PackedScene" uid="uid://daxf7crukjpwp" path="res://visual/models/toiletpaperholder.blend" id="39_owtj4"]
+[ext_resource type="PackedScene" uid="uid://c0vuc18p5yvu" path="res://visual/models/towelholder.blend" id="40_a1b3c"]
 [ext_resource type="PackedScene" uid="uid://boojjnpy3fl6o" path="res://visual/models/doormat.blend" id="40_wd13f"]
 [ext_resource type="PackedScene" uid="uid://b0h5aut8kf4u2" path="res://visual/models/hat.blend" id="41_qdp00"]
 [ext_resource type="PackedScene" uid="uid://cgnragn8pbkbe" path="res://visual/models/umbrella.blend" id="42_wefy1"]
@@ -1586,6 +1588,126 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wlawk"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 17, 19, 0, 8, 13)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.4566667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ewhqw"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 17, 19, 0, 8, 13)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.4566667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dha8w"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 17, 19, 0, 8, 13)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.4566667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6tfwr"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 17, 19, 0, 8, 13)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.4566667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4yv4g"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 17, 19, 0, 8, 13)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.4566667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hf5d8"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 20, 17, 19, 0, 8, 13)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.4566667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tspi8"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1628,6 +1750,106 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_nngwn"]
 radius = 1.6269531
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2bv2k"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(7, 14, 11, 3, 4, 17)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.4566667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7e67s"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(15, 0, 15, 4, 17)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.45233333, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_030sl"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(7, 14, 11, 3, 4, 17)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.27033335, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_43kuu"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 14, 22, 4, 11)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.49133334, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v2lqs"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 14, 22, 4, 11)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.31366667, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_0rdn8"]
 render_priority = 0
@@ -3153,7 +3375,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.010681152, 1.1490173, 0.466
 shape = SubResource("BoxShape3D_3f1wm")
 
 [node name="toilet" parent="Bathroom" unique_id=466880299 instance=ExtResource("19_gbuy4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5356224, -2.3841858e-07, -0.40194845)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.47092298, -2.3841858e-07, -0.40194845)
 
 [node name="Toilet" parent="Bathroom/toilet" index="0" unique_id=1496600105]
 surface_material_override/0 = SubResource("ShaderMaterial_uex6k")
@@ -3203,10 +3425,10 @@ shape = SubResource("ConvexPolygonShape3D_25koi")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=570630608]
 shape = SubResource("ConvexPolygonShape3D_gnm7j")
 
-[node name="shower" parent="Bathroom" unique_id=1377275483 instance=ExtResource("21_hgy1n")]
+[node name="shower" parent="Bathroom" unique_id=1363028735 instance=ExtResource("21_hgy1n")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051290154, 0, 0.30148602)
 
-[node name="curtainholder" parent="Bathroom/shower" index="0" unique_id=1996504707]
+[node name="curtainholder" parent="Bathroom/shower" index="0" unique_id=1065128949]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
 [node name="TextWriterHelper" type="Node" parent="Bathroom/shower/curtainholder" index="0" unique_id=1959973655 node_paths=PackedStringArray("mesh")]
@@ -3215,14 +3437,38 @@ mesh = NodePath("..")
 text = "SHOWER"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="shower holder" parent="Bathroom/shower" index="1" unique_id=1267690115]
+[node name="shower holder" parent="Bathroom/shower" index="1" unique_id=292848353]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
-[node name="Water Blender" parent="Bathroom/shower" index="2" unique_id=748520936]
+[node name="Water Blender" parent="Bathroom/shower" index="2" unique_id=105683591]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
-[node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=55889665]
+[node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=886539484]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
+
+[node name="Curtain" parent="Bathroom/shower" index="4" unique_id=2077066127]
+surface_material_override/0 = SubResource("ShaderMaterial_wlawk")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/shower/Curtain" index="0" unique_id=939141670 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "CURTAIN"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Curtain Ring_001" parent="Bathroom/shower" index="5" unique_id=1235635917]
+surface_material_override/0 = SubResource("ShaderMaterial_ewhqw")
+
+[node name="Curtain Ring_002" parent="Bathroom/shower" index="6" unique_id=1537754876]
+surface_material_override/0 = SubResource("ShaderMaterial_dha8w")
+
+[node name="Curtain Ring_003" parent="Bathroom/shower" index="7" unique_id=370735988]
+surface_material_override/0 = SubResource("ShaderMaterial_6tfwr")
+
+[node name="Curtain Ring_004" parent="Bathroom/shower" index="8" unique_id=1342943785]
+surface_material_override/0 = SubResource("ShaderMaterial_4yv4g")
+
+[node name="Curtain Ring_005" parent="Bathroom/shower" index="9" unique_id=2039409564]
+surface_material_override/0 = SubResource("ShaderMaterial_hf5d8")
 
 [node name="soapcup" parent="Bathroom" unique_id=1024570158 node_paths=PackedStringArray("_require_room", "_text_write_helper") instance=ExtResource("38_nngwn")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.62984216, 1.0035625, -0.6214838)
@@ -3257,6 +3503,51 @@ input_ray_pickable = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/soapcup/Area3D" unique_id=1476089195]
 transform = Transform3D(-0.40707144, 0, 0.9133963, 0, 1, 0, -0.9133963, 0, -0.40707144, 0, 0.37298214, 0)
 shape = SubResource("CylinderShape3D_nngwn")
+
+[node name="toiletpaperholder" parent="Bathroom" unique_id=1937622288 instance=ExtResource("39_owtj4")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.887296, 0.59053475, -0.2503357)
+
+[node name="Holder" parent="Bathroom/toiletpaperholder" index="0" unique_id=1904823548]
+surface_material_override/0 = SubResource("ShaderMaterial_2bv2k")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/toiletpaperholder/Holder" index="0" unique_id=1309480675 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "HOLDER"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Paper" parent="Bathroom/toiletpaperholder" index="1" unique_id=2102812964]
+surface_material_override/0 = SubResource("ShaderMaterial_7e67s")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/toiletpaperholder/Paper" index="0" unique_id=2110405022 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "PAPER"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="towelholder" parent="Bathroom" unique_id=887404369 instance=ExtResource("40_a1b3c")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.8959434, 1.0620527, 0.92152095)
+
+[node name="towel holder" parent="Bathroom/towelholder" index="0" unique_id=496417288]
+surface_material_override/0 = SubResource("ShaderMaterial_030sl")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/towelholder/towel holder" index="0" unique_id=1045921474 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "HOLDER"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="towel" parent="Bathroom/towelholder" index="1" unique_id=41288024]
+surface_material_override/0 = SubResource("ShaderMaterial_43kuu")
+
+[node name="TextWriterHelper" type="Node" parent="Bathroom/towelholder/towel" index="0" unique_id=1963890701 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "TOWEL"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="towel_001" parent="Bathroom/towelholder" index="2" unique_id=1143377705]
+surface_material_override/0 = SubResource("ShaderMaterial_v2lqs")
 
 [node name="Hallway" type="Node3D" parent="." unique_id=1366288698]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 2.8000002)
@@ -3508,6 +3799,8 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [editable path="Bathroom/bathroomfaucet"]
 [editable path="Bathroom/shower"]
 [editable path="Bathroom/soapcup"]
+[editable path="Bathroom/toiletpaperholder"]
+[editable path="Bathroom/towelholder"]
 [editable path="Hallway/shoestand"]
 [editable path="Hallway/shoestand/hallmirror"]
 [editable path="Hallway/hallamp"]
