@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://chyts0onlys3m" path="res://visual/models/kitchen_cupboards.blend" id="12_k36cs"]
 [ext_resource type="PackedScene" uid="uid://1y1yv4w5dmik" path="res://visual/models/kitchen_table.blend" id="13_ctgk5"]
 [ext_resource type="PackedScene" uid="uid://bmh8m68fp5jc2" path="res://visual/models/kitchen_small_bench.blend" id="13_k2cr2"]
+[ext_resource type="PackedScene" uid="uid://b5n7i773ijxvh" path="res://visual/models/computer.blend" id="15_0rdn8"]
 [ext_resource type="PackedScene" uid="uid://d82doohsb30g" path="res://visual/models/tvbench.blend" id="15_scpqm"]
 [ext_resource type="PackedScene" uid="uid://brofo6j8ni5si" path="res://visual/models/sofa.blend" id="16_vkan1"]
 [ext_resource type="PackedScene" uid="uid://dkhs6norgqn3u" path="res://visual/models/sofatable.blend" id="17_82452"]
@@ -647,6 +648,147 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6544"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(3, 17, 0, 22, 4, 17)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.5, 0.49133334, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(-0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s2x3b"]
+points = PackedVector3Array(-0.19999999, 0.00031656772, -0.5, -0.19999999, 1, -0.5, 0.19996086, 0.00031656772, -0.5, -0.19999999, 0.00031656772, 0.5, 0.19996086, 1, -0.5, -0.19999999, 1, 0.5, 0.19996086, 0.00031656772, 0.5, 0.19996086, 1, 0.5)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aqi1e"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(15, 0, 8, 13, 19, 8, 13, 6)
+shader_parameter/word_length = 8
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.43933326, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 41.000000596048
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cv5i2"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 14, 12, 15, 20, 19, 4, 17)
+shader_parameter/word_length = 8
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.5, 0.24433333, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6xypi"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(10, 4, 24, 1, 14, 0, 17, 3)
+shader_parameter/word_length = 8
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.5, 0.24433333, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h0bwq"]
+resource_name = "Telly"
+cull_mode = 2
+albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_36kp7"]
+_surfaces = [{
+"aabb": AABB(-1, 0.539001, -0.19211197, 2, 1.3148912, 0.35987842),
+"format": 34896613377,
+"index_count": 204,
+"index_data": PackedByteArray("AAABAAIAAwACAAEABAADAAEAAAAEAAEABAAFAAMABAAAAAYABAAGAAUABQAHAAMAAwAHAAIABQAGAAcACAAAAAIACQAGAAAACQAAAAgACgAHAAYACgAGAAkACwACAAcACwAHAAoACAACAAsACQAMAAoACAANAAkACQANAAwACwAOAAgACAAOAA0ACgAPAAsACgAMAA8ACwAPAA4ADAAQAA8ADAARABAADQARAAwADwAQABIADwASAA4AEwAQABEAEwASABAADQATABEAEgAUAA4AFAANAA4AEwAVABIAEgAVABQAEwAWABUADQAWABMAFgAXABUAFQAXABgAFQAYABQAFgAZABcAGgAZABYADQAaABYAGgAbABkAGgAcABsAGAAdABQAGAAeAB0AHQAeAB8AFAAdACAAHQAfACAAFAAgACEAIQAgAB8AIQANABQAIQAfACIADQAhACMAIwAhACIADQAjABoAIwAiACQAIwAlABoAGgAlABwAJAAmACMAIwAmACUAJgAcACUAJAAnACYAJgAnABwA"),
+"name": "Telly",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 40,
+"vertex_data": PackedByteArray("AAAHH9TRAAAAAP//crgAAAAA///U0QAA/////3K4AAAAAAcfcrgAAP//Bx9yuAAA//8HH9TRAAD/////1NEAAABdsDrU0QAA/qKwOtTRAAD+oguQ1NEAAABdC5DU0QAA/qILkIXfAAD+orA6hd8AAABdsDqF3wAAAF0LkIXfAAAAXQuQ//8AAP6iC5D//wAAAF2wOv//AAD+orA6//8AAABd8QeF3wAAAF3xB///AAD+ovEH//8AAABdAAD//wAAAF0AAIXfAAD+ogAA//8AAP6i8QeF3wAA/qIAAIXfAAAN1AAAAAAAAPEr8QcAAAAA8SsAAAAAAAABNAAAAAAAAAE08QcAAAAAc2zxB4XfAABzbAAAhd8AAIuT8QeF3wAAi5MAAIXfAAAN1PEHAAAAAP3L8QcAAAAA/csAAAAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j0fok"]
+resource_name = "tvbench_Cube"
+_surfaces = [{
+"aabb": AABB(-1, 0.539001, -0.19211197, 2, 1.3148912, 0.35987842),
+"attribute_data": PackedByteArray("ubNlakeykQTyswcDK7LaaCuy2mhfBJEER7KRBHsE2mh7BNpotAIHA18EkQTtAmVqw/ID9OjqCPvo6gP0w/II+8PyJsfo6ibH6Oqwe8PysHuY57B7mOcmxyuy2mjtAmVqewTaaLmzZWpfBJEE8rMHA0eykQS0AgcD3m6OdpWso8zebsubtAKjzJWsfGprQMuba0COdrQCfGqV+QNZiZ4DEJX5AxCJngNZiZ5phJX5aYSJnjSLlfk0i8qMsHvvhJMdyoyTHe+EsHsakLB7GpCTHcqMJsfvhLB7yoywe++EJscakCbHGpCwe++EA/TKjAP074QI+8qMCPuul/pVC5aHJ66XhycLlvpVP03p6KAG1PAfTDHjagjE8Zu/tfHwu9H4AbrB9GbBwfAIDsr0oAbU8GoIxPEaDNj4kaED9CHWCPuRoQj7IdYD9MqMJsfKjAP06OoD9OjqJsccfC3jm7+18f564ehmwcHwcVzK8moIxPE/TenoCA7K9Nhrt/Lwu9H4JWvR+AG6wfRxXNj4CA7K9HFcyvIaDNj4/nrh6AG6wfTYa7fym7+18Q=="),
+"format": 34896613399,
+"index_count": 204,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAAMAA4AEAAOABEAEgAQABEAEgATABAAFAASABEAFAARABUAFgAXABgAFgAZABcAGgAbABwAGgAdABsAHgAfACAAIAAfACEAHgAiAB8AIAAhACMAJAAiAB4AIwAhACUAJAAlACIAIwAlACQAJgAnACgAJgApACcAJgAqACkAJgArACoAKwAsACoAKwAtACwALgAvADAALgAxAC8AMgAuADAAMgAwADMANAA1ADYANAA3ADUAOAA0ADYAOAA2ADkANAA6ADcANAA7ADoAOwA8ADoAOwA9ADwAPgA/AEAAPgBBAD8AQgBDAEQAQgBFAEMARgBHAEgARgBJAEcASgBLAEwASgBNAEsATgBPAFAATgBRAE8AUgBRAE4AUgBOAFMAUQBSAFQAVABSAFUAVgBXAFgAVgBZAFcAWgBbAFwAWgBdAFsAXgBfAGAAXgBhAF8AYgBjAGQAYgBlAGMAZgBnAGgAZgBpAGcA"),
+"material": SubResource("StandardMaterial3D_h0bwq"),
+"name": "Telly",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 106,
+"vertex_data": PackedByteArray("AAAHH9TR/sEAAP//crjiwQAA///U0QXCAAAHH3K4IsIAAAcfcrj///////9yuP//AAD//3K4/////wcfcrj/////Bx9yuOPB/////9TR/cH/////crggwv//Bx/U0QbCAF3xB////78AXQAAhd//vwBd8QeF3/+/AF0AAP///78AXbA6////vwBdsDqF3/+/AF0LkIXf/78AXQuQ////vwBdC5DU0f+/AF2wOtTR/78AAAcfcrj/////Bx/U0f////8HH3K4//8AAAcf1NH///////9yuP//AAD//9TR//8AAP//crj////////U0f//AF2wOtTR//8AAP//1NH//wBdC5DU0f///////9TR//8AAAcf1NH///6iC5DU0f///qKwOtTR/////wcf1NH///6isDr//wCAAF0LkP//AID+oguQ//8AgABdsDr//wCAAF3xB///AID+ovEH//8AgABdAAD//wCA/qIAAP//AID+oguQhd9U1QBdC5D//1TVAF0LkIXfVNX+oguQ//9U1f6iC5DU0VTVAF0LkNTRVNX+orA6hd//v/6iC5D///+//qILkIXf/7/+orA6////v/6isDrU0f+//qILkNTR/7/+ovEH////v/6i8QeF3/+//qIAAP///7/+ogAAhd//vwBdsDrU0VTV/qKwOoXfVNX+orA61NFU1QBdsDqF31TV/qLxB4XfqPcN1AAAAACZ5/6iAACF35D4DdTxBwAAsubxK/EHAAD//wE0AAAAAP//ATTxBwAA///xKwAAAAD///3L8QcAAP//DdQAAAAA//8N1PEHAAD///3LAAAAAP//i5PxB4Xf//9zbAAAhd///4uTAACF3///c2zxB4Xf///+orA6hd////6i8QeF3///AF3xB4Xf//8AXbA6hd///wBdAACF38T58SvxBwAAUOAAXfEHhd8i+/ErAAAAAPbei5PxB4Xfsu8N1PEHAACH7/6i8QeF37jv/cvxBwAAfO9zbPEHhd/F5gE0AAAAAMbmc2wAAIXfxeYBNPEHAADG5ouTAACF38bm/cvxBwAAxeaLk/EHhd/G5v3LAAAAAMXmAF3xB4XfHu8BNPEHAABR8XNs8QeF3wjv8SvxBwAAePH1pwTsa2zX2Otr1tfxqIXr/3/+//9//v//f/7//3/+/5iTMScTWPYTFld0FBiUMSj/f////3////9/////f////3////9/////f////3////9/////f////3//P/9//z//f/8//3//P/9//7//f/+//3//v/9//7//f/9//3//f/9//3//f/9//3//f/9//3//f/9//3//f/9/////f////3////9/////f////3////9/////f///VNWqKlTVqipU1aoqVNWqKlTVqipU1aoq/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAFRVVFVUVVRVVFVUVVRVVFWTA8QgOgoEHzED3iCaCuoeoEifyEVWRNYNaA3oy8XLRTa3yMjMwTK+g856sfqpBNb/f/7//3/+//9//v//f/7//3/+//9/////f/7//3/+//5eroLJYUiN114agvBh3I1YkNK3f5C/t1KQ1beKkLm32H8dAAd9QAL/fwAA4XxcAoF+Bv7rf+X/bn7t/f9///9wyOIQaMfSDnvI9xBWx60O")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_36kp7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7eic1"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 2, 17, 4, 4, 13)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.5, 0.24433333, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 37.0000005364432
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_incia"]
 size = Vector3(4.607239, 2.3760376, 3.991211)
 
@@ -821,29 +963,6 @@ shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
 shader_parameter/offset = Vector2(-0.05, 0.03)
 shader_parameter/animate = true
 shader_parameter/uv_characters_per_line = 40.0000005811468
-shader_parameter/uv_character_spacing = 0.0
-shader_parameter/uv_line_spacing = 0.0
-shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_s2x3b"]
-points = PackedVector3Array(-0.19999999, 0.00031656772, -0.5, -0.19999999, 1, -0.5, 0.19996086, 0.00031656772, -0.5, -0.19999999, 0.00031656772, 0.5, 0.19996086, 1, -0.5, -0.19999999, 1, 0.5, 0.19996086, 0.00031656772, 0.5, 0.19996086, 1, 0.5)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_tfcne"]
-render_priority = 0
-shader = ExtResource("1_l4bwr")
-shader_parameter/spritefont = ExtResource("2_sikar")
-shader_parameter/spritefont_tex_size = Vector2i(416, 176)
-shader_parameter/character_start = Vector2(0, 0)
-shader_parameter/character_size = Vector2(11, 16)
-shader_parameter/character_spacing = Vector2(5, 0)
-shader_parameter/word = PackedInt32Array(12, 0, 6, 0, 25, 8, 13, 4)
-shader_parameter/word_length = 8
-shader_parameter/word_spacing = 2
-shader_parameter/font_color = Color(0.24000001, 0.33099997, 0.5, 1)
-shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
-shader_parameter/offset = Vector2(0.05, 0.03)
-shader_parameter/animate = true
-shader_parameter/uv_characters_per_line = 41.000000596048
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
@@ -1085,6 +1204,26 @@ shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
 shader_parameter/offset = Vector2(0.05, 0.03)
 shader_parameter/animate = true
 shader_parameter/uv_characters_per_line = 19.0000002682216
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tfcne"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(12, 0, 6, 0, 25, 8, 13, 4)
+shader_parameter/word_length = 8
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.33099997, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 41.000000596048
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
@@ -1494,26 +1633,6 @@ points = PackedVector3Array(-0.4, 1.4045719, -0.16, -0.4, 1.4045719, -0.12501174
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qdp00"]
 points = PackedVector3Array(-5.453825e-05, -6.3441694e-06, -0.2785234, -5.453825e-05, 0.082915194, -0.2785234, 0.054308772, -6.3441694e-06, -0.27317974, 0.047711045, -0.02628376, -0.24008192, -5.453825e-05, -0.02628376, -0.24477124, -0.047765568, -0.02628376, -0.24008192, -0.05436331, -6.3441694e-06, -0.27317974, -0.05436331, 0.082915194, -0.27317974, 0.054308772, 0.082915194, -0.27317974, 0.10654557, -6.3441694e-06, -0.25736696, 0.033643097, -0.046023376, -0.16930601, -5.453825e-05, -0.046023376, -0.17263216, 0.093622684, -0.02628376, -0.22617757, -0.03369762, -0.046023376, -0.16930601, -0.09367721, -0.02628376, -0.22617757, -0.106600076, -6.3441694e-06, -0.25736696, -0.106600076, 0.082915194, -0.25736696, 0.10654557, 0.082915194, -0.25736696, 0.1546928, -6.3441694e-06, -0.23163025, 0.06603208, -0.046023376, -0.15949118, 0.13593554, -0.02628376, -0.20354891, 0.095858276, -0.046023376, -0.14356932, -0.066086605, -0.046023376, -0.15949118, -0.095912814, -0.046023376, -0.14356932, -0.13599008, -0.02628376, -0.20354891, -0.15474734, -6.3441694e-06, -0.23163025, -0.15474734, 0.082915194, -0.23163025, 0.1546928, 0.082915194, -0.23163025, 0.19689661, -6.3441694e-06, -0.19695115, 0.17301384, -0.02628376, -0.1731229, 0.12203118, -0.046023376, -0.12208572, -0.12208572, -0.046023376, -0.12208572, -0.1731229, -0.02628376, -0.1731229, -0.19695115, -6.3441694e-06, -0.19695115, -0.19695115, 0.082915194, -0.19695115, 0.19689661, 0.082915194, -0.19695115, 0.23157573, -6.3441694e-06, -0.15474734, 0.20349437, -0.02628376, -0.13599008, 0.14351478, -0.046023376, -0.095912814, -0.14356932, -0.046023376, -0.095912814, -0.20354891, -0.02628376, -0.13599008, -0.23163025, -6.3441694e-06, -0.15474734, -0.23163025, 0.082915194, -0.15474734, 0.23157573, 0.082915194, -0.15474734, 0.25731242, -6.3441694e-06, -0.106600076, 0.2260685, -0.02628376, -0.09367721, 0.15943664, -0.046023376, -0.066086605, -0.15949118, -0.046023376, -0.066086605, -0.22617757, -0.02628376, -0.09367721, -0.25736696, -6.3441694e-06, -0.106600076, -0.25736696, 0.082915194, -0.106600076, 0.25731242, 0.082915194, -0.106600076, 0.27312523, -6.3441694e-06, -0.05436331, 0.24002737, -0.02628376, -0.047765568, 0.16925147, -0.046023376, -0.03369762, -0.16930601, -0.046023376, -0.03369762, -0.24008192, -0.02628376, -0.047765568, -0.27317974, -6.3441694e-06, -0.05436331, -0.27317974, 0.082915194, -0.05436331, 0.27312523, 0.082915194, -0.05436331, 0.2785234, -6.3441694e-06, -5.453825e-05, 0.2447167, -0.02628376, -5.453825e-05, 0.17257762, -0.046023376, -5.453825e-05, -0.17263216, -0.046023376, -5.453825e-05, -0.24477124, -0.02628376, -5.453825e-05, -0.2785234, -6.3441694e-06, -5.453825e-05, -0.2785234, 0.082915194, -5.453825e-05, 0.2785234, 0.082915194, -5.453825e-05, 0.27312523, -6.3441694e-06, 0.054308772, 0.24002737, -0.02628376, 0.047711045, 0.16925147, -0.046023376, 0.033643097, -0.16930601, -0.046023376, 0.033643097, -0.24008192, -0.02628376, 0.047711045, -0.27317974, -6.3441694e-06, 0.054308772, -0.27317974, 0.082915194, 0.054308772, 0.27312523, 0.082915194, 0.054308772, 0.25731242, -6.3441694e-06, 0.10654557, 0.2260685, -0.02628376, 0.093622684, 0.15943664, -0.046023376, 0.06603208, -0.22617757, -0.02628376, 0.093622684, -0.15949118, -0.046023376, 0.06603208, -0.25736696, -6.3441694e-06, 0.10654557, -0.25736696, 0.082915194, 0.10654557, 0.25731242, 0.082915194, 0.10654557, 0.23157573, -6.3441694e-06, 0.1546928, 0.20349437, -0.02628376, 0.13593554, 0.14351478, -0.046023376, 0.095858276, -0.14356932, -0.046023376, 0.095858276, -0.20354891, -0.02628376, 0.13593554, -0.23163025, -6.3441694e-06, 0.1546928, -0.23163025, 0.082915194, 0.1546928, 0.23157573, 0.082915194, 0.1546928, 0.19689661, -6.3441694e-06, 0.19689661, 0.17301384, -0.02628376, 0.17301384, 0.12203118, -0.046023376, 0.12203118, -0.12208572, -0.046023376, 0.12203118, -0.1731229, -0.02628376, 0.17301384, -0.19695115, -6.3441694e-06, 0.19689661, -0.19695115, 0.082915194, 0.19689661, 0.19689661, 0.082915194, 0.19689661, 0.1546928, -6.3441694e-06, 0.23157573, 0.13593554, -0.02628376, 0.20349437, 0.095858276, -0.046023376, 0.14351478, -0.095912814, -0.046023376, 0.14351478, -0.13599008, -0.02628376, 0.20349437, -0.15474734, -6.3441694e-06, 0.23157573, -0.15474734, 0.082915194, 0.23157573, 0.1546928, 0.082915194, 0.23157573, 0.10654557, -6.3441694e-06, 0.25731242, 0.093622684, -0.02628376, 0.2260685, 0.06603208, -0.046023376, 0.15943664, -0.066086605, -0.046023376, 0.15943664, -0.09367721, -0.02628376, 0.2260685, -0.106600076, -6.3441694e-06, 0.25731242, -0.106600076, 0.082915194, 0.25731242, 0.10654557, 0.082915194, 0.25731242, 0.054308772, -6.3441694e-06, 0.27312523, 0.047711045, -0.02628376, 0.24002737, 0.033643097, -0.046023376, 0.16925147, -0.03369762, -0.046023376, 0.16925147, -0.047765568, -0.02628376, 0.24002737, -0.05436331, -6.3441694e-06, 0.27312523, -0.05436331, 0.082915194, 0.27312523, 0.054308772, 0.082915194, 0.27312523, -5.453825e-05, -6.3441694e-06, 0.2785234, -5.453825e-05, -0.02628376, 0.2447167, -5.453825e-05, -0.046023376, 0.17257762, -5.453825e-05, 0.082915194, 0.2785234)
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_aqi1e"]
-render_priority = 0
-shader = ExtResource("1_l4bwr")
-shader_parameter/spritefont = ExtResource("2_sikar")
-shader_parameter/spritefont_tex_size = Vector2i(416, 176)
-shader_parameter/character_start = Vector2(0, 0)
-shader_parameter/character_size = Vector2(11, 16)
-shader_parameter/character_spacing = Vector2(5, 0)
-shader_parameter/word = PackedInt32Array(15, 0, 8, 13, 19, 8, 13, 6)
-shader_parameter/word_length = 8
-shader_parameter/word_spacing = 2
-shader_parameter/font_color = Color(0.43933326, 0.24000001, 0.5, 1)
-shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
-shader_parameter/offset = Vector2(0.05, 0.03)
-shader_parameter/animate = true
-shader_parameter/uv_characters_per_line = 41.000000596048
-shader_parameter/uv_character_spacing = 0.0
-shader_parameter/uv_line_spacing = 0.0
-shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mmmw5"]
 render_priority = 0
@@ -2115,7 +2234,7 @@ mesh = SubResource("ArrayMesh_yjo7f")
 surface_material_override/0 = SubResource("ShaderMaterial_owtj4")
 
 [node name="vase" parent="Office" unique_id=629835185 instance=ExtResource("20_gnm7j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4832015, 1.1409118, 1.4729486)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6193261, 1.1409118, 1.2372975)
 
 [node name="Vase" parent="Office/vase" index="0" unique_id=1347247409]
 surface_material_override/0 = SubResource("ShaderMaterial_qsdo8")
@@ -2140,6 +2259,69 @@ surface_material_override/0 = SubResource("ShaderMaterial_8yue1")
 
 [node name="Tulip_002" parent="Office/vase" index="3" unique_id=1622964651]
 surface_material_override/0 = SubResource("ShaderMaterial_updwn")
+
+[node name="kitchen_small_bench" parent="Office" unique_id=1174155355 instance=ExtResource("13_k2cr2")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.1398423, 2.3841858e-07, 0.6594107)
+
+[node name="Cupboard" parent="Office/kitchen_small_bench" index="0" unique_id=463445107]
+surface_material_override/0 = SubResource("ShaderMaterial_c6544")
+
+[node name="TextWriterHelper" type="Node" parent="Office/kitchen_small_bench/Cupboard" index="0" unique_id=1800804228 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "DRAWER"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Office/kitchen_small_bench" unique_id=1489844745]
+shape = SubResource("ConvexPolygonShape3D_s2x3b")
+
+[node name="painting_large" parent="Office" unique_id=1789724429 instance=ExtResource("32_dse8r")]
+transform = Transform3D(-1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, -1.0000001, 1.3216336, 1.5727288, 0.70181155)
+
+[node name="Painting" parent="Office/painting_large" index="0" unique_id=552591523]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.044796824)
+surface_material_override/0 = SubResource("ShaderMaterial_aqi1e")
+surface_material_override/1 = SubResource("ShaderMaterial_qm0fk")
+
+[node name="TextWriterHelper" type="Node" parent="Office/painting_large/Painting" index="0" unique_id=370233199 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "PAINTING"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="computer" parent="Office" unique_id=1981337692 instance=ExtResource("15_0rdn8")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.3701591, 1.0351441, 0.46648502)
+
+[node name="Computer" parent="Office/computer" index="0" unique_id=350782131]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.69446397, 0, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_cv5i2")
+
+[node name="TextWriterHelper" type="Node" parent="Office/computer/Computer" index="0" unique_id=1979846969 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "COMPUTER"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Keyboard" parent="Office/computer" index="1" unique_id=768196073]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.07059264, 0, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_6xypi")
+
+[node name="TextWriterHelper" type="Node" parent="Office/computer/Keyboard" index="0" unique_id=335575558 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "KEYBOARD"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Monitor" type="MeshInstance3D" parent="Office/computer" unique_id=1252189627]
+transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0.08152151, -0.21347046, -0.22842741)
+mesh = SubResource("ArrayMesh_j0fok")
+surface_material_override/0 = SubResource("ShaderMaterial_7eic1")
+
+[node name="TextWriterHelper" type="Node" parent="Office/computer/Monitor" unique_id=1978949443 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "SCREEN"
+metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="Kitchen" type="Node3D" parent="." unique_id=1116060079]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
@@ -2275,7 +2457,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_j2ixe")
 [node name="Table Colider" type="CollisionShape3D" parent="Kitchen/kitchen_table" unique_id=128718086]
 shape = SubResource("ConvexPolygonShape3D_hgy1n")
 
-[node name="kitchen_small_bench" parent="Kitchen" unique_id=1174155355 instance=ExtResource("13_k2cr2")]
+[node name="kitchen_small_bench" parent="Kitchen" unique_id=61349060 instance=ExtResource("13_k2cr2")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.31575012, 2.3841858e-07, -1.7578297)
 
 [node name="Cupboard" parent="Kitchen/kitchen_small_bench" index="0" unique_id=463445107]
@@ -2283,12 +2465,6 @@ surface_material_override/0 = SubResource("ShaderMaterial_25koi")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Kitchen/kitchen_small_bench" unique_id=1862276548]
 shape = SubResource("ConvexPolygonShape3D_s2x3b")
-
-[node name="magazine4" parent="Kitchen/kitchen_small_bench" unique_id=1562009490 instance=ExtResource("22_hpw2l")]
-transform = Transform3D(0.85493904, 0, -0.51872855, 0, 1, 0, 0.51872855, 0, 0.85493904, -0.022408009, 1.0070641, -0.26299334)
-
-[node name="Magazine" parent="Kitchen/kitchen_small_bench/magazine4" index="0" unique_id=1224586853]
-surface_material_override/0 = SubResource("ShaderMaterial_tfcne")
 
 [node name="kitchentablelamp" parent="Kitchen" unique_id=2074536262 instance=ExtResource("28_5i0b8")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.3041282, 1.6375624, 0.68864155)
@@ -2462,6 +2638,12 @@ script = ExtResource("2_vj7uu")
 mesh = NodePath("..")
 text = "MICROWAVE"
 metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="magazine4" parent="Kitchen" unique_id=1562009490 instance=ExtResource("22_hpw2l")]
+transform = Transform3D(-0.5187286, 0, -0.85493904, 0, 1, 0, 0.85493904, 0, -0.5187286, -0.052756786, 1.0070643, -1.7802377)
+
+[node name="Magazine" parent="Kitchen/magazine4" index="0" unique_id=1224586853]
+surface_material_override/0 = SubResource("ShaderMaterial_tfcne")
 
 [node name="Living Room" type="Node3D" parent="." unique_id=354522909]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
@@ -3016,7 +3198,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_a1b3c")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/hallamp" unique_id=1730878679]
 shape = SubResource("ConvexPolygonShape3D_qdp00")
 
-[node name="painting_large" parent="Hallway" unique_id=1789724429 instance=ExtResource("32_dse8r")]
+[node name="painting_large" parent="Hallway" unique_id=720103917 instance=ExtResource("32_dse8r")]
 transform = Transform3D(-1.0000001, 0, 2.9802322e-08, 0, 1, 0, -2.9802322e-08, 0, -1.0000001, 0.92500025, 1.44277, -1.2534817)
 
 [node name="Painting" parent="Hallway/painting_large" index="0" unique_id=552591523]
@@ -3159,6 +3341,9 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [editable path="Office/bookshelf2"]
 [editable path="Office/bookshelf3"]
 [editable path="Office/vase"]
+[editable path="Office/kitchen_small_bench"]
+[editable path="Office/painting_large"]
+[editable path="Office/computer"]
 [editable path="Kitchen/Fridge"]
 [editable path="Kitchen/Freezer"]
 [editable path="Kitchen/kitchen_cupboards"]
@@ -3166,7 +3351,6 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [editable path="Kitchen/chair2"]
 [editable path="Kitchen/kitchen_table"]
 [editable path="Kitchen/kitchen_small_bench"]
-[editable path="Kitchen/kitchen_small_bench/magazine4"]
 [editable path="Kitchen/kitchentablelamp"]
 [editable path="Kitchen/kitchenlamp"]
 [editable path="Kitchen/fruitbowl"]
@@ -3178,6 +3362,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [editable path="Kitchen/coffemug5"]
 [editable path="Kitchen/banana"]
 [editable path="Kitchen/microwave"]
+[editable path="Kitchen/magazine4"]
 [editable path="Living Room/tvbench"]
 [editable path="Living Room/sofa"]
 [editable path="Living Room/sofatable"]
