@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://6r2dupbaj22l" path="res://levels/apartment/the_ender.gd" id="5_gjl0y"]
 [ext_resource type="FontFile" uid="uid://chcmjokkcuh33" path="res://fonts/Absolute 10.ttf" id="5_safpt"]
 [ext_resource type="AudioStream" uid="uid://dtm3wfwgfw70d" path="res://audio/dialogue/the_end.mp3" id="7_vnv7o"]
+[ext_resource type="PackedScene" uid="uid://cw8wnamjscoef" path="res://levels/apartment/pause_menu.tscn" id="8_w1js0"]
 
 [sub_resource type="Resource" id="Resource_safpt"]
 script = ExtResource("4_5mrsh")
@@ -14,6 +15,7 @@ audio_path = "uid://cgpsmilslc0mi"
 metadata/_custom_type_script = "uid://cycuc5ntkfi75"
 
 [node name="Level" type="Node3D" unique_id=164394402]
+process_mode = 1
 
 [node name="Appartment" parent="." unique_id=288289078 instance=ExtResource("1_80vhd")]
 
@@ -441,3 +443,5 @@ text = "THE END"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="The Ender" unique_id=245341025]
 stream = ExtResource("7_vnv7o")
 bus = &"Dialogue"
+
+[node name="Pause Menu" parent="." unique_id=2082272006 instance=ExtResource("8_w1js0")]

@@ -2,6 +2,7 @@ extends CharacterBody3D
 class_name PlayerCharacter
 
 @export var cam: Camera3D
+
 var invert_y: bool:
     get():
         return AccessibilitySettings.mouse_inverted_y
@@ -55,12 +56,17 @@ func _input(event: InputEvent) -> void:
         elif event is InputEventJoypadMotion:
             var rel: Vector2 = Input.get_vector("player_look_right", "player_look_left", "player_look_up", "player_look_down")
             _joy_look = Vector2(rel.x * joy_turn_speed, rel.y * joy_look_speed)
+
             _using_joy_look = true
 
             get_viewport().set_input_as_handled()
 
     if Input.is_action_just_pressed("pause"):
-        get_tree().quit()
+        get_viewport().set_input_as_handled()
+        PauseMenu.instance.show_menu()
+
+    #if Input.is_action_just_pressed("pause"):
+        #get_tree().quit()
 
 func _process_rel_look(rel: Vector2) -> void:
         if abs(rel.x) > MOUSE_DEADZONE:

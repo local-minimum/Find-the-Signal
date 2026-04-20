@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://cw8wnamjscoef"]
+
+[ext_resource type="Script" uid="uid://dve0jrntvu87y" path="res://levels/apartment/pause_menu.gd" id="1_bjx17"]
+[ext_resource type="FontFile" uid="uid://chcmjokkcuh33" path="res://fonts/Absolute 10.ttf" id="2_d0riq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bym3p"]
+font = ExtResource("2_d0riq")
+font_size = 48
+
+[sub_resource type="LabelSettings" id="LabelSettings_w1js0"]
+font = ExtResource("2_d0riq")
+font_size = 24
+
+[node name="Pause Menu" type="CanvasLayer" unique_id=2082272006 node_paths=PackedStringArray("inv_y", "mouse_sense", "joy_sense", "resume")]
+process_mode = 2
+layer = 100
+script = ExtResource("1_bjx17")
+inv_y = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Invert Y")
+mouse_sense = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/Mouse Sens")
+joy_sense = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3/Controller Sens")
+resume = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=872844955]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1309546626]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer" unique_id=411033259]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer" unique_id=2147015234]
+custom_minimum_size = Vector2(0, 320)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=518185892]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=431885713]
+layout_mode = 2
+text = "SETTINGS"
+label_settings = SubResource("LabelSettings_bym3p")
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1447501104]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1347793943]
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1114425075]
+layout_mode = 2
+text = "INVERT Y-AXIS"
+label_settings = SubResource("LabelSettings_w1js0")
+
+[node name="Invert Y" type="CheckButton" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1587058895]
+layout_mode = 2
+size_flags_horizontal = 10
+focus_next = NodePath("../../VBoxContainer2/Mouse Sens")
+focus_previous = NodePath("../../Resume")
+theme_override_fonts/font = ExtResource("2_d0riq")
+theme_override_font_sizes/font_size = 24
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=973737300]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2" unique_id=1894782096]
+layout_mode = 2
+text = "MOUSE SENS"
+label_settings = SubResource("LabelSettings_w1js0")
+
+[node name="Mouse Sens" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2" unique_id=1277522350]
+layout_mode = 2
+focus_next = NodePath("../../VBoxContainer3/Controller Sens")
+focus_previous = NodePath("../../HBoxContainer/Invert Y")
+max_value = 0.1
+step = 0.001
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1690704151]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3" unique_id=1116101508]
+layout_mode = 2
+text = "CONTROLLER SENS"
+label_settings = SubResource("LabelSettings_w1js0")
+
+[node name="Controller Sens" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3" unique_id=478454705]
+layout_mode = 2
+focus_next = NodePath("../../Resume")
+focus_previous = NodePath("../../VBoxContainer2/Mouse Sens")
+min_value = 0.01
+max_value = 2.0
+step = 0.05
+value = 0.75
+
+[node name="Resume" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1493179408]
+layout_mode = 2
+size_flags_vertical = 10
+focus_next = NodePath("../HBoxContainer/Invert Y")
+focus_previous = NodePath("../VBoxContainer3/Controller Sens")
+theme_override_fonts/font = ExtResource("2_d0riq")
+theme_override_font_sizes/font_size = 24
+text = "RESUME"
+
+[connection signal="gui_input" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Invert Y" to="." method="_on_invert_y_gui_input"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Invert Y" to="." method="_on_invert_y_pressed"]
+[connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/Mouse Sens" to="." method="_on_mouse_sens_drag_ended"]
+[connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3/Controller Sens" to="." method="_on_controller_sens_drag_ended"]
+[connection signal="gui_input" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_gui_input"]
+[connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
