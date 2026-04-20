@@ -496,7 +496,6 @@ metadata/_custom_type_script = "uid://4q753223m055"
 stream = ExtResource("10_r3mdn")
 volume_db = -80.0
 autoplay = true
-bus = &"Wispers"
 
 [node name="Area3D" type="Area3D" parent="Title/Whats" unique_id=546523396]
 
@@ -521,7 +520,6 @@ metadata/_custom_type_script = "uid://4q753223m055"
 stream = ExtResource("11_7ag5j")
 volume_db = -80.0
 autoplay = true
-bus = &"Wispers"
 
 [node name="Area3D" type="Area3D" parent="Title/That" unique_id=1630359350]
 
@@ -546,7 +544,6 @@ metadata/_custom_type_script = "uid://4q753223m055"
 stream = ExtResource("12_hunuo")
 volume_db = -80.0
 autoplay = true
-bus = &"Wispers"
 
 [node name="Area3D" type="Area3D" parent="Title/Signal" unique_id=1516322872]
 

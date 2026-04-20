@@ -51,7 +51,7 @@ func _silence_signals() -> void:
 
 
 func _silence_whispers() -> void:
-    var bus_idx: int = AudioServer.get_bus_index("Wispers")
+    var bus_idx: int = AudioServer.get_bus_index("Whispers")
     var start_volume = AudioServer.get_bus_volume_linear(bus_idx)
 
     var fn: Callable = func(volume: float) -> void:

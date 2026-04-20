@@ -53,7 +53,7 @@ static var mouse_inverted_y: bool:
             _instance.settings.set_settingb(_MOUSE_INVERT_Y_KEY, value)
         __SignalBus.on_update_mouse_y_inverted.emit(value)
 
-static var mouse_sensitivity: float = 0.002:
+static var mouse_sensitivity: float = 0.02:
     get():
         if _instance == null || _instance.settings == null:
             return mouse_sensitivity

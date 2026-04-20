@@ -1,4 +1,6 @@
 extends Node3D
+static var whisper_volume: float
+static var signal_volume: float
 
 @export_file("*.tscn") var level: String
 
@@ -6,8 +8,22 @@ extends Node3D
 @export var that: MenuWhisperer
 @export var sig: MenuWhisperer
 
+func _enter_tree() -> void:
+    var bus_idx: int = AudioServer.get_bus_index("Signal")
+    if signal_volume == 0.0:
+        signal_volume = AudioServer.get_bus_volume_linear(bus_idx)
+    else:
+        AudioServer.set_bus_volume_linear(bus_idx, signal_volume)
+
+    bus_idx = AudioServer.get_bus_index("Whispers")
+    if whisper_volume == 0.0:
+        whisper_volume = AudioServer.get_bus_volume_linear(bus_idx)
+    else:
+        AudioServer.set_bus_volume_linear(bus_idx, whisper_volume)
+
 func _ready() -> void:
     Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+    DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_FULLSCREEN)
 
 func _unhandled_input(event: InputEvent) -> void:
     if Time.get_ticks_msec() > 300 &&  event.is_action_pressed("player_jump"):

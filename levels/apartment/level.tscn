@@ -19,7 +19,16 @@ process_mode = 1
 
 [node name="Appartment" parent="." unique_id=288289078 instance=ExtResource("1_80vhd")]
 
-[node name="Simple Subtitles Container" parent="." unique_id=148810722 instance=ExtResource("2_hjsbj")]
+[node name="Container" type="Control" parent="." unique_id=5526313]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Simple Subtitles Container" parent="Container" unique_id=148810722 instance=ExtResource("2_hjsbj")]
+layout_mode = 1
 offset_top = -54.0
 
 [node name="Intro Dialogue" type="Node" parent="." unique_id=404100729]

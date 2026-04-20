@@ -1,6 +1,7 @@
 extends CharacterBody3D
 class_name PlayerCharacter
 
+
 @export var cam: Camera3D
 
 var invert_y: bool:
@@ -48,7 +49,11 @@ func _input(event: InputEvent) -> void:
     elif Input.mouse_mode == Input.MOUSE_MODE_CAPTURED && !cinematic:
         if event is InputEventMouseMotion:
             var m_event: InputEventMouseMotion = event
-            _process_rel_look(Vector2(-m_event.relative.x * mouse_speed, m_event.relative.y * mouse_look_speed))
+            var delta: Vector2 = m_event.relative - Vector2.ONE * 0.5
+
+            _process_rel_look(0.2 * Vector2(-delta.x * mouse_speed, delta.y * mouse_look_speed))
+
+
             _using_joy_look = false
 
             get_viewport().set_input_as_handled()
