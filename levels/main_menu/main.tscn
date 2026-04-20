@@ -571,7 +571,7 @@ theme_override_constants/margin_bottom = 20
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-text = "Press [Space] to Start"
+text = "Press [Space]/[A] to Start"
 label_settings = SubResource("LabelSettings_tok6w")
 
 [node name="About" type="Label" parent="CanvasLayer/MarginContainer" unique_id=1194597091]
