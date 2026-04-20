@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://br8kt053hfjwx"]
 
+[ext_resource type="Script" uid="uid://cqwyfv2jvl8tx" path="res://levels/main_menu/main.gd" id="1_ckfqu"]
 [ext_resource type="Shader" uid="uid://b5mwd23qr5g5r" path="res://visual/shaders/text_shader/text_writer.gdshader" id="1_oc74w"]
 [ext_resource type="Texture2D" uid="uid://ydiallcd2mse" path="res://visual/shaders/text_shader/font/absolute_10.png" id="2_ug1tr"]
 [ext_resource type="Script" uid="uid://4q753223m055" path="res://visual/shaders/text_shader/text_texture_helper.gd" id="3_x7dr8"]
@@ -323,7 +324,21 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="LabelSettings" id="LabelSettings_tok6w"]
+font = ExtResource("8_tok6w")
+font_size = 48
+shadow_size = 2
+shadow_color = Color(0.14, 0.14, 0.14, 0.85882354)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ckfqu"]
+font = ExtResource("8_tok6w")
+font_size = 14
+shadow_size = 2
+shadow_color = Color(0.14, 0.14, 0.14, 0.85882354)
+
 [node name="Main" type="Node3D" unique_id=1626330220]
+script = ExtResource("1_ckfqu")
+level = "uid://76umehonao8p"
 
 [node name="Decoration" type="Node3D" parent="." unique_id=2091812135]
 
@@ -486,6 +501,35 @@ script = ExtResource("3_x7dr8")
 mesh = NodePath("..")
 text = "SIGNAL"
 metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1662956845]
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=312173706]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 80
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Play to start" type="Label" parent="CanvasLayer/MarginContainer" unique_id=1922816810]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Press [Space] to Start"
+label_settings = SubResource("LabelSettings_tok6w")
+
+[node name="About" type="Label" parent="CanvasLayer/MarginContainer" unique_id=1194597091]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Made for Ludum Dare 59
+By Local_Minimum, poem by Xymidaz"
+label_settings = SubResource("LabelSettings_ckfqu")
+horizontal_alignment = 2
 
 [editable path="Decoration/chair"]
 [editable path="Decoration/kitchen_table"]

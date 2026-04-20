@@ -26,6 +26,7 @@ audio = SubResource("Resource_safpt")
 
 [node name="The Ender" type="CanvasLayer" parent="." unique_id=197655452 node_paths=PackedStringArray("the_ender", "labels")]
 script = ExtResource("5_gjl0y")
+menu_scene = "uid://br8kt053hfjwx"
 the_ender = NodePath("AudioStreamPlayer")
 labels = [NodePath("The End"), NodePath("The End2"), NodePath("The End3"), NodePath("The End4"), NodePath("The End5"), NodePath("The End6"), NodePath("The End7"), NodePath("The End8"), NodePath("The End9"), NodePath("The End10"), NodePath("The End11"), NodePath("The End12"), NodePath("The End13"), NodePath("The End14"), NodePath("The End15"), NodePath("The End16"), NodePath("The End17"), NodePath("The End18"), NodePath("The End19"), NodePath("The End20"), NodePath("The End21"), NodePath("The End22"), NodePath("The End23"), NodePath("The End Big")]
 
