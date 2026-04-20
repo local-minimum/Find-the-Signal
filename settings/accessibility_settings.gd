@@ -53,7 +53,7 @@ static var mouse_inverted_y: bool:
             _instance.settings.set_settingb(_MOUSE_INVERT_Y_KEY, value)
         __SignalBus.on_update_mouse_y_inverted.emit(value)
 
-static var mouse_sensitivity: float = 1.0:
+static var mouse_sensitivity: float = 0.002:
     get():
         if _instance == null || _instance.settings == null:
             return mouse_sensitivity
@@ -64,12 +64,23 @@ static var mouse_sensitivity: float = 1.0:
             _instance.settings.set_settingf(_MOUSE_SENSITIVITY, value)
         __SignalBus.on_update_mouse_sensitivity.emit(value)
 
+static var joy_sensitivity: float = 0.75:
+    get():
+        if _instance == null || _instance.settings == null:
+            return joy_sensitivity
+        return _instance.settings.get_settingf(_JOY_SENSITIVITY, joy_sensitivity)
+    set(value):
+        joy_sensitivity = value
+        if _instance != null && _instance.settings != null:
+            _instance.settings.set_settingf(_JOY_SENSITIVITY, value)
+        __SignalBus.on_update_joy_sensitivity.emit(value)
 
 const _SUBTITLES_KEY: String = "acciessibility.subtitles"
 const _SUBTITLES_SIZE_KEY: String = "acciessibility.subtitles.size"
 const _HANDEDNESS_KEY: String = "accessibility.handedness"
 const _MOUSE_INVERT_Y_KEY: String = "accessibility.mouse.invert-y-axis"
 const _MOUSE_SENSITIVITY: String = "accessibility.mouse.sensistivity"
+const _JOY_SENSITIVITY: String = "accessibility.joy.sensistivity"
 
 @export var settings: GameSettingsProvider
 

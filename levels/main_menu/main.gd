@@ -6,7 +6,8 @@ extends Node3D
 @export var that: MenuWhisperer
 @export var sig: MenuWhisperer
 
-
+func _ready() -> void:
+    Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 func _unhandled_input(event: InputEvent) -> void:
     if Time.get_ticks_msec() > 300 &&  event.is_action_pressed("player_jump"):

@@ -579,7 +579,7 @@ layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "Made for Ludum Dare 59
-By Local_Minimum, poem by Xymidaz"
+By Local_Minimum, poem by xymidaz"
 label_settings = SubResource("LabelSettings_ckfqu")
 horizontal_alignment = 2
 

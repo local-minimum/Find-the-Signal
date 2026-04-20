@@ -11,6 +11,7 @@ signal on_captured_cursor_change(cursor_shape: Input.CursorShape)
 signal on_update_handedness(handedness: AccessibilitySettings.Handedness)
 signal on_update_mouse_y_inverted(inverted: bool)
 signal on_update_mouse_sensitivity(sensistivity: float)
+signal on_update_joy_sensitivity(sensistivity: float)
 
 # A11Y systems
 signal on_subtitle(data: SubData)
