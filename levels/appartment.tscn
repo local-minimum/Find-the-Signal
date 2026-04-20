@@ -450,9 +450,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_sdg87"]
-size = Vector3(1.1201905, 1.9955428, 0.11166229)
-
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sikar"]
 data = PackedVector3Array(0.5527, 0, 0.099999994, 0.5527, 2.3999999, -0.099999994, 0.5527, 2.3999999, 0.099999994, 0.5527, 0, 0.099999994, 0.5527, 0, -0.099999994, 0.5527, 2.3999999, -0.099999994, 0.5527, 0, -0.099999994, 0.7527, 2.3999999, -0.099999994, 0.5527, 2.3999999, -0.099999994, 0.5527, 0, -0.099999994, 0.7527, 0, -0.099999994, 0.7527, 2.3999999, -0.099999994, 0.7527, 0, -0.099999994, 0.7527, 2.3999999, 0.099999994, 0.7527, 2.3999999, -0.099999994, 0.7527, 0, -0.099999994, 0.7527, 0, 0.099999994, 0.7527, 2.3999999, 0.099999994, 0.7527, 0, 0.099999994, 0.5527, 2.3999999, 0.099999994, 0.7527, 2.3999999, 0.099999994, 0.7527, 0, 0.099999994, 0.5527, 0, 0.099999994, 0.5527, 2.3999999, 0.099999994, -0.5527, 0, 0.099999994, -0.5527, 2.3999999, -0.099999994, -0.5527, 0, -0.099999994, -0.5527, 0, 0.099999994, -0.5527, 2.3999999, 0.099999994, -0.5527, 2.3999999, -0.099999994, -0.5527, 0, -0.099999994, -0.7527, 2.3999999, -0.099999994, -0.7527, 0, -0.099999994, -0.5527, 0, -0.099999994, -0.5527, 2.3999999, -0.099999994, -0.7527, 2.3999999, -0.099999994, -0.7527, 0, -0.099999994, -0.7527, 2.3999999, 0.099999994, -0.7527, 0, 0.099999994, -0.7527, 0, -0.099999994, -0.7527, 2.3999999, -0.099999994, -0.7527, 2.3999999, 0.099999994, -0.7527, 0, 0.099999994, -0.5527, 2.3999999, 0.099999994, -0.5527, 0, 0.099999994, -0.7527, 0, 0.099999994, -0.7527, 2.3999999, 0.099999994, -0.5527, 2.3999999, 0.099999994)
 
@@ -816,9 +813,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_qsdo8"]
-size = Vector3(0.5559038, 0.058627427, 0.18613282)
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h0bwq"]
 resource_name = "Telly"
 cull_mode = 2
@@ -995,9 +989,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_43kuu"]
-size = Vector3(0.8004472, 0.8830863, 2.463592)
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_v2lqs"]
 size = Vector3(0.8004472, 0.10065439, 2.463592)
 
@@ -1021,9 +1012,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_7e67s"]
-size = Vector3(0.57403904, 0.1652763, 0.6822351)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wsgsd"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1043,6 +1031,9 @@ shader_parameter/uv_characters_per_line = 40.0000005811468
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_43kuu"]
+size = Vector3(0.8004472, 0.8830863, 2.463592)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3g6b8"]
 points = PackedVector3Array(-0.34789774, 0, -1.1706171, -0.34789774, 0.9587549, -1.1706171, 0.34787962, 0, -1.1706171, -0.34789774, 0, 1.170388, 0.37146887, 0.9587549, -1.1706171, -0.34789774, 0.9587549, 1.170388, 0.37146887, 0.8727898, -1.1706171, 0.34787962, 0, 1.170388, 0.37146887, 0.9587549, 1.170388, 0.37146887, 0.8727898, 1.170388)
@@ -1202,9 +1193,6 @@ shader_parameter/uv_characters_per_line = 11.000000149012
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_4y17l"]
-size = Vector3(0.11721774, 0.08794482, 0.13035217)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_pfvgk"]
 render_priority = 0
@@ -1413,9 +1401,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_fpma5"]
-size = Vector3(2.0156057, 1.3554466, 0.19342098)
-
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_fd646"]
 points = PackedVector3Array(0.9998044, 0.53931487, 0.20002143, 0.9998044, 0.0038186312, 0.20002143, 0.9998044, 0.53931487, -0.20006059, -1.0000001, 0.53931487, 0.20006059, 0.9998044, 0.0038186312, -0.20006059, -1.0000001, 0.0038186312, 0.20006059, -1.0000001, 0.53931487, -0.20006059, -1.0000001, 0.0038186312, -0.20006059)
 
@@ -1467,9 +1452,6 @@ shader_parameter/uv_characters_per_line = 40.0000005811468
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_fffcv"]
-size = Vector3(0.7442434, 0.73555136, 1.438294)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_j2ixe"]
 points = PackedVector3Array(0.36620748, 0.52086675, 0.70996785, -0.36620748, 0.52086675, 0.70996785, 0.36620748, -0.0028654635, 0.70996785, 0.36620748, 0.52086675, -0.70996785, -0.36620748, -0.0028654635, 0.70996785, -0.36620748, 0.52086675, -0.70996785, 0.36620748, -0.0028654635, -0.70996785, -0.36620748, -0.0028654635, -0.70996785)
@@ -1529,9 +1511,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_q2ts7"]
-size = Vector3(0.9142903, 0.809416, 2.1077588)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wd13f"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1574,9 +1553,6 @@ shader_parameter/uv_characters_per_line = 20.0000002831228
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_78ykh"]
-size = Vector3(0.43316242, 0.1136089, 0.25106078)
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fd646"]
 data = PackedVector3Array(-0.45, 0.29709998, 1, -0.45, 0.4362, -1, -0.45, 0.4362, 1, -0.45, 0.29709998, 1, -0.45, 0.29709998, -1, -0.45, 0.4362, -1, -0.45, 0.4362, -1, 0.45, 0.8921, -1, 0.45, 0.4362, -1, -0.45, 0.4362, -1, -0.45, 0.8921, -1, 0.45, 0.8921, -1, 0.45, 0.29709998, -1, 0.45, 0.4362, 1, 0.45, 0.4362, -1, 0.45, 0.29709998, -1, 0.45, 0.29709998, 1, 0.45, 0.4362, 1, -0.45, 0.4362, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.29709998, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1, -0.45, 0.29709998, 1, -0.45, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.45, 0.0026999998, 1, -0.45, 0.4362, 1, -0.45, 0.4362, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.45, 0.4362, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.4362, 1.0468999, -0.45, 0.4362, 1, -0.45, 0.5771, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.29709998, -1, -0.45, 0.0026999998, -1.0633, -0.45, 0.29709998, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.0026999998, -1, -0.45, 0.0026999998, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.29709998, -1.0633, -0.45, 0.4362, -1.0633, -0.45, 0.29709998, -1, -0.45, 0.4362, -1.0633, -0.45, 0.4362, -1, -0.45, 0.4362, -1.0633, -0.45, 0.8921, -1, -0.45, 0.4362, -1, -0.45, 0.4362, -1.0633, -0.45, 0.8921, -1.0633, -0.45, 0.8921, -1, 0.45, 0.4362, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.29709998, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.0026999998, -1, 0.45, 0.29709998, -1, 0.45, 0.29709998, -1.0633, 0.45, 0.0026999998, -1.0633, 0.45, 0.0026999998, -1, 0.45, 0.4362, -1, 0.45, 0.4362, -1.0633, 0.45, 0.29709998, -1.0633, 0.45, 0.4362, -1, 0.45, 0.8921, -1.0633, 0.45, 0.4362, -1.0633, 0.45, 0.4362, -1, 0.45, 0.8921, -1, 0.45, 0.8921, -1.0633, -0.45, 0.8921, -1, 0.45, 0.8921, -1.0633, 0.45, 0.8921, -1, -0.45, 0.8921, -1, -0.45, 0.8921, -1.0633, 0.45, 0.8921, -1.0633, -0.3955, 0.29709998, 1, -0.3955, 0.0026999998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.0026999998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1, 0.45, 0.4362, 1, 0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.5771, 1, 0.45, 0.29709998, 1, 0.45, 0.4362, 1.0468999, 0.45, 0.4362, 1, 0.45, 0.29709998, 1, 0.45, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.29709998, 1, 0.45, 0.0026999998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.29709998, 1, 0.45, 0.0026999998, 1, 0.45, 0.0026999998, 1.0468999, 0.45, 0.5771, 1, -0.45, 0.5771, 1.0468999, -0.45, 0.5771, 1, 0.45, 0.5771, 1, 0.45, 0.5771, 1.0468999, -0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1, -0.45, 0.5771, 1, -0.45, 0.4362, 1, 0.45, 0.4362, 1, 0.45, 0.5771, 1, -0.45, 0.5771, 1, -0.45, 0.4362, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1.0468999, -0.45, 0.4362, 1.0468999, -0.45, 0.5771, 1.0468999, 0.45, 0.5771, 1.0468999, 0.45, 0.4362, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.45, 0.4362, 1.0468999, 0.45, 0.4362, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.45, 0.29709998, 1.0468999, -0.3955, 0.29709998, 1.0468999, -0.3955, 0.0026999998, 1.0468999, -0.45, 0.0026999998, 1.0468999, -0.3955, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.45, 0.4362, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, 0.3955, 0.29709998, 1.0468999, 0.45, 0.29709998, 1.0468999, 0.45, 0.0026999998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, -0.42999998, 0.4362, 0.9939, -0.45, 0.4362, -1, -0.42999998, 0.4362, -0.9939, -0.42999998, 0.4362, 0.9939, -0.45, 0.4362, 1, -0.45, 0.4362, -1, -0.42999998, 0.4362, -0.9939, 0.45, 0.4362, -1, 0.42999998, 0.4362, -0.9939, -0.42999998, 0.4362, -0.9939, -0.45, 0.4362, -1, 0.45, 0.4362, -1, 0.42999998, 0.4362, -0.9939, 0.45, 0.4362, 1, 0.42999998, 0.4362, 0.9939, 0.42999998, 0.4362, -0.9939, 0.45, 0.4362, -1, 0.45, 0.4362, 1, 0.42999998, 0.4362, 0.9939, -0.45, 0.4362, 1, -0.42999998, 0.4362, 0.9939, 0.42999998, 0.4362, 0.9939, 0.45, 0.4362, 1, -0.45, 0.4362, 1, -0.3955, 0.29709998, -1, -0.45, 0.0026999998, -1, -0.45, 0.29709998, -1, -0.3955, 0.29709998, -1, -0.3955, 0.0026999998, -1, -0.45, 0.0026999998, -1, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1, 0.3955, 0.29709998, 1, 0.3955, 0.29709998, 1.0468999, 0.3955, 0.0026999998, 1.0468999, 0.3955, 0.0026999998, 1, -0.45, 0.29709998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.29709998, 1, -0.45, 0.29709998, 1, -0.45, 0.0026999998, 1, -0.3955, 0.0026999998, 1, -0.3955, 0.29709998, -1.0633, -0.3955, 0.0026999998, -1, -0.3955, 0.29709998, -1, -0.3955, 0.29709998, -1.0633, -0.3955, 0.0026999998, -1.0633, -0.3955, 0.0026999998, -1, 0.45, 0.29709998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.29709998, -1, 0.45, 0.29709998, -1, 0.45, 0.0026999998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.29709998, 1, 0.45, 0.0026999998, 1, 0.45, 0.29709998, 1, 0.3955, 0.29709998, 1, 0.3955, 0.0026999998, 1, 0.45, 0.0026999998, 1, 0.3955, 0.29709998, -1, 0.3955, 0.0026999998, -1.0633, 0.3955, 0.29709998, -1.0633, 0.3955, 0.29709998, -1, 0.3955, 0.0026999998, -1, 0.3955, 0.0026999998, -1.0633)
@@ -1711,9 +1687,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_larho"]
-size = Vector3(0.42569363, 0.80722713, 0.5948931)
-
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dh07s"]
 points = PackedVector3Array(0.12379357, 0.4111764, 0.29835117, -0.1238353, 0.4111764, 0.29835117, 0.12379357, 0.38962436, 0.29835117, 0.21312356, 0.4111764, 0.20898598, 0.16960597, 0.76559657, -0.14736491, 0.14953697, 0.7835438, -0.16617249, -0.14957869, 0.7835438, -0.16617249, -0.16968942, 0.76559657, -0.14736491, -0.21312356, 0.4111764, 0.20898598, -0.1238353, 0.38962436, 0.29835117, 0.101888746, 0, 0.29215986, 0.21312356, 0.38962436, 0.20898598, 0.21312356, 0.4111764, -0.13019279, 0.16960597, 0.76559657, -0.28123745, 0.14953697, 0.7835438, -0.26242986, -0.14957869, 0.7835438, -0.26242986, -0.16968942, 0.76559657, -0.28123745, -0.21312356, 0.4111764, -0.13019279, -0.21312356, 0.38962436, 0.20898598, -0.10193048, 0, 0.29215986, 0.17536381, 0, 0.20285308, 0.21312356, 0.38962436, -0.29835117, -0.21312356, 0.38962436, -0.29835117, -0.17540553, 0, 0.20285308, 0.17536381, 0, -0.29835117, -0.17540553, 0, -0.29835117)
 
@@ -1757,9 +1730,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_4yv4g"]
-size = Vector3(0.017201044, 0.71765316, 0.5436237)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_gnm7j"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1779,9 +1749,6 @@ shader_parameter/uv_characters_per_line = 40.0000005811468
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_7eic1"]
-size = Vector3(0.18802339, 0.10948748, 0.46549588)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_25koi"]
 points = PackedVector3Array(0.26365054, 0.6808371, 0.35090038, -0.039087266, 0.7521825, 0.027209044, -0.24120897, 0.6808371, 0.35090038, 0.26365054, 0.61575, 0.35090038, 0.26365054, 0.6808371, -0.35096905, -0.039087266, 0.7521825, -0.027277738, -0.17281374, 0.75174075, 0.027209044, -0.24120897, 0.6808371, -0.35096905, -0.24120897, 0.61575, 0.35090038, 0.24116513, 0, 0.32314166, 0.26365054, 0.61575, -0.35096905, -0.17281374, 0.75174075, -0.027277738, -0.24120897, 0.61575, -0.35096905, -0.24120897, 0, 0.32314166, 0.24116513, 0, -0.32321033, -0.24120897, 0, -0.32321033)
@@ -1812,9 +1779,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_0v37p"]
-size = Vector3(0.41196072, 1.2330084, 0.41392386)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wlawk"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1834,9 +1798,6 @@ shader_parameter/uv_characters_per_line = 37.0000005364432
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_1oboc"]
-size = Vector3(0.3910867, 1.9200811, 0.05485402)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ewhqw"]
 render_priority = 0
@@ -1958,9 +1919,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_ns23l"]
-size = Vector3(0.16830838, 0.053259835, 0.13664113)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1bcnc"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1980,9 +1938,6 @@ shader_parameter/uv_characters_per_line = 13.0000001788144
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_xjdua"]
-size = Vector3(0.08780301, 0.19193171, 0.053755388)
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_nngwn"]
 radius = 1.6269531
@@ -2006,9 +1961,6 @@ shader_parameter/uv_characters_per_line = 37.0000005364432
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_tw61u"]
-size = Vector3(0.13246205, 0.07188395, 0.122736394)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_7e67s"]
 render_priority = 0
@@ -2073,9 +2025,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_dusx7"]
-size = Vector3(0.079227656, 0.37008625, 0.2655401)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_v2lqs"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -2095,6 +2044,9 @@ shader_parameter/uv_characters_per_line = 37.0000005364432
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dusx7"]
+size = Vector3(0.079227656, 0.37008625, 0.2655401)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xdkwc"]
 size = Vector3(0.097231016, 0.07188395, 0.90793777)
@@ -2122,9 +2074,6 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_1bcnc"]
-size = Vector3(0.8104435, 0.371065, 0.3924396)
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_nngwn"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -2144,9 +2093,6 @@ shader_parameter/uv_characters_per_line = 40.0000005811468
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_ewhqw"]
-size = Vector3(0.846027, 0.20994656, 0.4706702)
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_cgv1t"]
 points = PackedVector3Array(-0.39999998, 7.450581e-09, -0.14999999, -0.39999998, 7.450581e-09, 0.14999999, -0.39999998, 0.28204602, -0.14999999, 0.39992172, 7.450581e-09, -0.14999999, -0.39999998, 0.28204602, 0.14999999, 0.39992172, 7.450581e-09, 0.14999999, 0.39992172, 0.28204602, -0.14999999, 0.39992172, 0.28204602, 0.14999999)
@@ -2318,7 +2264,6 @@ shape = SubResource("SphereShape3D_bpw3g")
 
 [node name="Ceiling" type="MeshInstance3D" parent="Foundation" unique_id=1798091812]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.35, 0)
-visible = false
 mesh = SubResource("BoxMesh_5ww25")
 surface_material_override/0 = SubResource("ShaderMaterial_vj7uu")
 
@@ -2492,24 +2437,13 @@ mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost/Door" index="1" unique_id=1268251144 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost/Door" index="1" unique_id=1268251144 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
 stream = ExtResource("7_qxbha")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Office")
-area = NodePath("Area3D")
-
-[node name="Area3D" parent="Foundation/doorpost/Door/Signal Player" index="0"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Foundation/doorpost/Door/Signal Player/Area3D" index="0"]
-transform = Transform3D(0.999164, 0, -0.040881664, 0, 1, 0, 0.040881664, 0, 0.999164, 0.03201747, -0.0016435385, 0.013593912)
-shape = SubResource("BoxShape3D_sdg87")
 
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost" unique_id=586314475]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2537,14 +2471,13 @@ mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost6/Door" index="1" unique_id=334564272 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost6/Door" index="1" unique_id=334564272 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
 stream = ExtResource("7_qxbha")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Hallway")
-area = NodePath("Area3D")
 
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=576888300]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2614,14 +2547,13 @@ mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost3/Door" index="1" unique_id=130276502 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost3/Door" index="1" unique_id=130276502 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
 stream = ExtResource("7_qxbha")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Living Room")
-area = NodePath("Area3D")
 
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost3" unique_id=2067569618]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2649,14 +2581,13 @@ mesh = NodePath("..")
 text = "DOOR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost2/Door" index="1" unique_id=705122218 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Foundation/doorpost2/Door" index="1" unique_id=705122218 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.57322955, 0, 0.007402897)
 stream = ExtResource("7_qxbha")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Bedroom")
-area = NodePath("Area3D")
 
 [node name="Door Post Colider" type="CollisionShape3D" parent="Foundation/doorpost2" unique_id=1379248593]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -3022,23 +2953,12 @@ mesh = NodePath("..")
 text = "KEYBOARD"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Office/computer/Keyboard" index="1" unique_id=35739405 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Office/computer/Keyboard" index="1" unique_id=35739405 node_paths=PackedStringArray("room")]
 stream = ExtResource("20_y0q2p")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D")
-
-[node name="Area3D" parent="Office/computer/Keyboard/Signal Player" index="0"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Office/computer/Keyboard/Signal Player/Area3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.013194561, 0.027539015, 0.14598417)
-shape = SubResource("BoxShape3D_qsdo8")
 
 [node name="Monitor" type="MeshInstance3D" parent="Office/computer" unique_id=1252189627]
 transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0.08152151, -0.21347046, -0.22842741)
@@ -3201,24 +3121,13 @@ override_mat_idx = 1
 text = "COUNTERTOP"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards" index="2" unique_id=1386519262 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards" index="2" unique_id=1386519262 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0.09313631, 0.31478733, 0.04430282)
 stream = ExtResource("33_tspi8")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D2")
-
-[node name="Area3D2" parent="Kitchen/kitchen_cupboards/Lower Cupboards/Signal Player" index="1"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards/Signal Player/Area3D2" index="0"]
-transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.083313465, 0.12931299, -0.08866441)
-shape = SubResource("BoxShape3D_43kuu")
 
 [node name="Signal Player2" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards" index="3" unique_id=861866132 node_paths=PackedStringArray("room", "area")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0.09313631, 0.9088876, 0.04430282)
@@ -3248,24 +3157,13 @@ mesh = NodePath("..")
 text = "SINK"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Sink" index="1" unique_id=372693734 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Sink" index="1" unique_id=372693734 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, -0.119710445, 0.86461127, 0.77729416)
 stream = ExtResource("33_6xypi")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D2")
-
-[node name="Area3D2" parent="Kitchen/kitchen_cupboards/Sink/Signal Player" index="1"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Kitchen/kitchen_cupboards/Sink/Signal Player/Area3D2" index="0"]
-transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, 0.15733194, 0.017056227, -0.031145096)
-shape = SubResource("BoxShape3D_7e67s")
 
 [node name="Upper" parent="Kitchen/kitchen_cupboards" index="2" unique_id=70712342]
 surface_material_override/0 = SubResource("ShaderMaterial_wsgsd")
@@ -3517,24 +3415,13 @@ metadata/_custom_type_script = "uid://4q753223m055"
 [node name="Apple_001" parent="Kitchen/fruitbowl" index="2" unique_id=923682788]
 surface_material_override/0 = SubResource("ShaderMaterial_if3nq")
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/fruitbowl/Apple_001" index="0" unique_id=30363550 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Kitchen/fruitbowl/Apple_001" index="0" unique_id=30363550 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.017509222, -0.009662867, 0)
 stream = ExtResource("42_6tfwr")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D")
-
-[node name="Area3D" parent="Kitchen/fruitbowl/Apple_001/Signal Player" index="0"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Kitchen/fruitbowl/Apple_001/Signal Player/Area3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017774582, 0.019544363, -0.007012844)
-shape = SubResource("BoxShape3D_4y17l")
 
 [node name="Apple_002" parent="Kitchen/fruitbowl" index="3" unique_id=519505411]
 surface_material_override/0 = SubResource("ShaderMaterial_pfvgk")
@@ -3917,24 +3804,13 @@ mesh = NodePath("..")
 text = "TELLY"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player2" type="AudioStreamPlayer3D" parent="Living Room/tvbench/TV" index="1" unique_id=395898160 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player2" type="AudioStreamPlayer3D" parent="Living Room/tvbench/TV" index="1" unique_id=395898160 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022990346, 0.7388333, 0.11149979)
 stream = ExtResource("53_7e67s")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D")
-
-[node name="Area3D" parent="Living Room/tvbench/TV/Signal Player2" index="0"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Living Room/tvbench/TV/Signal Player2/Area3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.043767333, 0.4488895, -0.05149764)
-shape = SubResource("BoxShape3D_fpma5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/tvbench" unique_id=1771994484]
 shape = SubResource("ConvexPolygonShape3D_fd646")
@@ -4026,24 +3902,13 @@ mesh = NodePath("..")
 text = "TABLE"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player2" type="AudioStreamPlayer3D" parent="Living Room/sofatable/Sofa Table" index="1" unique_id=417504079 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player2" type="AudioStreamPlayer3D" parent="Living Room/sofatable/Sofa Table" index="1" unique_id=417504079 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5069495, 0)
 stream = ExtResource("57_43kuu")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D")
-
-[node name="Area3D" parent="Living Room/sofatable/Sofa Table/Signal Player2" index="0"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Living Room/sofatable/Sofa Table/Signal Player2/Area3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.005864382, -0.3444344, -0.011398077)
-shape = SubResource("BoxShape3D_fffcv")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/sofatable" unique_id=2097973426]
 shape = SubResource("ConvexPolygonShape3D_j2ixe")
@@ -4381,24 +4246,13 @@ mesh = NodePath("..")
 text = "BED"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bed/Bed" index="1" unique_id=1149602050 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bed/Bed" index="1" unique_id=1149602050 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, -2.9802319e-08, 0, 1, 0, 2.9802319e-08, 0, 1, 0, 0.5024597, 0)
 stream = ExtResource("63_flvpg")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D")
-
-[node name="Area3D" parent="Bedroom/bed/Bed/Signal Player" index="0"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bedroom/bed/Bed/Signal Player/Area3D" index="0"]
-transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1.0000019, -0.0015377998, -0.10680735, -0.008946657)
-shape = SubResource("BoxShape3D_q2ts7")
 
 [node name="Matress" parent="Bedroom/bed" index="1" unique_id=552793993]
 surface_material_override/0 = SubResource("ShaderMaterial_wd13f")
@@ -4437,24 +4291,13 @@ mesh = NodePath("..")
 text = "PILLOW"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bed/Pillow" index="1" unique_id=755305254 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bedroom/bed/Pillow" index="1" unique_id=755305254 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, -2.9802319e-08, 0, 1, 0, 2.9802319e-08, 0, 1, 0, 0.61281073, -0.85816574)
 stream = ExtResource("65_dusx7")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D2")
-
-[node name="Area3D2" parent="Bedroom/bed/Pillow/Signal Player" index="1"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bedroom/bed/Pillow/Signal Player/Area3D2" index="0"]
-transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1.0000019, -0.010111332, -0.045742154, 0.0081009865)
-shape = SubResource("BoxShape3D_78ykh")
 
 [node name="CollisionShape3D3" type="CollisionShape3D" parent="Bedroom/bed" unique_id=852097975]
 shape = SubResource("ConcavePolygonShape3D_fd646")
@@ -4946,24 +4789,13 @@ mesh = NodePath("..")
 text = "TOILET"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/toilet/Toilet" index="1" unique_id=91027091 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/toilet/Toilet" index="1" unique_id=91027091 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0, 0.5309175, 0)
 stream = ExtResource("67_cegsb")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D5")
-
-[node name="Area3D5" parent="Bathroom/toilet/Toilet/Signal Player" index="4"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/toilet/Toilet/Signal Player/Area3D5" index="0"]
-transform = Transform3D(0.9999996, -7.4505766e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.0019079, -0.13802058, 0.005645752)
-shape = SubResource("BoxShape3D_larho")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/toilet" unique_id=184700203]
 shape = SubResource("ConvexPolygonShape3D_dh07s")
@@ -4989,24 +4821,13 @@ mesh = NodePath("..")
 text = "MIRROR"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/bathroomfaucet/Mirror" index="1" unique_id=434436655 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/bathroomfaucet/Mirror" index="1" unique_id=434436655 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2083951, 0)
 stream = ExtResource("58_sdg87")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D2")
-
-[node name="Area3D2" parent="Bathroom/bathroomfaucet/Mirror/Signal Player" index="1"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/bathroomfaucet/Mirror/Signal Player/Area3D2" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2304399, 0.12272191, 0.005264044)
-shape = SubResource("BoxShape3D_4yv4g")
 
 [node name="Lamp" parent="Bathroom/bathroomfaucet" index="2" unique_id=1989527657]
 surface_material_override/0 = SubResource("ShaderMaterial_gnm7j")
@@ -5017,24 +4838,13 @@ mesh = NodePath("..")
 text = "LAMP"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/bathroomfaucet/Lamp" index="1" unique_id=1385365159 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/bathroomfaucet/Lamp" index="1" unique_id=1385365159 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8171904, 0)
 stream = ExtResource("29_by15u")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D")
-
-[node name="Area3D" parent="Bathroom/bathroomfaucet/Lamp/Signal Player" index="0"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/bathroomfaucet/Lamp/Signal Player/Area3D" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.15257776, 0.00010943413, 0.001502037)
-shape = SubResource("BoxShape3D_7eic1")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/bathroomfaucet" unique_id=1733045929]
 shape = SubResource("ConvexPolygonShape3D_25koi")
@@ -5079,24 +4889,13 @@ surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 [node name="Water Blender" parent="Bathroom/shower" index="2" unique_id=105683591]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/shower/Water Blender" index="0" unique_id=1117756893 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/shower/Water Blender" index="0" unique_id=1117756893 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0, 1.1795595, 0.044748664)
 stream = ExtResource("71_cfcrq")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D5")
-
-[node name="Area3D5" parent="Bathroom/shower/Water Blender/Signal Player" index="4"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/shower/Water Blender/Signal Player/Area3D5" index="0"]
-transform = Transform3D(0.9999996, -7.4505766e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -4.6253204e-05, 0.19987023, 0.0955205)
-shape = SubResource("BoxShape3D_0v37p")
 
 [node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=886539484]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
@@ -5110,24 +4909,13 @@ mesh = NodePath("..")
 text = "CURTAIN"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/shower/Curtain" index="1" unique_id=677254465 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/shower/Curtain" index="1" unique_id=677254465 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, -0.8275721, 1.1222732, 0)
 stream = ExtResource("71_18tso")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D5")
-
-[node name="Area3D5" parent="Bathroom/shower/Curtain/Signal Player" index="4"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/shower/Curtain/Signal Player/Area3D5" index="0"]
-transform = Transform3D(0.9999996, -7.4505766e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, 0.010634899, -0.10506821, 0.0023949146)
-shape = SubResource("BoxShape3D_1oboc")
 
 [node name="Curtain Ring_001" parent="Bathroom/shower" index="5" unique_id=1235635917]
 surface_material_override/0 = SubResource("ShaderMaterial_ewhqw")
@@ -5161,24 +4949,13 @@ mesh = NodePath("..")
 text = "HOLDER"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/soapcup/Soap Cup" index="1" unique_id=275223522 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/soapcup/Soap Cup" index="1" unique_id=275223522 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0, 0, 0)
 stream = ExtResource("74_xtb4u")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D5")
-
-[node name="Area3D5" parent="Bathroom/soapcup/Soap Cup/Signal Player" index="4"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/soapcup/Soap Cup/Signal Player/Area3D5" index="0"]
-transform = Transform3D(0.9999996, -7.4505766e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, 0.00068616867, -0.00023376942, 0.011627674)
-shape = SubResource("BoxShape3D_ns23l")
 
 [node name="Shampoo" parent="Bathroom/soapcup" index="1" unique_id=555263326]
 transform = Transform3D(0.892389, 0, 0.45126694, 0, 1, 0, -0.45126694, 0, 0.892389, 0, 0, 0)
@@ -5190,25 +4967,14 @@ mesh = NodePath("..")
 text = "SIGNAL?"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Shampoo player" type="AudioStreamPlayer3D" parent="Bathroom/soapcup/Shampoo" index="1" unique_id=352999101 node_paths=PackedStringArray("room", "area")]
+[node name="Shampoo player" type="AudioStreamPlayer3D" parent="Bathroom/soapcup/Shampoo" index="1" unique_id=352999101 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0, 0, 0)
 stream = ExtResource("10_wn8e3")
 max_distance = 3.0
 bus = &"Signal"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D5")
 replacement_whisper = ExtResource("74_fpma5")
-
-[node name="Area3D5" parent="Bathroom/soapcup/Shampoo/Shampoo player" index="4"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/soapcup/Shampoo/Shampoo player/Area3D5" index="0"]
-transform = Transform3D(0.9999996, -7.4505766e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, 0.000934124, 0.08786392, -0.0010848045)
-shape = SubResource("BoxShape3D_xjdua")
 
 [node name="Area3D" type="Area3D" parent="Bathroom/soapcup" unique_id=1494118648]
 collision_layer = 0
@@ -5231,24 +4997,13 @@ mesh = NodePath("..")
 text = "HOLDER"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/toiletpaperholder/Holder" index="1" unique_id=693063022 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/toiletpaperholder/Holder" index="1" unique_id=693063022 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0, 0, 0)
 stream = ExtResource("74_xtb4u")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D4")
-
-[node name="Area3D4" parent="Bathroom/toiletpaperholder/Holder/Signal Player" index="3"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/toiletpaperholder/Holder/Signal Player/Area3D4" index="0"]
-transform = Transform3D(0.9999996, -7.4505766e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.0019516945, 0.0025075674, -0.006965935)
-shape = SubResource("BoxShape3D_tw61u")
 
 [node name="Paper" parent="Bathroom/toiletpaperholder" index="1" unique_id=2102812964]
 surface_material_override/0 = SubResource("ShaderMaterial_7e67s")
@@ -5299,24 +5054,13 @@ mesh = NodePath("..")
 text = "TOWEL"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/towelholder/towel" index="1" unique_id=1031312402 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Bathroom/towelholder/towel" index="1" unique_id=1031312402 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0, 0, 0)
 stream = ExtResource("73_o4lce")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D3")
-
-[node name="Area3D3" parent="Bathroom/towelholder/towel/Signal Player" index="2"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Bathroom/towelholder/towel/Signal Player/Area3D3" index="0"]
-transform = Transform3D(0.9999996, -7.450577e-09, -1.4901161e-07, 3.9412917e-14, 0.9999999, 4.9266964e-07, -1.7881393e-07, 9.103678e-08, 1.0000013, -0.0024029613, -0.14659357, 0.0028221607)
-shape = SubResource("BoxShape3D_dusx7")
 
 [node name="towel_001" parent="Bathroom/towelholder" index="2" unique_id=1143377705]
 surface_material_override/0 = SubResource("ShaderMaterial_v2lqs")
@@ -5386,24 +5130,13 @@ mesh = NodePath("..")
 text = "SHOE RACK"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Hallway/shoestand/Shoestand" index="1" unique_id=777482796 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Hallway/shoestand/Shoestand" index="1" unique_id=777482796 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.004500866, 0)
 stream = ExtResource("57_242ya")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D2")
-
-[node name="Area3D2" parent="Hallway/shoestand/Shoestand/Signal Player" index="1"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Hallway/shoestand/Shoestand/Signal Player/Area3D2" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0004963875, 0.08438359, -0.041364074)
-shape = SubResource("BoxShape3D_1bcnc")
 
 [node name="Hat thing" parent="Hallway/shoestand" index="1" unique_id=611524497]
 surface_material_override/0 = SubResource("ShaderMaterial_nngwn")
@@ -5414,24 +5147,13 @@ mesh = NodePath("..")
 text = "CLOTHES RACK"
 metadata/_custom_type_script = "uid://4q753223m055"
 
-[node name="Signal Player" type="AudioStreamPlayer3D" parent="Hallway/shoestand/Hat thing" index="1" unique_id=1638681470 node_paths=PackedStringArray("room", "area")]
+[node name="Signal Player" type="AudioStreamPlayer3D" parent="Hallway/shoestand/Hat thing" index="1" unique_id=1638681470 node_paths=PackedStringArray("room")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.498157, 0)
 stream = ExtResource("58_o44a7")
 max_distance = 3.0
 bus = &"Wispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
-area = NodePath("Area3D2")
-
-[node name="Area3D2" parent="Hallway/shoestand/Hat thing/Signal Player" index="1"]
-collision_layer = 0
-collision_mask = 4
-input_ray_pickable = false
-monitorable = false
-
-[node name="CollisionShape3D" parent="Hallway/shoestand/Hat thing/Signal Player/Area3D2" index="0"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.007100582, 0.0038243532, -0.002248764)
-shape = SubResource("BoxShape3D_ewhqw")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hallway/shoestand" unique_id=1074502925]
 shape = SubResource("ConvexPolygonShape3D_cgv1t")

@@ -21,21 +21,22 @@ var _joy_look: Vector2
 var _using_joy_look: bool
 
 func _input(event: InputEvent) -> void:
-    if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED:
+    if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED && event is InputEventMouseButton:
         Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-    if event is InputEventMouseMotion:
-        var m_event: InputEventMouseMotion = event
-        _process_rel_look(Vector2(-m_event.relative.x * MOUSE_TURN_SPEED, m_event.relative.y * MOUSE_LOOK_SPEED))
-        _using_joy_look = false
+    elif Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+        if event is InputEventMouseMotion:
+            var m_event: InputEventMouseMotion = event
+            _process_rel_look(Vector2(-m_event.relative.x * MOUSE_TURN_SPEED, m_event.relative.y * MOUSE_LOOK_SPEED))
+            _using_joy_look = false
 
-    elif event is InputEventJoypadMotion:
-        var rel: Vector2 = Input.get_vector("player_look_right", "player_look_left", "player_look_up", "player_look_down")
-        _joy_look = Vector2(rel.x * JOY_TURN_SPEED, rel.y * JOY_LOOK_SPEED)
-        _using_joy_look = true
+        elif event is InputEventJoypadMotion:
+            var rel: Vector2 = Input.get_vector("player_look_right", "player_look_left", "player_look_up", "player_look_down")
+            _joy_look = Vector2(rel.x * JOY_TURN_SPEED, rel.y * JOY_LOOK_SPEED)
+            _using_joy_look = true
 
-    if Input.is_action_just_pressed("pause"):
-        get_tree().quit()
+        if Input.is_action_just_pressed("pause"):
+            get_tree().quit()
 
 
 func _process_rel_look(rel: Vector2) -> void:
