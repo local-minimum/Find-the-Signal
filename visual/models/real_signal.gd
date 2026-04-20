@@ -5,6 +5,8 @@ extends Node
 
 @export var poem: SubbedAudio
 
+@export var signal_player: AudioStreamPlayer3D
+
 @export var distance: float = 1.5
 @export var vertical_view_bias: float = 0.5
 @export var look_target: Node3D
@@ -22,16 +24,31 @@ func _enter_tree() -> void:
 
 func _handle_ready_goal() -> void:
     _outro_ready = true
+    signal_player.play()
 
 func _trigger_outro() -> void:
     __SignalBus.on_trigger_outro.emit()
     _focus_on_target()
+    _silence_signals()
     _silence_whispers()
     poem.play(null, _do_the_end, AudioHub.QueueBehaviour.IGNORE_QUEUE_SILENCE_PLAYING, 2.5)
     anim_player.play(anim)
     _outro_ready = false
 
 var _cam_slide_tween: Tween
+
+func _silence_signals() -> void:
+    var bus_idx: int = AudioServer.get_bus_index("Signal")
+    var start_volume = AudioServer.get_bus_volume_linear(bus_idx)
+
+    var fn: Callable = func(volume: float) -> void:
+        AudioServer.set_bus_volume_linear(bus_idx, volume)
+        if volume == 0.0:
+            signal_player.stop()
+
+    var tween = create_tween()
+    tween.tween_method(fn, start_volume, 0.0, _fade_wispers_time * 0.5)
+
 
 func _silence_whispers() -> void:
     var bus_idx: int = AudioServer.get_bus_index("Wispers")

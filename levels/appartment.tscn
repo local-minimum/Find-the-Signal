@@ -4482,11 +4482,12 @@ shape = SubResource("ConvexPolygonShape3D_ule8i")
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Bedroom/bed" unique_id=333170108]
 shape = SubResource("ConvexPolygonShape3D_dse8r")
 
-[node name="phone" parent="Bedroom/bed" unique_id=1747965263 node_paths=PackedStringArray("anim_player", "look_target", "_camera") instance=ExtResource("67_larho")]
+[node name="phone" parent="Bedroom/bed" unique_id=1747965263 node_paths=PackedStringArray("anim_player", "signal_player", "look_target", "_camera") instance=ExtResource("67_larho")]
 transform = Transform3D(0.7988142, 0, 0.60157794, 0, 1, 0, -0.60157806, 0, 0.79881394, 0, 0.55717754, -0.8230505)
 script = ExtResource("68_1oboc")
 anim_player = NodePath("../AnimationPlayer")
 poem = SubResource("Resource_7d5gt")
+signal_player = NodePath("AudioStreamPlayer3D")
 distance = 0.5
 vertical_view_bias = 0.75
 look_target = NodePath(".")
@@ -4503,6 +4504,7 @@ text = "PHONE"
 metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Bedroom/bed/phone" unique_id=2088280984]
+stream = ExtResource("10_wn8e3")
 max_distance = 4.0
 bus = &"Signal"
 
