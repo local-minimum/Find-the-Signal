@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dy50xavr0qc0u" path="res://visual/models/coffemug.blend" id="6_i5uue"]
 [ext_resource type="PackedScene" uid="uid://ck4qkkoffwrh6" path="res://visual/models/vase.blend" id="7_ygfjx"]
 [ext_resource type="FontFile" uid="uid://chcmjokkcuh33" path="res://fonts/Absolute 10.ttf" id="8_tok6w"]
+[ext_resource type="Script" uid="uid://dprfesilhoqcu" path="res://levels/main_menu/menu_whisperer.gd" id="10_7ag5j"]
 [ext_resource type="AudioStream" uid="uid://m6pm5l08a586" path="res://audio/whispers/menu_whats.mp3" id="10_r3mdn"]
 [ext_resource type="AudioStream" uid="uid://6xuxepdaovbw" path="res://audio/whispers/menu_that.mp3" id="11_7ag5j"]
 [ext_resource type="AudioStream" uid="uid://d0hy8x5u7v8is" path="res://audio/whispers/menu_signal.mp3" id="12_hunuo"]
@@ -277,6 +278,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_r3mdn"]
+size = Vector3(2.353, 0.48173046, 0.1)
+
 [sub_resource type="TextMesh" id="TextMesh_tok6w"]
 text = "THAT"
 font = ExtResource("8_tok6w")
@@ -339,9 +343,12 @@ font_size = 14
 shadow_size = 2
 shadow_color = Color(0.14, 0.14, 0.14, 0.85882354)
 
-[node name="Main" type="Node3D" unique_id=1626330220]
+[node name="Main" type="Node3D" unique_id=1626330220 node_paths=PackedStringArray("whats", "that", "sig")]
 script = ExtResource("1_ckfqu")
 level = "uid://76umehonao8p"
+whats = NodePath("Title/Whats")
+that = NodePath("Title/That")
+sig = NodePath("Title/Signal")
 
 [node name="Decoration" type="Node3D" parent="." unique_id=2091812135]
 
@@ -472,10 +479,12 @@ fov = 50.0
 
 [node name="Title" type="Node3D" parent="." unique_id=550078052]
 
-[node name="Whats" type="MeshInstance3D" parent="Title" unique_id=679658265]
+[node name="Whats" type="MeshInstance3D" parent="Title" unique_id=679658265 node_paths=PackedStringArray("player")]
 transform = Transform3D(0.9974768, -0.07099259, 0, 0.07099259, 0.9974768, 0, 0, 0, 1, 1.6724939, 1.7122191, -3.957447)
 mesh = SubResource("TextMesh_aawn3")
 surface_material_override/0 = SubResource("ShaderMaterial_iufuv")
+script = ExtResource("10_7ag5j")
+player = NodePath("AudioStreamPlayer")
 
 [node name="TextWriterHelper" type="Node" parent="Title/Whats" unique_id=1024025775 node_paths=PackedStringArray("mesh")]
 script = ExtResource("3_x7dr8")
@@ -485,12 +494,22 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Title/Whats" unique_id=1605236825]
 stream = ExtResource("10_r3mdn")
+volume_db = -80.0
+autoplay = true
 bus = &"Wispers"
 
-[node name="That" type="MeshInstance3D" parent="Title" unique_id=1822115186]
+[node name="Area3D" type="Area3D" parent="Title/Whats" unique_id=546523396]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Title/Whats/Area3D" unique_id=537746184]
+transform = Transform3D(1.0000073, -2.2351742e-08, 0, 2.2351742e-08, 1.0000073, 0, 0, 0, 1, -0.037781, 0.0071001053, 0)
+shape = SubResource("BoxShape3D_r3mdn")
+
+[node name="That" type="MeshInstance3D" parent="Title" unique_id=1822115186 node_paths=PackedStringArray("player")]
 transform = Transform3D(0.9974768, -0.07099259, 0, 0.07099259, 0.9974768, 0, 0, 0, 1, 1.7081411, 1.1510996, -3.957447)
 mesh = SubResource("TextMesh_tok6w")
 surface_material_override/0 = SubResource("ShaderMaterial_aawn3")
+script = ExtResource("10_7ag5j")
+player = NodePath("AudioStreamPlayer")
 
 [node name="TextWriterHelper" type="Node" parent="Title/That" unique_id=1608302461 node_paths=PackedStringArray("mesh")]
 script = ExtResource("3_x7dr8")
@@ -500,12 +519,22 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Title/That" unique_id=853245480]
 stream = ExtResource("11_7ag5j")
+volume_db = -80.0
+autoplay = true
 bus = &"Wispers"
 
-[node name="Signal" type="MeshInstance3D" parent="Title" unique_id=236440513]
+[node name="Area3D" type="Area3D" parent="Title/That" unique_id=1630359350]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Title/That/Area3D" unique_id=759914142]
+transform = Transform3D(1.0000073, -2.2351742e-08, 0, 2.2351742e-08, 1.0000073, 0, 0, 0, 1, -0.037781, 0.0071001053, 0)
+shape = SubResource("BoxShape3D_r3mdn")
+
+[node name="Signal" type="MeshInstance3D" parent="Title" unique_id=236440513 node_paths=PackedStringArray("player")]
 transform = Transform3D(0.9974768, -0.07099259, 0, 0.07099259, 0.9974768, 0, 0, 0, 1, 1.7556534, 0.58723533, -3.957447)
 mesh = SubResource("TextMesh_8yf7r")
 surface_material_override/0 = SubResource("ShaderMaterial_vfruc")
+script = ExtResource("10_7ag5j")
+player = NodePath("AudioStreamPlayer")
 
 [node name="TextWriterHelper" type="Node" parent="Title/Signal" unique_id=695074759 node_paths=PackedStringArray("mesh")]
 script = ExtResource("3_x7dr8")
@@ -515,7 +544,15 @@ metadata/_custom_type_script = "uid://4q753223m055"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Title/Signal" unique_id=1571792325]
 stream = ExtResource("12_hunuo")
+volume_db = -80.0
+autoplay = true
 bus = &"Wispers"
+
+[node name="Area3D" type="Area3D" parent="Title/Signal" unique_id=1516322872]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Title/Signal/Area3D" unique_id=977989700]
+transform = Transform3D(1.0000073, -2.2351742e-08, 0, 2.2351742e-08, 1.0000073, 0, 0, 0, 1, -0.037781, 0.0071001053, 0)
+shape = SubResource("BoxShape3D_r3mdn")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1662956845]
 
@@ -545,6 +582,13 @@ text = "Made for Ludum Dare 59
 By Local_Minimum, poem by Xymidaz"
 label_settings = SubResource("LabelSettings_ckfqu")
 horizontal_alignment = 2
+
+[connection signal="mouse_entered" from="Title/Whats/Area3D" to="Title/Whats" method="_on_area_3d_mouse_entered"]
+[connection signal="mouse_exited" from="Title/Whats/Area3D" to="Title/Whats" method="_on_area_3d_mouse_exited"]
+[connection signal="mouse_entered" from="Title/That/Area3D" to="Title/That" method="_on_area_3d_mouse_entered"]
+[connection signal="mouse_exited" from="Title/That/Area3D" to="Title/That" method="_on_area_3d_mouse_exited"]
+[connection signal="mouse_entered" from="Title/Signal/Area3D" to="Title/Signal" method="_on_area_3d_mouse_entered"]
+[connection signal="mouse_exited" from="Title/Signal/Area3D" to="Title/Signal" method="_on_area_3d_mouse_exited"]
 
 [editable path="Decoration/chair"]
 [editable path="Decoration/kitchen_table"]
