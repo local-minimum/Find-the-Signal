@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://76umehonao8p"]
 
-[ext_resource type="PackedScene" uid="uid://cyrcju6ju545l" path="res://levels/appartment.tscn" id="1_80vhd"]
+[ext_resource type="PackedScene" uid="uid://cyrcju6ju545l" path="res://levels/apartment/appartment.tscn" id="1_80vhd"]
 [ext_resource type="PackedScene" uid="uid://cfelmhc86djyq" path="res://subtitles/simple_subtitles_container.tscn" id="2_hjsbj"]
-[ext_resource type="Script" uid="uid://cnyle5dkbjm3u" path="res://levels/intro_dialogue.gd" id="3_cwqvt"]
+[ext_resource type="Script" uid="uid://cnyle5dkbjm3u" path="res://levels/apartment/intro_dialogue.gd" id="3_cwqvt"]
 [ext_resource type="Script" uid="uid://cycuc5ntkfi75" path="res://subtitles/subbed_audio.gd" id="4_5mrsh"]
-[ext_resource type="Script" uid="uid://6r2dupbaj22l" path="res://levels/the_ender.gd" id="5_gjl0y"]
+[ext_resource type="Script" uid="uid://6r2dupbaj22l" path="res://levels/apartment/the_ender.gd" id="5_gjl0y"]
 [ext_resource type="FontFile" uid="uid://chcmjokkcuh33" path="res://fonts/Absolute 10.ttf" id="5_safpt"]
 [ext_resource type="AudioStream" uid="uid://dtm3wfwgfw70d" path="res://audio/dialogue/the_end.mp3" id="7_vnv7o"]
 
