@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cfelmhc86djyq"]
 
-[ext_resource type="Script" uid="uid://cbgfqqfwx7v5o" path="res://core/subtitles/subtitles.gd" id="1_p2jd1"]
+[ext_resource type="Script" uid="uid://cbgfqqfwx7v5o" path="res://subtitles/subtitles.gd" id="1_p2jd1"]
 [ext_resource type="FontFile" uid="uid://vrrmdx83skor" path="res://fonts/roboto/Roboto-Regular.ttf" id="2_bvfgd"]
 [ext_resource type="FontFile" uid="uid://cc4xli25271fd" path="res://fonts/roboto/Roboto-Bold.ttf" id="3_3ukyr"]
 [ext_resource type="FontFile" uid="uid://b5c0p00x6g6u5" path="res://fonts/roboto/Roboto-Italic.ttf" id="4_vbbp5"]
@@ -46,7 +46,7 @@ theme_override_styles/panel = SubResource("StyleBoxEmpty_5r7rs")
 process_mode = 1
 script = ExtResource("1_p2jd1")
 subs_root = NodePath("..")
-labels = [NodePath("../MarginContainer/CenterContainer/PanelContainer/MarginContainer/Subtitles/Line 1"), NodePath("../MarginContainer/CenterContainer/PanelContainer/MarginContainer/Subtitles/Line 2")]
+labels = [NodePath("../MarginContainer/CenterContainer/PanelContainer/MarginContainer/Subtitles/Line 1")]
 regular_style = SubResource("LabelSettings_uf1ab")
 bold_style = SubResource("LabelSettings_p8cgh")
 italic_style = SubResource("LabelSettings_wdlki")
@@ -79,13 +79,6 @@ layout_mode = 2
 mouse_filter = 2
 
 [node name="Line 1" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/MarginContainer/Subtitles" unique_id=325371103]
-visible = false
-layout_mode = 2
-theme_override_fonts/font = ExtResource("4_vbbp5")
-theme_override_font_sizes/font_size = 36
-horizontal_alignment = 1
-
-[node name="Line 2" type="Label" parent="MarginContainer/CenterContainer/PanelContainer/MarginContainer/Subtitles" unique_id=1962749650]
 visible = false
 layout_mode = 2
 theme_override_fonts/font = ExtResource("4_vbbp5")

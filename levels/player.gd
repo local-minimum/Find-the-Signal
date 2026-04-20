@@ -1,7 +1,10 @@
 extends CharacterBody3D
+class_name PlayerCharacter
 
 @export var cam: Camera3D
 @export var invert_y: bool
+
+var cinematic: bool
 
 const SPEED: float = 2.0
 const JUMP_VELOCITY: float = 1.5
@@ -14,6 +17,10 @@ const JOY_LOOK_SPEED: float = PI * 0.5
 const MOUSE_DEADZONE: float = 0.001
 const MAX_PITCH_CAM: float = PI * 0.3
 
+func _enter_tree() -> void:
+    if __SignalBus.on_trigger_outro.connect(_handle_trigger_outro) != OK:
+        push_error("Failed to connect trigger outro")
+
 func _ready() -> void:
     Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
@@ -24,7 +31,7 @@ func _input(event: InputEvent) -> void:
     if Input.mouse_mode != Input.MOUSE_MODE_CAPTURED && event is InputEventMouseButton:
         Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-    elif Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+    elif Input.mouse_mode == Input.MOUSE_MODE_CAPTURED && !cinematic:
         if event is InputEventMouseMotion:
             var m_event: InputEventMouseMotion = event
             _process_rel_look(Vector2(-m_event.relative.x * MOUSE_TURN_SPEED, m_event.relative.y * MOUSE_LOOK_SPEED))
@@ -39,8 +46,8 @@ func _input(event: InputEvent) -> void:
 
             get_viewport().set_input_as_handled()
 
-        if Input.is_action_just_pressed("pause"):
-            get_tree().quit()
+    if Input.is_action_just_pressed("pause"):
+        get_tree().quit()
 
 func _process_rel_look(rel: Vector2) -> void:
         if abs(rel.x) > MOUSE_DEADZONE:
@@ -52,13 +59,16 @@ func _process_rel_look(rel: Vector2) -> void:
                 cam.rotation = (cam.rotation + rel.y * Vector3.LEFT).clampf(-MAX_PITCH_CAM, MAX_PITCH_CAM)
 
 func _physics_process(delta: float) -> void:
+    if cinematic:
+        return
+
     # Add the gravity.
     if not is_on_floor():
         velocity += get_gravity() * delta
 
     # Handle jump.
-    if Input.is_action_just_pressed("player_jump") and is_on_floor():
-        velocity.y = JUMP_VELOCITY
+    #if Input.is_action_just_pressed("player_jump") and is_on_floor():
+        #velocity.y = JUMP_VELOCITY
 
     if _using_joy_look && _joy_look != Vector2.ZERO:
         _process_rel_look(_joy_look * delta)
@@ -75,3 +85,6 @@ func _physics_process(delta: float) -> void:
         velocity.z = move_toward(velocity.z, 0, SPEED)
 
     move_and_slide()
+
+func _handle_trigger_outro() -> void:
+    cinematic = true

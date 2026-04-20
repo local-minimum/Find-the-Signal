@@ -18,3 +18,8 @@ signal on_clear_queued_subtitles(subs: Array[SubData])
 signal on_clear_all_queued_subtitles()
 signal on_toggle_subtitles(enabled: bool)
 signal on_change_subtitles_size(size: int)
+
+
+# Trigger outro
+signal on_ready_goal
+signal on_trigger_outro

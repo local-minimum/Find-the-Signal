@@ -92,7 +92,9 @@
 [ext_resource type="AudioStream" uid="uid://caghphg0e8k61" path="res://audio/toilet.mp3" id="67_cegsb"]
 [ext_resource type="AudioStream" uid="uid://bhor3shjgftkc" path="res://audio/alarmclock.mp3" id="67_fffcv"]
 [ext_resource type="AudioStream" uid="uid://corrfau38w3xv" path="res://audio/shoe.mp3" id="67_hfraf"]
+[ext_resource type="PackedScene" uid="uid://b06hksfhs8mg0" path="res://visual/models/phone.blend" id="67_larho"]
 [ext_resource type="AudioStream" uid="uid://dh525lxwa55gh" path="res://audio/bedsidetable.mp3" id="67_xdkwc"]
+[ext_resource type="Script" uid="uid://d3sdl6vdbd38r" path="res://visual/models/real_signal.gd" id="68_1oboc"]
 [ext_resource type="AudioStream" uid="uid://bji4l5miwr20n" path="res://audio/closet.mp3" id="69_tw61u"]
 [ext_resource type="AudioStream" uid="uid://exvf5j0gwydo" path="res://audio/curtain.mp3" id="71_18tso"]
 [ext_resource type="AudioStream" uid="uid://r734db3edo8n" path="res://audio/shower.mp3" id="71_cfcrq"]
@@ -1578,6 +1580,143 @@ points = PackedVector3Array(0.4299649, 0.5389691, 0.9939293, 0.4299649, 0.436203
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_dse8r"]
 points = PackedVector3Array(-0.16107956, 0.54414845, -0.9605097, -0.20978948, 0.54414845, -0.931836, -0.16107956, 0.6106573, -0.9605097, 0.16099742, 0.54414845, -0.9605097, -0.16107956, 0.53408986, -0.931836, -0.20978948, 0.6106573, -0.931836, -0.20978948, 0.54414845, -0.74224144, -0.16107956, 0.62073284, -0.931836, 0.16099742, 0.6106573, -0.9605097, 0.20978948, 0.54414845, -0.931836, 0.16099742, 0.53408986, -0.931836, -0.16107956, 0.53408986, -0.74224144, -0.20978948, 0.6106573, -0.74224144, -0.16107956, 0.54414845, -0.71354353, -0.16107956, 0.62073284, -0.74224144, 0.16099742, 0.62073284, -0.931836, 0.20978948, 0.6106573, -0.931836, 0.20978948, 0.54414845, -0.74224144, 0.16099742, 0.53408986, -0.74224144, -0.16107956, 0.6106573, -0.71354353, 0.16099742, 0.54414845, -0.71354353, 0.16099742, 0.62073284, -0.74224144, 0.20978948, 0.6106573, -0.74224144, 0.16099742, 0.6106573, -0.71354353)
+
+[sub_resource type="Resource" id="Resource_7d5gt"]
+script = ExtResource("12_yoejx")
+audio_path = "uid://bw8q22tkle3rt"
+metadata/_custom_type_script = "uid://cycuc5ntkfi75"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1oboc"]
+render_priority = 0
+shader = ExtResource("1_l4bwr")
+shader_parameter/spritefont = ExtResource("2_sikar")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(15, 7, 14, 13, 4)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 3
+shader_parameter/font_color = Color(0.24000001, 0.25733334, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.1, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 20.0000002831228
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1oboc"]
+radius = 1.065918
+
+[sub_resource type="Animation" id="Animation_1oboc"]
+resource_name = "Outro"
+length = 6.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pillow:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6, 3.98),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0.28707075, -0.08261311, -0.08990884)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pillow:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.6, 3.98),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0), Vector3(0.17197539, 0.97672105, -0.11508239)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("phone:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(3.52, 6.04),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.55717754, -0.8230505), Vector3(0.020902634, 0.649562, -0.816)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("phone:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(3.52, 6.04),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0.6454751, 0), Vector3(1.0835221, 0.57445854, -0.4461088)]
+}
+
+[sub_resource type="Animation" id="Animation_0v37p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pillow:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pillow:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("phone:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.55717754, -0.8230505)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("phone:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.6454751, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0v37p"]
+_data = {
+&"Outro": SubResource("Animation_1oboc"),
+&"RESET": SubResource("Animation_0v37p")
+}
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wefy1"]
 render_priority = 0
@@ -4317,6 +4456,7 @@ transform = Transform3D(1.0000019, 0, -5.364418e-07, 0, 1, 0, 5.364418e-07, 0, 1
 shape = SubResource("BoxShape3D_jtfew")
 
 [node name="Pillow" parent="Bedroom/bed" index="2" unique_id=1877344731]
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, 0, 0, 0)
 surface_material_override/0 = SubResource("ShaderMaterial_qdp00")
 
 [node name="TextWriterHelper" type="Node" parent="Bedroom/bed/Pillow" index="0" unique_id=14904613 node_paths=PackedStringArray("mesh")]
@@ -4341,6 +4481,42 @@ shape = SubResource("ConvexPolygonShape3D_ule8i")
 
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Bedroom/bed" unique_id=333170108]
 shape = SubResource("ConvexPolygonShape3D_dse8r")
+
+[node name="phone" parent="Bedroom/bed" unique_id=1747965263 node_paths=PackedStringArray("anim_player", "look_target", "_camera") instance=ExtResource("67_larho")]
+transform = Transform3D(0.7988142, 0, 0.60157794, 0, 1, 0, -0.60157806, 0, 0.79881394, 0, 0.55717754, -0.8230505)
+script = ExtResource("68_1oboc")
+anim_player = NodePath("../AnimationPlayer")
+poem = SubResource("Resource_7d5gt")
+distance = 0.5
+vertical_view_bias = 0.75
+look_target = NodePath(".")
+_camera = NodePath("../../../Player/Eyes")
+
+[node name="Phone" parent="Bedroom/bed/phone" index="0" unique_id=499605922]
+transform = Transform3D(1.0000001, 0, 0, 0, 1.0000002, 0, 0, 0, 1.0000001, 0, 0, 0)
+surface_material_override/0 = SubResource("ShaderMaterial_1oboc")
+
+[node name="TextWriterHelper" type="Node" parent="Bedroom/bed/phone/Phone" index="0" unique_id=841718495 node_paths=PackedStringArray("mesh")]
+script = ExtResource("2_vj7uu")
+mesh = NodePath("..")
+text = "PHONE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Bedroom/bed/phone" unique_id=2088280984]
+max_distance = 4.0
+bus = &"Signal"
+
+[node name="Area3D" type="Area3D" parent="Bedroom/bed/phone" unique_id=475881482]
+collision_layer = 0
+collision_mask = 2
+input_ray_pickable = false
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bedroom/bed/phone/Area3D" unique_id=1503722900]
+shape = SubResource("CylinderShape3D_1oboc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Bedroom/bed" unique_id=1673975804]
+libraries/ = SubResource("AnimationLibrary_0v37p")
 
 [node name="bedsidetable" parent="Bedroom" unique_id=1174490723 instance=ExtResource("23_j2ixe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.77837515, 0.033242345, -3.7137403)
@@ -4972,6 +5148,7 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.6
 script = ExtResource("8_incia")
 _require_room = NodePath("..")
 _text_write_helper = NodePath("Shampoo/TextWriterHelper")
+_near_threshold = 0.3
 _spellings = Array[String](["SIGNAL?", "SAGNIL?", "SAMNIL?", "SHAMNIL", "SHAMNIO", "SHAMNOO", "SHAMPOO"])
 _whisperer = NodePath("Shampoo/Shampoo player")
 _dialogue = SubResource("Resource_xjdua")
@@ -5412,7 +5589,7 @@ transform = Transform3D(0.91306573, 0.18437171, -0.36375526, -0.19793107, 0.9802
 script = ExtResource("8_incia")
 _require_room = NodePath("..")
 _text_write_helper = NodePath("Ubrella/TextWriterHelper")
-_near_threshold = 0.5
+_near_threshold = 0.6
 _spellings = Array[String](["SIGNAL?", "SIGNALL", "SIBNALL", "SIBNELLA", "UIBNELLA", "UMBNELLA", "UMBRELLA", "UMBRELLA"])
 _whisperer = NodePath("Signal Player")
 _dialogue = SubResource("Resource_yoejx")
@@ -5507,6 +5684,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [connection signal="body_exited" from="Living Room/remote/Area3D" to="Living Room/remote" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Bedroom/Area3D" to="Bedroom" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Bedroom/Area3D" to="Bedroom" method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Bedroom/bed/phone/Area3D" to="Bedroom/bed/phone" method="_on_area_3d_body_entered"]
 [connection signal="body_entered" from="Bedroom/alarmclock/Area3D" to="Bedroom/alarmclock" method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Bedroom/alarmclock/Area3D" to="Bedroom/alarmclock" method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Bathroom/Area3D" to="Bathroom" method="_on_area_3d_body_entered"]
@@ -5564,6 +5742,7 @@ surface_material_override/0 = SubResource("ShaderMaterial_o44a7")
 [editable path="Living Room/magazine4"]
 [editable path="Living Room/remote"]
 [editable path="Bedroom/bed"]
+[editable path="Bedroom/bed/phone"]
 [editable path="Bedroom/bedsidetable"]
 [editable path="Bedroom/closet"]
 [editable path="Bedroom/closet2"]
