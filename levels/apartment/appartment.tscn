@@ -5587,7 +5587,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0019133091, -0.0063756704, 
 shape = SubResource("BoxShape3D_dha8w")
 
 [node name="umbrella" parent="Hallway" unique_id=103978942 node_paths=PackedStringArray("_require_room", "_text_write_helper", "_whisperer") instance=ExtResource("42_wefy1")]
-transform = Transform3D(0.91306573, 0.18437171, -0.36375526, -0.19793107, 0.9802159, 0, 0.35655874, 0.07199848, 0.93149453, 0.8344456, 0.49428183, 1.7800694)
+transform = Transform3D(0.91306573, 0.18437171, -0.36375526, -0.19793107, 0.9802159, 0, 0.35655874, 0.07199848, 0.93149453, 0.73263836, 0.49428183, 1.3622675)
 script = ExtResource("8_incia")
 _require_room = NodePath("..")
 _text_write_helper = NodePath("Ubrella/TextWriterHelper")
