@@ -17,6 +17,7 @@
 [ext_resource type="AudioStream" uid="uid://8dchny1mkf61" path="res://audio/signal.mp3" id="10_wn8e3"]
 [ext_resource type="PackedScene" uid="uid://bxw3m8s02sjcf" path="res://visual/models/fridgefreezer.blend" id="11_3f1wm"]
 [ext_resource type="PackedScene" uid="uid://chyts0onlys3m" path="res://visual/models/kitchen_cupboards.blend" id="12_k36cs"]
+[ext_resource type="Script" uid="uid://cycuc5ntkfi75" path="res://subtitles/subbed_audio.gd" id="12_yoejx"]
 [ext_resource type="PackedScene" uid="uid://1y1yv4w5dmik" path="res://visual/models/kitchen_table.blend" id="13_ctgk5"]
 [ext_resource type="PackedScene" uid="uid://bmh8m68fp5jc2" path="res://visual/models/kitchen_small_bench.blend" id="13_k2cr2"]
 [ext_resource type="AudioStream" uid="uid://bhfit6dxs766w" path="res://audio/chair.mp3" id="14_qsdo8"]
@@ -461,6 +462,11 @@ points = PackedVector3Array(-1.0965928, -0.995453, -0.050000012, -1.0965928, -0.
 
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vkan1"]
 points = PackedVector3Array(-1.0965928, -0.995453, -0.050000012, -1.0965928, -0.995453, 0.050000012, -1.0965928, 0.9954529, -0.050000012, 0, -0.995453, -0.050000012, 0, -0.995453, 0.050000012, -1.0965928, 0.9954529, 0.050000012, 0, 0.9954529, -0.050000012, 0, 0.9954529, 0.050000012)
+
+[sub_resource type="Resource" id="Resource_larho"]
+script = ExtResource("12_yoejx")
+audio_path = "uid://bvspjv1c2dbhe"
+metadata/_custom_type_script = "uid://cycuc5ntkfi75"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_82452"]
 render_priority = 0
@@ -1280,6 +1286,11 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 [sub_resource type="BoxShape3D" id="BoxShape3D_2bv2k"]
 size = Vector3(0.07483593, 0.19915426, 0.08714854)
 
+[sub_resource type="Resource" id="Resource_1oboc"]
+script = ExtResource("12_yoejx")
+audio_path = "uid://0384ctl7ocu5"
+metadata/_custom_type_script = "uid://cycuc5ntkfi75"
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_qxbha"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1462,6 +1473,11 @@ points = PackedVector3Array(-0.38330373, -0.14535545, -7.504225e-05, -0.37594983
 [sub_resource type="BoxShape3D" id="BoxShape3D_c6544"]
 size = Vector3(0.7829941, 0.5822562, 0.68404186)
 
+[sub_resource type="Resource" id="Resource_0v37p"]
+script = ExtResource("12_yoejx")
+audio_path = "uid://jyjh1hp1g56c"
+metadata/_custom_type_script = "uid://cycuc5ntkfi75"
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bpw3g"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -1637,6 +1653,11 @@ shader_parameter/uv_characters_per_line = 27.0000003874312
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="Resource" id="Resource_ns23l"]
+script = ExtResource("12_yoejx")
+audio_path = "uid://cy8vjuyr2fhsq"
+metadata/_custom_type_script = "uid://cycuc5ntkfi75"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xtb4u"]
 render_priority = 0
@@ -1899,6 +1920,11 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="Resource" id="Resource_xjdua"]
+script = ExtResource("12_yoejx")
+audio_path = "uid://lssbojl1m6i5"
+metadata/_custom_type_script = "uid://cycuc5ntkfi75"
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tspi8"]
 render_priority = 0
 shader = ExtResource("1_l4bwr")
@@ -2154,6 +2180,11 @@ shader_parameter/uv_character_aspect_ratio = 1.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dha8w"]
 size = Vector3(0.120563164, 0.18954644, 0.27873933)
+
+[sub_resource type="Resource" id="Resource_yoejx"]
+script = ExtResource("12_yoejx")
+audio_path = "uid://bes426yfjox74"
+metadata/_custom_type_script = "uid://cycuc5ntkfi75"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_242ya"]
 render_priority = 0
@@ -2610,6 +2641,7 @@ _near_threshold = 0.5
 _spellings = Array[String](["SIGNAL?", "SAIGNAL", "SAINTAL", "SAINTIL", "SAINTILG", "SAINTING", "PAINTING"])
 _word_spacings = Array[int]([2, 2, 2, 2, 3])
 _whisperer = NodePath("Signal Player")
+_dialogue = SubResource("Resource_larho")
 
 [node name="Painting" parent="Office/Signal Painting" index="0" unique_id=1593500899]
 surface_material_override/0 = SubResource("ShaderMaterial_82452")
@@ -3648,6 +3680,7 @@ _text_write_helper = NodePath("Banana/TextWriterHelper")
 _near_threshold = 0.9
 _spellings = Array[String](["SIGNAL?", "SAGNAL?", "SAGNALA", "SANALA", "SANANA", "BANANA"])
 _whisperer = NodePath("Signal Player")
+_dialogue = SubResource("Resource_1oboc")
 
 [node name="Banana" parent="Kitchen/banana" index="0" unique_id=336904905]
 transform = Transform3D(1, -8.7414676e-08, 8.4143714e-10, -8.7414676e-08, -0.9998145, 0.019249767, -8.414318e-10, -0.019249767, -0.9998145, 0, -0.06838274, 0.23409033)
@@ -4182,6 +4215,7 @@ _text_write_helper = NodePath("Remote/TextWriterHelper")
 _near_threshold = 0.4
 _spellings = Array[String](["SIGNAL?", "SIGOAL?", "RIGOAL?", "RIGOTL?", "RIGOTL", "REGOTL", "REGOTE", "REMOTE"])
 _whisperer = NodePath("Signal Player2")
+_dialogue = SubResource("Resource_0v37p")
 
 [node name="Remote" parent="Living Room/remote" index="0" unique_id=224622674]
 surface_material_override/0 = SubResource("ShaderMaterial_bpw3g")
@@ -4723,6 +4757,7 @@ _text_write_helper = NodePath("Alarm Clock/TextWriterHelper")
 _near_threshold = 0.5
 _spellings = Array[String](["SIGNAL?", "SIAGNL?", "SLAGNL?", "SLAGNLO?", "SLARNLO?", "SLARNLOC", "ALARNLOC", "ALARMLOC", "ALARMLOCK", "ALARM LOCK", "ALARM CLOCK"])
 _whisperer = NodePath("Signal Player")
+_dialogue = SubResource("Resource_ns23l")
 
 [node name="Alarm Clock" parent="Bedroom/alarmclock" index="0" unique_id=751942778]
 surface_material_override/0 = SubResource("ShaderMaterial_xtb4u")
@@ -4939,6 +4974,7 @@ _require_room = NodePath("..")
 _text_write_helper = NodePath("Shampoo/TextWriterHelper")
 _spellings = Array[String](["SIGNAL?", "SAGNIL?", "SAMNIL?", "SHAMNIL", "SHAMNIO", "SHAMNOO", "SHAMPOO"])
 _whisperer = NodePath("Shampoo/Shampoo player")
+_dialogue = SubResource("Resource_xjdua")
 
 [node name="Soap Cup" parent="Bathroom/soapcup" index="0" unique_id=282002631]
 surface_material_override/0 = SubResource("ShaderMaterial_tspi8")
@@ -5379,6 +5415,7 @@ _text_write_helper = NodePath("Ubrella/TextWriterHelper")
 _near_threshold = 0.5
 _spellings = Array[String](["SIGNAL?", "SIGNALL", "SIBNALL", "SIBNELLA", "UIBNELLA", "UMBNELLA", "UMBRELLA", "UMBRELLA"])
 _whisperer = NodePath("Signal Player")
+_dialogue = SubResource("Resource_yoejx")
 
 [node name="Ubrella" parent="Hallway/umbrella" index="0" unique_id=1054375483]
 transform = Transform3D(-0.9999822, 0.0059978105, -0.000680089, 0.0058887955, 0.9940935, 0.108367465, 0.0013261139, 0.10836168, -0.99411035, 0.022859573, -0.0072944164, 0.07427311)

@@ -7,15 +7,20 @@ class_name SignalCheckpoint
 @export var _spellings: Array[String] = ["SIGNAL?"]
 @export var _word_spacings: Array[int] = [2]
 @export var _whisperer: WisperPlayer
+@export var _dialogue: SubbedAudio
 
 var completed: bool:
     set(value):
-        completed = value
-        if value:
+        if value && !completed:
+            completed = value
+
             if _whisperer:
                 _whisperer.change_to_whisper()
             else:
                 push_warning("This signal %s doesn't have a whisper" % self)
+
+            if _dialogue != null:
+                _dialogue.play()
 
             if _require_room:
                 _require_room.appartment.signals_found += 1
