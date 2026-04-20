@@ -23,3 +23,4 @@ signal on_change_subtitles_size(size: int)
 # Trigger outro
 signal on_ready_goal
 signal on_trigger_outro
+signal on_trigger_the_end

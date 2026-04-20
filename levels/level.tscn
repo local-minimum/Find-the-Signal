@@ -4,6 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cfelmhc86djyq" path="res://subtitles/simple_subtitles_container.tscn" id="2_hjsbj"]
 [ext_resource type="Script" uid="uid://cnyle5dkbjm3u" path="res://levels/intro_dialogue.gd" id="3_cwqvt"]
 [ext_resource type="Script" uid="uid://cycuc5ntkfi75" path="res://subtitles/subbed_audio.gd" id="4_5mrsh"]
+[ext_resource type="Script" uid="uid://6r2dupbaj22l" path="res://levels/the_ender.gd" id="5_gjl0y"]
+[ext_resource type="FontFile" uid="uid://chcmjokkcuh33" path="res://fonts/Absolute 10.ttf" id="5_safpt"]
+[ext_resource type="AudioStream" uid="uid://dtm3wfwgfw70d" path="res://audio/dialogue/the_end.mp3" id="7_vnv7o"]
 
 [sub_resource type="Resource" id="Resource_safpt"]
 script = ExtResource("4_5mrsh")
@@ -20,3 +23,420 @@ offset_top = -54.0
 [node name="Intro Dialogue" type="Node" parent="." unique_id=404100729]
 script = ExtResource("3_cwqvt")
 audio = SubResource("Resource_safpt")
+
+[node name="The Ender" type="CanvasLayer" parent="." unique_id=197655452 node_paths=PackedStringArray("the_ender", "labels")]
+script = ExtResource("5_gjl0y")
+the_ender = NodePath("AudioStreamPlayer")
+labels = [NodePath("The End"), NodePath("The End2"), NodePath("The End3"), NodePath("The End4"), NodePath("The End5"), NodePath("The End6"), NodePath("The End7"), NodePath("The End8"), NodePath("The End9"), NodePath("The End10"), NodePath("The End11"), NodePath("The End12"), NodePath("The End13"), NodePath("The End14"), NodePath("The End15"), NodePath("The End16"), NodePath("The End17"), NodePath("The End18"), NodePath("The End19"), NodePath("The End20"), NodePath("The End21"), NodePath("The End22"), NodePath("The End23"), NodePath("The End Big")]
+
+[node name="The End" type="Label" parent="The Ender" unique_id=1011329631]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -234.0
+offset_top = 200.0
+offset_right = 45.0
+offset_bottom = 281.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23921569, 0.5019608, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End2" type="Label" parent="The Ender" unique_id=328372301]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -380.0
+offset_top = -172.0
+offset_right = -101.0
+offset_bottom = -91.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.24000001, 0.39599997, 0.5, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End3" type="Label" parent="The Ender" unique_id=111744111]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 88.0
+offset_top = -241.0
+offset_right = 367.0
+offset_bottom = -160.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.34833336, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End4" type="Label" parent="The Ender" unique_id=1049965520]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -372.0
+offset_top = 74.0
+offset_right = -93.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.43933335, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End5" type="Label" parent="The Ender" unique_id=1471350489]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = 79.0
+offset_right = 461.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.24000001, 0.39599997, 0.5, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End6" type="Label" parent="The Ender" unique_id=71558193]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 101.0
+offset_top = -137.0
+offset_right = 380.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.43933335, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End7" type="Label" parent="The Ender" unique_id=1625397329]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -278.0
+offset_top = -278.0
+offset_right = 1.0
+offset_bottom = -197.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.4392157, 0.23921569, 0.5019608, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End8" type="Label" parent="The Ender" unique_id=326554379]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -466.0
+offset_top = -85.0
+offset_right = -187.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.43933326, 0.24000001, 0.5, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End9" type="Label" parent="The Ender" unique_id=219386511]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -74.0
+offset_top = 140.0
+offset_right = 205.0
+offset_bottom = 221.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.34833336, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End10" type="Label" parent="The Ender" unique_id=1711170470]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 256.0
+offset_top = -56.0
+offset_right = 535.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23921569, 0.5019608, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End11" type="Label" parent="The Ender" unique_id=408885522]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -542.0
+offset_top = 160.0
+offset_right = -263.0
+offset_bottom = 241.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.24000001, 0.39599997, 0.5, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End12" type="Label" parent="The Ender" unique_id=1213311856]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 278.0
+offset_top = -296.0
+offset_right = 557.0
+offset_bottom = -215.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23921569, 0.5019608, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End13" type="Label" parent="The Ender" unique_id=1242265573]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -564.0
+offset_top = -246.0
+offset_right = -285.0
+offset_bottom = -165.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.43933335, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End14" type="Label" parent="The Ender" unique_id=1427332895]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.0
+offset_top = -190.0
+offset_right = 183.0
+offset_bottom = -109.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23921569, 0.5019608, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End15" type="Label" parent="The Ender" unique_id=2036253777]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -501.0
+offset_top = 3.0
+offset_right = -222.0
+offset_bottom = 84.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.24000001, 0.39599997, 0.5, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End16" type="Label" parent="The Ender" unique_id=1737029464]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 131.0
+offset_top = 15.0
+offset_right = 410.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23921569, 0.5019608, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End17" type="Label" parent="The Ender" unique_id=713508678]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 294.0
+offset_top = 153.0
+offset_right = 573.0
+offset_bottom = 234.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.43933335, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End18" type="Label" parent="The Ender" unique_id=1713222893]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 113.0
+offset_top = 226.0
+offset_right = 392.0
+offset_bottom = 307.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.24000001, 0.39599997, 0.5, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End19" type="Label" parent="The Ender" unique_id=1667949399]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -325.0
+offset_right = 269.0
+offset_bottom = -244.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.34833336, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End20" type="Label" parent="The Ender" unique_id=558600075]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 394.0
+offset_top = -186.0
+offset_right = 673.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.43933335, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End21" type="Label" parent="The Ender" unique_id=659916851]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -731.0
+offset_top = -166.0
+offset_right = -452.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23921569, 0.5019608, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End22" type="Label" parent="The Ender" unique_id=158260507]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -683.0
+offset_top = 239.0
+offset_right = -404.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.43933335, 0.24000001, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End23" type="Label" parent="The Ender" unique_id=568061188]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -741.0
+offset_top = -315.0
+offset_right = -462.0
+offset_bottom = -234.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.23921569, 0.5019608, 0.40392157, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 72
+text = "THE END"
+
+[node name="The End Big" type="Label" parent="The Ender" unique_id=1298088460]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -496.0
+offset_top = -140.0
+offset_right = 496.0
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.5, 0.24000001, 0.24433327, 1)
+theme_override_fonts/font = ExtResource("5_safpt")
+theme_override_font_sizes/font_size = 256
+text = "THE END"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="The Ender" unique_id=245341025]
+stream = ExtResource("7_vnv7o")
+bus = &"Dialogue"

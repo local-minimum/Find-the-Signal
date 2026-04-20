@@ -87,7 +87,7 @@ func _focus_on_target() -> void:
 
 
 func _do_the_end(_success: bool) -> void:
-    pass
+    __SignalBus.on_trigger_the_end.emit()
 
 
 func _on_area_3d_body_entered(_body: Node3D) -> void:
