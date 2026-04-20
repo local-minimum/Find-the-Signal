@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="AudioHubConfig" format=3 uid="uid://bqxliblstvsbk"]
+
+[ext_resource type="Script" uid="uid://ksj8iby0h1hc" path="res://addons/minimum_convenience/scripts/audio_hub_config.gd" id="1_fmqvq"]
+
+[resource]
+script = ExtResource("1_fmqvq")
+sfx_bus_name = ""
+music_bus_name = ""
+sfx_players = 0
+music_players = 0
+dialogue_players = 1
+metadata/_custom_type_script = "uid://ksj8iby0h1hc"

@@ -30,14 +30,17 @@ func _input(event: InputEvent) -> void:
             _process_rel_look(Vector2(-m_event.relative.x * MOUSE_TURN_SPEED, m_event.relative.y * MOUSE_LOOK_SPEED))
             _using_joy_look = false
 
+            get_viewport().set_input_as_handled()
+
         elif event is InputEventJoypadMotion:
             var rel: Vector2 = Input.get_vector("player_look_right", "player_look_left", "player_look_up", "player_look_down")
             _joy_look = Vector2(rel.x * JOY_TURN_SPEED, rel.y * JOY_LOOK_SPEED)
             _using_joy_look = true
 
+            get_viewport().set_input_as_handled()
+
         if Input.is_action_just_pressed("pause"):
             get_tree().quit()
-
 
 func _process_rel_look(rel: Vector2) -> void:
         if abs(rel.x) > MOUSE_DEADZONE:

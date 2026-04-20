@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://76umehonao8p"]
+
+[ext_resource type="PackedScene" uid="uid://cyrcju6ju545l" path="res://levels/appartment.tscn" id="1_80vhd"]
+[ext_resource type="PackedScene" uid="uid://cfelmhc86djyq" path="res://subtitles/simple_subtitles_container.tscn" id="2_hjsbj"]
+
+[node name="Level" type="Node3D" unique_id=164394402]
+
+[node name="Appartment" parent="." unique_id=288289078 instance=ExtResource("1_80vhd")]
+
+[node name="Simple Subtitles Container" parent="." unique_id=148810722 instance=ExtResource("2_hjsbj")]
