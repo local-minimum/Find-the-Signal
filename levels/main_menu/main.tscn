@@ -1,0 +1,493 @@
+[gd_scene format=3 uid="uid://br8kt053hfjwx"]
+
+[ext_resource type="Shader" uid="uid://b5mwd23qr5g5r" path="res://visual/shaders/text_shader/text_writer.gdshader" id="1_oc74w"]
+[ext_resource type="Texture2D" uid="uid://ydiallcd2mse" path="res://visual/shaders/text_shader/font/absolute_10.png" id="2_ug1tr"]
+[ext_resource type="Script" uid="uid://4q753223m055" path="res://visual/shaders/text_shader/text_texture_helper.gd" id="3_x7dr8"]
+[ext_resource type="PackedScene" uid="uid://bou48nt6gbvfa" path="res://visual/models/chair.blend" id="4_ug1tr"]
+[ext_resource type="PackedScene" uid="uid://1y1yv4w5dmik" path="res://visual/models/kitchen_table.blend" id="5_x7dr8"]
+[ext_resource type="PackedScene" uid="uid://dy50xavr0qc0u" path="res://visual/models/coffemug.blend" id="6_i5uue"]
+[ext_resource type="PackedScene" uid="uid://ck4qkkoffwrh6" path="res://visual/models/vase.blend" id="7_ygfjx"]
+[ext_resource type="FontFile" uid="uid://chcmjokkcuh33" path="res://fonts/Absolute 10.ttf" id="8_tok6w"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_i5uue"]
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ygfjx"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(5, 11, 14, 14, 17)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 1
+shader_parameter/font_color = Color(0.24007735, 0.42301592, 0.4964913, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 97.0000014305152
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_oc74w"]
+size = Vector3(0.2, 2.4, 10)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ug1tr"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 0, 11, 11)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.27033338, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 80.0000011771948
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 4.0000000596048
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x7dr8"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 7, 0, 8, 17)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.49566662, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_i5uue"]
+points = PackedVector3Array(0.2662381, 1.2731259, 0.34397632, 0.2662381, 1.2731259, 0.26696658, -0.2662381, 1.2731259, 0.34397632, 0.2662381, 1.1563301e-05, 0.2985788, -0.2662381, 1.2731259, 0.26696658, 0.2662381, 0.61638033, -0.22161071, -0.2662381, 1.1563301e-05, 0.2985788, 0.2662381, 1.1563301e-05, -0.22161071, -0.2662381, 0.61638033, -0.22161071, -0.2662381, 1.1563301e-05, -0.22161071)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i5uue"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 0, 1, 11, 4)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.31800002, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 40.0000005811468
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_ygfjx"]
+points = PackedVector3Array(-2.9325485e-05, 0.8909117, -0.4901855, -2.9325485e-05, 0.9909118, -0.4901855, 0.7090825, 0.8909117, -0.4901855, -0.09571245, 0.8909117, -0.480781, 0.7090825, 0.9909118, -0.4901855, -0.09571245, 0.9909118, -0.480781, 0.7091999, 0.8909117, 0.4900893, -0.1876387, 0.8909117, -0.45295137, 0.7091999, 0.9909118, 0.4900893, -0.1876387, 0.9909118, -0.45295137, -2.9325485e-05, 0.8909117, 0.4900893, -0.27240342, 0.8909117, -0.40765625, -2.9325485e-05, 0.9909118, 0.4900893, -0.27240342, 0.9909118, -0.40765625, -0.09571245, 0.8909117, 0.48068482, -0.34671926, 0.8909117, -0.346623, -0.09571245, 0.9909118, 0.48068482, -0.34671926, 0.9909118, -0.346623, -0.1876387, 0.8909117, 0.45285517, -0.40765122, 0.8909117, -0.27234668, -0.1876387, 0.9909118, 0.45285517, -0.40765122, 0.9909118, -0.27234668, -0.27240342, 0.8909117, 0.40756005, -0.45296863, 0.8909117, -0.18761021, -0.27240342, 0.9909118, 0.40756005, -0.45296863, 0.9909118, -0.18761021, -0.34671926, 0.8909117, 0.3465268, -0.48079306, 0.8909117, -0.09567648, -0.34671926, 0.9909118, 0.3465268, -0.48079306, 0.9909118, -0.09567648, -0.40765122, 0.8909117, 0.27225047, -0.49018526, 0.8909117, -9.608269e-05, -0.40765122, 0.9909118, 0.27225047, -0.49018526, 0.9909118, -9.608269e-05, -0.45296863, 0.8909117, 0.187514, -0.48079306, 0.8909117, 0.09558028, -0.45296863, 0.9909118, 0.187514, -0.48079306, 0.9909118, 0.09558028)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tok6w"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(12, 20, 6)
+shader_parameter/word_length = 3
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.34833336, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 7.0000000894072
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ckfqu"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(12, 20, 6)
+shader_parameter/word_length = 3
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.24000001, 0.34833336, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 7.0000000894072
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_071me"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(21, 0, 18, 4)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.24000001, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 17.0000002384192
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5hip0"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 20, 11, 8, 15)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.48266667, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 13.0000001788144
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r3mdn"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 20, 11, 8, 15)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.48266667, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 13.0000001788144
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7ag5j"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 20, 11, 8, 15)
+shader_parameter/word_length = 5
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.5, 0.48266667, 0.24000001, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.05, 0.03)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 13.0000001788144
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="BoxMesh" id="BoxMesh_ygfjx"]
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hunuo"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(2, 4, 8, 11, 8, 13, 6)
+shader_parameter/word_length = 7
+shader_parameter/word_spacing = 2
+shader_parameter/font_color = Color(0.48266667, 0.24000001, 0.5, 1)
+shader_parameter/background_color = Color(0.7581918, 0.7581918, 0.7581917, 1)
+shader_parameter/offset = Vector2(0.005, 0.003)
+shader_parameter/animate = false
+shader_parameter/uv_characters_per_line = 89.0000013113056
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="Environment" id="Environment_oc74w"]
+background_mode = 1
+background_color = Color(0.7694324, 0.7694324, 0.7694324, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_aawn3"]
+text = "WHAT'S"
+font = ExtResource("8_tok6w")
+font_size = 72
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iufuv"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(22, 7, 0, 19, 69, 18)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 1
+shader_parameter/font_color = Color(0.24007735, 0.42301592, 0.4964913, 1)
+shader_parameter/background_color = Color(0.101240985, 0.101240985, 0.101240985, 1)
+shader_parameter/offset = Vector2(0.02, 0.01)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 27.0000003874312
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="TextMesh" id="TextMesh_tok6w"]
+text = "THAT"
+font = ExtResource("8_tok6w")
+font_size = 72
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aawn3"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(19, 7, 0, 19)
+shader_parameter/word_length = 4
+shader_parameter/word_spacing = 1
+shader_parameter/font_color = Color(0.24007735, 0.42301592, 0.4964913, 1)
+shader_parameter/background_color = Color(0.101240985, 0.101240985, 0.101240985, 1)
+shader_parameter/offset = Vector2(0.02, 0.01)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 27.0000003874312
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[sub_resource type="TextMesh" id="TextMesh_8yf7r"]
+text = "SIGNAL"
+font = ExtResource("8_tok6w")
+font_size = 72
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vfruc"]
+render_priority = 0
+shader = ExtResource("1_oc74w")
+shader_parameter/spritefont = ExtResource("2_ug1tr")
+shader_parameter/spritefont_tex_size = Vector2i(416, 176)
+shader_parameter/character_start = Vector2(0, 0)
+shader_parameter/character_size = Vector2(11, 16)
+shader_parameter/character_spacing = Vector2(5, 0)
+shader_parameter/word = PackedInt32Array(18, 8, 6, 13, 0, 11)
+shader_parameter/word_length = 6
+shader_parameter/word_spacing = 1
+shader_parameter/font_color = Color(0.24007735, 0.42301592, 0.4964913, 1)
+shader_parameter/background_color = Color(0.101240985, 0.101240985, 0.101240985, 1)
+shader_parameter/offset = Vector2(0.02, 0.01)
+shader_parameter/animate = true
+shader_parameter/uv_characters_per_line = 27.0000003874312
+shader_parameter/uv_character_spacing = 0.0
+shader_parameter/uv_line_spacing = 0.0
+shader_parameter/uv_character_aspect_ratio = 1.0
+
+[node name="Main" type="Node3D" unique_id=1626330220]
+
+[node name="Decoration" type="Node3D" parent="." unique_id=2091812135]
+
+[node name="Floor" type="MeshInstance3D" parent="Decoration" unique_id=1996515327]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.1610947, -0.05, -5.048544)
+mesh = SubResource("BoxMesh_i5uue")
+surface_material_override/0 = SubResource("ShaderMaterial_ygfjx")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/Floor" unique_id=499570056 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "FLOOR"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Wall" type="MeshInstance3D" parent="Decoration/Floor" unique_id=1676291902]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, -2.3841858e-07, 1.2, -1)
+mesh = SubResource("BoxMesh_oc74w")
+surface_material_override/0 = SubResource("ShaderMaterial_ug1tr")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/Floor/Wall" unique_id=2081795706 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "WALL"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Wall2" type="MeshInstance3D" parent="Decoration/Floor" unique_id=533970131]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.01911354, 1.2, 1)
+mesh = SubResource("BoxMesh_oc74w")
+surface_material_override/0 = SubResource("ShaderMaterial_ug1tr")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/Floor/Wall2" unique_id=297519881 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "WALL"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="chair" parent="Decoration" unique_id=579024908 instance=ExtResource("4_ug1tr")]
+transform = Transform3D(0.82354254, 0, 0.56725466, 0, 1, 0, -0.56725466, 0, 0.82354254, 2.4951718, -1.1920929e-07, -2.0006332)
+
+[node name="Chair" parent="Decoration/chair" index="0" unique_id=654230161]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13796091, 0, 0.11515689)
+surface_material_override/0 = SubResource("ShaderMaterial_x7dr8")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/chair/Chair" index="0" unique_id=1724281949 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "CHAIR"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Decoration/chair" unique_id=1095436966]
+shape = SubResource("ConvexPolygonShape3D_i5uue")
+
+[node name="kitchen_table" parent="Decoration" unique_id=427097996 instance=ExtResource("5_x7dr8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.407302, 1.1920929e-07, -2.5228064)
+
+[node name="Table" parent="Decoration/kitchen_table" index="0" unique_id=567726177]
+surface_material_override/0 = SubResource("ShaderMaterial_i5uue")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/kitchen_table/Table" index="0" unique_id=2136294403 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "TABLE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Table Leg" parent="Decoration/kitchen_table" index="1" unique_id=1128711773]
+surface_material_override/0 = SubResource("ShaderMaterial_i5uue")
+
+[node name="Table Colider" type="CollisionShape3D" parent="Decoration/kitchen_table" unique_id=862206775]
+shape = SubResource("ConvexPolygonShape3D_ygfjx")
+
+[node name="coffemug" parent="Decoration" unique_id=759679566 instance=ExtResource("6_i5uue")]
+transform = Transform3D(-0.6999875, 0, -0.7141551, 0, 1, 0, 0.7141551, 0, -0.6999875, 2.3015587, 1.0459118, -2.3835285)
+
+[node name="Cylinder" parent="Decoration/coffemug" index="0" unique_id=1355868046]
+surface_material_override/0 = SubResource("ShaderMaterial_tok6w")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/coffemug/Cylinder" index="0" unique_id=1671157545 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "MUG"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Cylinder_001" parent="Decoration/coffemug" index="1" unique_id=1725403774]
+surface_material_override/0 = SubResource("ShaderMaterial_ckfqu")
+
+[node name="vase" parent="Decoration" unique_id=629835185 instance=ExtResource("7_ygfjx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.7596498, 1.1409118, -2.5804543)
+
+[node name="Vase" parent="Decoration/vase" index="0" unique_id=1347247409]
+surface_material_override/0 = SubResource("ShaderMaterial_071me")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/vase/Vase" index="0" unique_id=396606272 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "VASE"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Tulip" parent="Decoration/vase" index="1" unique_id=1736307395]
+surface_material_override/0 = SubResource("ShaderMaterial_5hip0")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/vase/Tulip" index="0" unique_id=373236918 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "TULIP"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Tulip_001" parent="Decoration/vase" index="2" unique_id=369706255]
+surface_material_override/0 = SubResource("ShaderMaterial_r3mdn")
+
+[node name="Tulip_002" parent="Decoration/vase" index="3" unique_id=1622964651]
+surface_material_override/0 = SubResource("ShaderMaterial_7ag5j")
+
+[node name="Ceiling" type="MeshInstance3D" parent="Decoration" unique_id=1391792483]
+transform = Transform3D(1, 0, 1.7484555e-07, 0, 1, 0, -1.7484555e-07, 0, 1, 4, 2.35, -6)
+mesh = SubResource("BoxMesh_ygfjx")
+surface_material_override/0 = SubResource("ShaderMaterial_hunuo")
+
+[node name="TextWriterHelper" type="Node" parent="Decoration/Ceiling" unique_id=645208995 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "CEILING"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1214615755]
+transform = Transform3D(0.81089, 0.045522273, -0.5834253, -0.026928961, 0.9988165, 0.040505562, 0.58457863, -0.01713452, 0.81115615, 0.5526781, 1.3266935, -0.654189)
+environment = SubResource("Environment_oc74w")
+fov = 50.0
+
+[node name="Title" type="Node3D" parent="." unique_id=550078052]
+
+[node name="Whats" type="MeshInstance3D" parent="Title" unique_id=679658265]
+transform = Transform3D(0.9974768, -0.07099259, 0, 0.07099259, 0.9974768, 0, 0, 0, 1, 1.6724939, 1.7122191, -3.957447)
+mesh = SubResource("TextMesh_aawn3")
+surface_material_override/0 = SubResource("ShaderMaterial_iufuv")
+
+[node name="TextWriterHelper" type="Node" parent="Title/Whats" unique_id=1024025775 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "WHAT'S"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="That" type="MeshInstance3D" parent="Title" unique_id=1822115186]
+transform = Transform3D(0.9974768, -0.07099259, 0, 0.07099259, 0.9974768, 0, 0, 0, 1, 1.7081411, 1.1510996, -3.957447)
+mesh = SubResource("TextMesh_tok6w")
+surface_material_override/0 = SubResource("ShaderMaterial_aawn3")
+
+[node name="TextWriterHelper" type="Node" parent="Title/That" unique_id=1608302461 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "THAT"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[node name="Signal" type="MeshInstance3D" parent="Title" unique_id=236440513]
+transform = Transform3D(0.9974768, -0.07099259, 0, 0.07099259, 0.9974768, 0, 0, 0, 1, 1.7556534, 0.58723533, -3.957447)
+mesh = SubResource("TextMesh_8yf7r")
+surface_material_override/0 = SubResource("ShaderMaterial_vfruc")
+
+[node name="TextWriterHelper" type="Node" parent="Title/Signal" unique_id=695074759 node_paths=PackedStringArray("mesh")]
+script = ExtResource("3_x7dr8")
+mesh = NodePath("..")
+text = "SIGNAL"
+metadata/_custom_type_script = "uid://4q753223m055"
+
+[editable path="Decoration/chair"]
+[editable path="Decoration/kitchen_table"]
+[editable path="Decoration/coffemug"]
+[editable path="Decoration/vase"]
