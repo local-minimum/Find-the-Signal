@@ -459,6 +459,9 @@ data = PackedVector3Array(0.5527, 0, 0.099999994, 0.5527, 2.3999999, -0.09999999
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_scpqm"]
 points = PackedVector3Array(-1.0965928, -0.995453, -0.050000012, -1.0965928, -0.995453, 0.050000012, -1.0965928, 0.9954529, -0.050000012, 0, -0.995453, -0.050000012, 0, -0.995453, 0.050000012, -1.0965928, 0.9954529, 0.050000012, 0, 0.9954529, -0.050000012, 0, 0.9954529, 0.050000012)
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_kvxpr"]
+points = PackedVector3Array(-1.0965928, -0.995453, -0.050000012, -1.0965928, -0.995453, 0.050000012, -1.0965928, 0.9954529, -0.050000012, 0, -0.995453, -0.050000012, 0, -0.995453, 0.050000012, -1.0965928, 0.9954529, 0.050000012, 0, 0.9954529, -0.050000012, 0, 0.9954529, 0.050000012)
+
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_82452"]
 points = PackedVector3Array(-1.0965928, -0.995453, -0.050000012, -1.0965928, -0.995453, 0.050000012, -1.0965928, 0.9954529, -0.050000012, 0, -0.995453, -0.050000012, 0, -0.995453, 0.050000012, -1.0965928, 0.9954529, 0.050000012, 0, 0.9954529, -0.050000012, 0, 0.9954529, 0.050000012)
 
@@ -2628,10 +2631,13 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.6
 [node name="Door Post" parent="Foundation/doorpost6" index="0" unique_id=1545824159]
 surface_material_override/0 = SubResource("ShaderMaterial_6lvam")
 
-[node name="Top Wall" parent="Foundation/doorpost6" index="1" unique_id=1893192431]
+[node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=576888300]
+shape = SubResource("ConcavePolygonShape3D_sikar")
+
+[node name="Top Wall" parent="Foundation/doorpost6" index="2" unique_id=1893192431]
 surface_material_override/0 = SubResource("ShaderMaterial_6lvam")
 
-[node name="Door" parent="Foundation/doorpost6" index="2" unique_id=1339026248]
+[node name="Door" parent="Foundation/doorpost6" index="3" unique_id=1339026248]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5482963, 1.0006874, 0.0071258545)
 surface_material_override/0 = SubResource("ShaderMaterial_ndm35")
 
@@ -2649,8 +2655,9 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Hallway")
 
-[node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=576888300]
-shape = SubResource("ConcavePolygonShape3D_sikar")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=1814549341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5482963, 1.0006874, 0.0071258545)
+shape = SubResource("ConvexPolygonShape3D_kvxpr")
 
 [node name="doorpost4" parent="Foundation" unique_id=1375936417 instance=ExtResource("4_sikar")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.39999998, 0, 2.7)
