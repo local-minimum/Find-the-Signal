@@ -4,6 +4,10 @@ class_name Appartment
 enum AnimationTarget { EVERYTHING = 0, NOT_STRUCTURE = 1, NOT_LARGE = 2, NOT_MEDIUM = 3, NOT_SMALL = 4, NOTHING = 5, UNSET = -1 }
 
 static var animation_target: AnimationTarget = AnimationTarget.UNSET
+static var whisper_muting: int = -1:
+    set(value):
+        whisper_muting = value
+        __SignalBus.on_change_whisper_muting.emit(value)
 
 @export var needed_signals: int = 6
 

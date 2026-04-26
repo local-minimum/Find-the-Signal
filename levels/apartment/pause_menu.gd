@@ -8,6 +8,7 @@ static var instance: PauseMenu
 @export var joy_sense: HSlider
 @export var anim_text: HSlider
 @export var anim_text_explain: Label
+@export var whispers: HSlider
 @export var resume: Button
 
 func _enter_tree() -> void:
@@ -34,6 +35,7 @@ func show_menu() -> void:
     joy_sense.value = AccessibilitySettings.joy_sensitivity
     anim_text.value = animation_target_slider_value
     anim_text_explain.text = get_animation_target_explained(roundi(anim_text.value))
+    whispers.value = 2 - Appartment.whisper_muting
 
     Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
     inv_y.grab_focus()
@@ -130,3 +132,6 @@ func _get_new_animation_target() -> Appartment.AnimationTarget:
         _:
             push_warning("Unhandled slider value %s" % [anim_text.value])
             return Appartment.animation_target
+
+func _on_whispers_slider_value_changed(value: float) -> void:
+    Appartment.whisper_muting = 2 - roundi(value)

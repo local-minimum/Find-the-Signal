@@ -2636,6 +2636,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Office")
+priority = 2
 
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost" unique_id=586314475]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2670,6 +2671,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Hallway")
+priority = 2
 
 [node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=576888300]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2784,6 +2786,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Bedroom")
+priority = 2
 
 [node name="Door Post Colider" type="CollisionShape3D" parent="Foundation/doorpost2" unique_id=1379248593]
 shape = SubResource("ConcavePolygonShape3D_sikar")
@@ -2843,6 +2846,7 @@ script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
 replacement_whisper = ExtResource("21_updwn")
+priority = 3
 
 [node name="Area3D" type="Area3D" parent="Office/Signal Painting/Signal Player" unique_id=485103924]
 collision_layer = 0
@@ -2921,6 +2925,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 2
 
 [node name="Area3D2" type="Area3D" parent="Office/desk/Signal Player" unique_id=1082766583]
 collision_layer = 0
@@ -2985,6 +2990,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Office/bookshelf3/Signal Player" unique_id=1086984284]
 collision_layer = 0
@@ -3031,6 +3037,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Office/vase/Signal Player" unique_id=1240872591]
 collision_layer = 0
@@ -3065,6 +3072,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Office/kitchen_small_bench/Signal Player" unique_id=1900679954]
 collision_layer = 0
@@ -3156,6 +3164,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 0
 
 [node name="Monitor" type="MeshInstance3D" parent="Office/computer" unique_id=1252189627]
 transform = Transform3D(-0.4, 0, -6.039832e-08, 0, 0.4, 0, 6.039832e-08, 0, -0.4, 0.08152151, -0.21347046, -0.22842741)
@@ -3204,6 +3213,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Office/bedlamp2/Signal Player" unique_id=1459251718]
 collision_layer = 0
@@ -3253,6 +3263,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Kitchen/Fridge/Signal Player" unique_id=480514559]
 collision_layer = 0
@@ -3287,6 +3298,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Kitchen/Freezer/Signal Player" unique_id=1757536662]
 collision_layer = 0
@@ -3325,6 +3337,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 2
 
 [node name="Signal Player2" type="AudioStreamPlayer3D" parent="Kitchen/kitchen_cupboards/Lower Cupboards" index="3" unique_id=861866132 node_paths=PackedStringArray("room", "area")]
 transform = Transform3D(1, 0, 0, 0, 1, -1.8626454e-09, 0, 1.8626454e-09, 1, 0.09313631, 0.9088876, 0.04430282)
@@ -3488,6 +3501,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 2
 
 [node name="Area3D2" type="Area3D" parent="Kitchen/kitchen_table/Signal Player2" unique_id=680419777]
 collision_layer = 0
@@ -3516,6 +3530,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Kitchen/kitchen_small_bench/Signal Player" unique_id=713202206]
 collision_layer = 0
@@ -3619,6 +3634,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 0
 
 [node name="Apple_002" parent="Kitchen/fruitbowl" index="3" unique_id=519505411]
 surface_material_override/0 = SubResource("ShaderMaterial_pfvgk")
@@ -3634,6 +3650,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Kitchen/fruitbowl/Signal Player" unique_id=1850344286]
 collision_layer = 0
@@ -3680,6 +3697,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Kitchen/vase/Signal Player" unique_id=1765436031]
 collision_layer = 0
@@ -3714,6 +3732,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 0
 
 [node name="Area3D2" type="Area3D" parent="Kitchen/coffemug/Signal Player" unique_id=227082715]
 collision_layer = 0
@@ -3742,6 +3761,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 0
 
 [node name="Area3D2" type="Area3D" parent="Kitchen/coffemug2/Signal Player" unique_id=1515955520]
 collision_layer = 0
@@ -3770,6 +3790,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 0
 
 [node name="Area3D2" type="Area3D" parent="Kitchen/coffemug3/Signal Player" unique_id=251212943]
 collision_layer = 0
@@ -3798,6 +3819,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 0
 
 [node name="Area3D2" type="Area3D" parent="Kitchen/coffemug4/Signal Player" unique_id=1180959207]
 collision_layer = 0
@@ -3826,6 +3848,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 0
 
 [node name="Area3D2" type="Area3D" parent="Kitchen/coffemug5/Signal Player" unique_id=851438599]
 collision_layer = 0
@@ -3876,6 +3899,7 @@ script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
 replacement_whisper = ExtResource("47_4yv4g")
+priority = 3
 
 [node name="Area3D2" type="Area3D" parent="Kitchen/banana/Signal Player" unique_id=1863231708]
 collision_layer = 0
@@ -3932,6 +3956,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Kitchen/magazine4/Signal Player" unique_id=1639605298]
 collision_layer = 0
@@ -3982,6 +4007,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
 area = NodePath("Area3D2")
+priority = 2
 
 [node name="Area3D2" type="Area3D" parent="Living Room/tvbench/bench/Signal Player2" unique_id=1254866560]
 collision_layer = 0
@@ -4009,6 +4035,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/tvbench" unique_id=1771994484]
 shape = SubResource("ConvexPolygonShape3D_fd646")
@@ -4039,6 +4066,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Living Room/sofa/Signal Player" unique_id=1911990015]
 collision_layer = 0
@@ -4058,6 +4086,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Living Room/sofa/Signal Player3" unique_id=1292679191]
 collision_layer = 0
@@ -4077,6 +4106,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Living Room/sofa/Signal Player2" unique_id=523419150]
 collision_layer = 0
@@ -4107,6 +4137,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Living Room/sofatable" unique_id=2097973426]
 shape = SubResource("ConvexPolygonShape3D_j2ixe")
@@ -4163,6 +4194,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Living Room/bookshelf/Signal Player" unique_id=1975302841]
 collision_layer = 0
@@ -4227,6 +4259,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Living Room/bookshelf2/Signal Player" unique_id=1501748969]
 collision_layer = 0
@@ -4286,6 +4319,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Living Room/magazine/Signal Player" unique_id=410526766]
 collision_layer = 0
@@ -4311,6 +4345,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Living Room/magazine2/Signal Player" unique_id=1933334157]
 collision_layer = 0
@@ -4336,6 +4371,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Living Room/magazine3/Signal Player" unique_id=1836309364]
 collision_layer = 0
@@ -4361,6 +4397,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Living Room/magazine4/Signal Player" unique_id=1296247226]
 collision_layer = 0
@@ -4408,6 +4445,7 @@ script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
 replacement_whisper = ExtResource("59_030sl")
+priority = 3
 
 [node name="Area3D" type="Area3D" parent="Living Room/remote/Signal Player2" unique_id=1612685431]
 collision_layer = 0
@@ -4470,6 +4508,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
 area = NodePath("Area3D2")
+priority = 2
 
 [node name="Area3D2" type="Area3D" parent="Bedroom/bed/Matress/Signal Player" unique_id=1713721371]
 collision_layer = 0
@@ -4603,6 +4642,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Bedroom/closet/Signal Player" unique_id=1403392666]
 collision_layer = 0
@@ -4637,6 +4677,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Bedroom/closet2/Signal Player" unique_id=616683218]
 collision_layer = 0
@@ -4671,6 +4712,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Bedroom/closet3/Signal Player" unique_id=1262703402]
 collision_layer = 0
@@ -4735,6 +4777,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Bedroom/bookshelf2/Signal Player" unique_id=948230080]
 collision_layer = 0
@@ -4896,6 +4939,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 2
 
 [node name="Area3D" type="Area3D" parent="Bedroom/kitchen_small_bench/Signal Player" unique_id=611232854]
 collision_layer = 0
@@ -4942,6 +4986,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Bedroom/vase/Signal Player" unique_id=62333427]
 collision_layer = 0
@@ -4990,6 +5035,7 @@ script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
 replacement_whisper = ExtResource("67_fffcv")
+priority = 3
 
 [node name="Area3D" type="Area3D" parent="Bedroom/alarmclock/Signal Player" unique_id=2128709510]
 collision_layer = 0
@@ -5035,6 +5081,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 2
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Bathroom/toilet" unique_id=184700203]
 shape = SubResource("ConvexPolygonShape3D_dh07s")
@@ -5067,6 +5114,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 2
 
 [node name="Lamp" parent="Bathroom/bathroomfaucet" index="2" unique_id=1989527657]
 surface_material_override/0 = SubResource("ShaderMaterial_gnm7j")
@@ -5099,6 +5147,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D3")
+priority = 2
 
 [node name="Area3D3" type="Area3D" parent="Bathroom/bathroomfaucet/Signal Player" unique_id=1330454545]
 collision_layer = 0
@@ -5135,6 +5184,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 2
 
 [node name="Shower Head" parent="Bathroom/shower" index="3" unique_id=886539484]
 surface_material_override/0 = SubResource("ShaderMaterial_hvw63")
@@ -5197,6 +5247,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 0
 
 [node name="Shampoo" parent="Bathroom/soapcup" index="1" unique_id=555263326]
 transform = Transform3D(0.892389, 0, 0.45126694, 0, 1, 0, -0.45126694, 0, 0.892389, 0, 0, 0)
@@ -5216,6 +5267,7 @@ bus = &"Signal"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
 replacement_whisper = ExtResource("74_fpma5")
+priority = 3
 
 [node name="Area3D" type="Area3D" parent="Bathroom/soapcup" unique_id=1494118648]
 collision_layer = 0
@@ -5245,6 +5297,7 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
+priority = 0
 
 [node name="Paper" parent="Bathroom/toiletpaperholder" index="1" unique_id=2102812964]
 surface_material_override/0 = SubResource("ShaderMaterial_7e67s")
@@ -5263,6 +5316,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
 area = NodePath("Area3D5")
+priority = 0
 
 [node name="Area3D5" type="Area3D" parent="Bathroom/toiletpaperholder/Paper/Signal Player" unique_id=2012057558]
 collision_layer = 0
@@ -5333,6 +5387,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D4")
+priority = 0
 
 [node name="Area3D4" type="Area3D" parent="Bathroom/towelholder/Signal Player" unique_id=1834125582]
 collision_layer = 0
@@ -5416,6 +5471,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../..")
 area = NodePath("Area3D2")
+priority = 2
 
 [node name="Area3D2" type="Area3D" parent="Hallway/shoestand/hallmirror/Signal Player" unique_id=440161733]
 collision_layer = 0
@@ -5444,6 +5500,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D")
+priority = 0
 
 [node name="Area3D" type="Area3D" parent="Hallway/hallamp/Signal Player" unique_id=864461926]
 collision_layer = 0
@@ -5601,6 +5658,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 0
 
 [node name="Area3D2" type="Area3D" parent="Hallway/hat/Signal Player" unique_id=481566074]
 collision_layer = 0
@@ -5650,6 +5708,7 @@ script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
 replacement_whisper = ExtResource("63_mmmw5")
+priority = 3
 
 [node name="Area3D2" type="Area3D" parent="Hallway/umbrella/Signal Player" unique_id=23897065]
 collision_layer = 0
@@ -5681,6 +5740,7 @@ bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../..")
 area = NodePath("Area3D2")
+priority = 0
 
 [node name="Area3D2" type="Area3D" parent="Hallway/shoe/Signal Player" unique_id=4680163]
 collision_layer = 0

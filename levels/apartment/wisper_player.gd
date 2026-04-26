@@ -4,12 +4,20 @@ class_name WisperPlayer
 @export var room: Room
 @export var area: Area3D
 @export var replacement_whisper: AudioStream
+@export var priority: int = 1
+var _muted: bool
 
 func _enter_tree() -> void:
+    if __SignalBus.on_change_whisper_muting.connect(_handle_whisper_muting) != OK:
+        push_error("Failed to modulate whisper muting")
+
     if room.on_enter_room.connect(_handle_player_enter_room) != OK:
         push_error("Failed to connect enter room")
     if room.on_exit_room.connect(_handle_player_exit_room) != OK:
         push_error("Failed to connect exit room")
+
+    if !room.is_inside:
+        stop()
 
     if area != null:
         if area.area_entered.connect(_handle_player_looks_at) != OK:
@@ -17,12 +25,20 @@ func _enter_tree() -> void:
         if area.area_exited.connect(_handle_player_looks_away) != OK:
             push_error("Failed to connect look away")
 
+    _handle_whisper_muting(Appartment.whisper_muting)
+func _handle_whisper_muting(mute_priority: int) -> void:
+    _muted = mute_priority >= priority
+
+    if playing && _muted:
+        stop()
+    elif !playing && room.is_inside:
+        play()
+
 func _handle_player_enter_room() -> void:
     play()
 
 func _handle_player_exit_room() -> void:
     stop()
-
 
 func change_to_whisper() -> void:
     stream = replacement_whisper

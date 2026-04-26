@@ -18,7 +18,7 @@ font_size = 24
 font = ExtResource("2_d0riq")
 font_size = 18
 
-[node name="Pause Menu" type="CanvasLayer" unique_id=2082272006 node_paths=PackedStringArray("inv_y", "mouse_sense", "joy_sense", "anim_text", "anim_text_explain", "resume")]
+[node name="Pause Menu" type="CanvasLayer" unique_id=2082272006 node_paths=PackedStringArray("inv_y", "mouse_sense", "joy_sense", "anim_text", "anim_text_explain", "whispers", "resume")]
 process_mode = 2
 layer = 100
 script = ExtResource("1_bjx17")
@@ -27,6 +27,7 @@ mouse_sense = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxConta
 joy_sense = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3/Controller Sens")
 anim_text = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Slider")
 anim_text_explain = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Explanation")
+whispers = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer5/Whispers Slider")
 resume = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=872844955]
@@ -134,6 +135,22 @@ text = "EVERYTHING!"
 label_settings = SubResource("LabelSettings_bjx17")
 horizontal_alignment = 1
 
+[node name="VBoxContainer5" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=233448227]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer5" unique_id=2076075069]
+layout_mode = 2
+text = "WHISPERS"
+label_settings = SubResource("LabelSettings_w1js0")
+
+[node name="Whispers Slider" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer5" unique_id=1885082574]
+layout_mode = 2
+focus_next = NodePath("../../Resume")
+focus_previous = NodePath("../../VBoxContainer2/Mouse Sens")
+max_value = 3.0
+value = 2.0
+rounded = true
+
 [node name="Resume" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1493179408]
 layout_mode = 2
 size_flags_vertical = 10
@@ -149,5 +166,6 @@ text = "RESUME"
 [connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3/Controller Sens" to="." method="_on_controller_sens_drag_ended"]
 [connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Slider" to="." method="_on_moving_text_slider_drag_ended"]
 [connection signal="value_changed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Slider" to="." method="_on_moving_text_slider_value_changed"]
+[connection signal="value_changed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer5/Whispers Slider" to="." method="_on_whispers_slider_value_changed"]
 [connection signal="gui_input" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_gui_input"]
 [connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]

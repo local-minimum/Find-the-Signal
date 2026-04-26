@@ -20,6 +20,7 @@ signal on_clear_all_queued_subtitles()
 signal on_toggle_subtitles(enabled: bool)
 signal on_change_subtitles_size(size: int)
 signal on_change_text_animation_targets(target: Appartment.AnimationTarget)
+signal on_change_whisper_muting(mute_priority: int)
 
 # Trigger outro
 signal on_ready_goal
