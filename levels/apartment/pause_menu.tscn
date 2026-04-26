@@ -3,6 +3,9 @@
 [ext_resource type="Script" uid="uid://dve0jrntvu87y" path="res://levels/apartment/pause_menu.gd" id="1_bjx17"]
 [ext_resource type="FontFile" uid="uid://chcmjokkcuh33" path="res://fonts/Absolute 10.ttf" id="2_d0riq"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjx17"]
+bg_color = Color(0.20751235, 0.20751238, 0.20751235, 0.83137256)
+
 [sub_resource type="LabelSettings" id="LabelSettings_bym3p"]
 font = ExtResource("2_d0riq")
 font_size = 48
@@ -11,13 +14,19 @@ font_size = 48
 font = ExtResource("2_d0riq")
 font_size = 24
 
-[node name="Pause Menu" type="CanvasLayer" unique_id=2082272006 node_paths=PackedStringArray("inv_y", "mouse_sense", "joy_sense", "resume")]
+[sub_resource type="LabelSettings" id="LabelSettings_bjx17"]
+font = ExtResource("2_d0riq")
+font_size = 18
+
+[node name="Pause Menu" type="CanvasLayer" unique_id=2082272006 node_paths=PackedStringArray("inv_y", "mouse_sense", "joy_sense", "anim_text", "anim_text_explain", "resume")]
 process_mode = 2
 layer = 100
 script = ExtResource("1_bjx17")
 inv_y = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Invert Y")
 mouse_sense = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/Mouse Sens")
 joy_sense = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3/Controller Sens")
+anim_text = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Slider")
+anim_text_explain = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Explanation")
 resume = NodePath("CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=872844955]
@@ -29,6 +38,7 @@ grow_vertical = 2
 
 [node name="PanelContainer" type="PanelContainer" parent="CenterContainer" unique_id=1309546626]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bjx17")
 
 [node name="MarginContainer" type="MarginContainer" parent="CenterContainer/PanelContainer" unique_id=411033259]
 layout_mode = 2
@@ -100,7 +110,29 @@ focus_previous = NodePath("../../VBoxContainer2/Mouse Sens")
 min_value = 0.01
 max_value = 2.0
 step = 0.05
-value = 0.75
+value = 0.76
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1539387426]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4" unique_id=1534595286]
+layout_mode = 2
+text = "MOVING TEXT"
+label_settings = SubResource("LabelSettings_w1js0")
+
+[node name="Moving Text Slider" type="HSlider" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4" unique_id=74229614]
+layout_mode = 2
+focus_next = NodePath("../../Resume")
+focus_previous = NodePath("../../VBoxContainer2/Mouse Sens")
+max_value = 5.0
+value = 4.0
+rounded = true
+
+[node name="Moving Text Explanation" type="Label" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4" unique_id=876547406]
+layout_mode = 2
+text = "EVERYTHING!"
+label_settings = SubResource("LabelSettings_bjx17")
+horizontal_alignment = 1
 
 [node name="Resume" type="Button" parent="CenterContainer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1493179408]
 layout_mode = 2
@@ -115,5 +147,7 @@ text = "RESUME"
 [connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Invert Y" to="." method="_on_invert_y_pressed"]
 [connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer2/Mouse Sens" to="." method="_on_mouse_sens_drag_ended"]
 [connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer3/Controller Sens" to="." method="_on_controller_sens_drag_ended"]
+[connection signal="drag_ended" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Slider" to="." method="_on_moving_text_slider_drag_ended"]
+[connection signal="value_changed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer4/Moving Text Slider" to="." method="_on_moving_text_slider_value_changed"]
 [connection signal="gui_input" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_gui_input"]
 [connection signal="pressed" from="CenterContainer/PanelContainer/MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]

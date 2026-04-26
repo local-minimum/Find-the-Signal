@@ -289,6 +289,9 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_eqpja"]
+points = PackedVector3Array(1.7, 1.2, 0.05, 1.7, 1.2, -0.05, -1.7, 1.2, 0.05, 1.7, -1.2, 0.05, 1.7, -1.2, -0.05, -1.7, 1.2, -0.05, -1.7, -1.2, 0.05, -1.7, -1.2, -0.05)
+
 [sub_resource type="BoxMesh" id="BoxMesh_l3nmf"]
 size = Vector3(0.5, 2.4, 0.1)
 
@@ -312,8 +315,8 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 0.5000000074506
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_eqpja"]
-points = PackedVector3Array(1.7, 1.2, 0.05, 1.7, 1.2, -0.05, -1.7, 1.2, 0.05, 1.7, -1.2, 0.05, 1.7, -1.2, -0.05, -1.7, 1.2, -0.05, -1.7, -1.2, 0.05, -1.7, -1.2, -0.05)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p0fxa"]
+points = PackedVector3Array(-0.25, -1.2, -0.05, -0.25, -1.2, 0.05, -0.25, 1.2, -0.05, 0.25, -1.2, -0.05, 0.25, -1.2, 0.05, -0.25, 1.2, 0.05, 0.25, 1.2, -0.05, 0.25, 1.2, 0.05)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_eqpja"]
 render_priority = 0
@@ -432,6 +435,9 @@ shader_parameter/uv_characters_per_line = 20.0000002831228
 shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 0.20000000298024
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_e7kvm"]
+points = PackedVector3Array(-0.1, -1.2, -0.1, -0.1, -1.2, 0.1, -0.1, 1.2, -0.1, 0.1, -1.2, -0.1, 0.1, -1.2, 0.1, -0.1, 1.2, 0.1, 0.1, 1.2, -0.1, 0.1, 1.2, 0.1)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ndm35"]
 render_priority = 0
@@ -2397,8 +2403,13 @@ shader_parameter/uv_character_spacing = 0.0
 shader_parameter/uv_line_spacing = 0.0
 shader_parameter/uv_character_aspect_ratio = 1.0
 
-[node name="Appartment" type="Node3D" unique_id=288289078]
+[node name="Appartment" type="Node3D" unique_id=288289078 node_paths=PackedStringArray("structure_meshes", "large_furniture", "medium_things", "small_things", "signals")]
 script = ExtResource("1_tfcne")
+structure_meshes = [NodePath("Foundation/Ceiling"), NodePath("Foundation/Floor"), NodePath("Foundation/Wall"), NodePath("Foundation/Wall2"), NodePath("Foundation/Wall3"), NodePath("Foundation/Wall4"), NodePath("Foundation/Inner Wall"), NodePath("Foundation/Inner Wall2"), NodePath("Foundation/Inner Wall3"), NodePath("Foundation/Inner Wall4"), NodePath("Foundation/Inner Wall9"), NodePath("Foundation/Inner Wall5"), NodePath("Foundation/Inner Wall6"), NodePath("Foundation/Inner Wall7"), NodePath("Foundation/Inner Wall8"), NodePath("Foundation/Inner Wall10"), NodePath("Foundation/doorpost/Door Post"), NodePath("Foundation/doorpost/Top Wall"), NodePath("Foundation/doorpost6/Door Post"), NodePath("Foundation/doorpost6/Top Wall"), NodePath("Foundation/doorpost4/Door Post"), NodePath("Foundation/doorpost4/Top Wall"), NodePath("Foundation/doorpost5/Door Post"), NodePath("Foundation/doorpost5/Top Wall"), NodePath("Foundation/doorpost3/Door Post"), NodePath("Foundation/doorpost3/Top Wall"), NodePath("Foundation/doorpost2/Door Post"), NodePath("Foundation/doorpost2/Top Wall")]
+large_furniture = [NodePath("Foundation/doorpost/Door"), NodePath("Foundation/doorpost6/Door"), NodePath("Foundation/doorpost4/Door"), NodePath("Foundation/doorpost5/Door"), NodePath("Foundation/doorpost3/Door"), NodePath("Foundation/doorpost2/Door"), NodePath("Office/desk/Desk Drawer"), NodePath("Office/bookshelf3/bookshelf"), NodePath("Kitchen/Fridge/FridgeFreezer"), NodePath("Kitchen/Freezer/FridgeFreezer"), NodePath("Kitchen/kitchen_cupboards/Lower Cupboards"), NodePath("Kitchen/kitchen_cupboards/Upper"), NodePath("Living Room/tvbench/TV"), NodePath("Living Room/sofa/Sofa"), NodePath("Living Room/sofatable/Sofa Table"), NodePath("Living Room/bookshelf/bookshelf"), NodePath("Living Room/bookshelf2/bookshelf"), NodePath("Bedroom/bed/Matress"), NodePath("Bedroom/closet/Closet"), NodePath("Bedroom/closet2/Closet"), NodePath("Bedroom/closet3/Closet"), NodePath("Bedroom/bookshelf2/bookshelf"), NodePath("Hallway/shoestand/hallmirror/Cube")]
+medium_things = [NodePath("Office/desk/chair/Chair"), NodePath("Office/bookshelf3/Books"), NodePath("Office/bookshelf3/Books2"), NodePath("Office/bookshelf3/Books3"), NodePath("Office/bookshelf3/Books4"), NodePath("Office/bookshelf3/Books5"), NodePath("Office/kitchen_small_bench/Cupboard"), NodePath("Office/painting_large/Painting"), NodePath("Office/computer/Computer"), NodePath("Office/computer/Monitor"), NodePath("Kitchen/kitchen_cupboards/Sink"), NodePath("Kitchen/chair/Chair"), NodePath("Kitchen/chair2/Chair"), NodePath("Kitchen/kitchen_table/Table"), NodePath("Kitchen/kitchen_table/Table Leg"), NodePath("Kitchen/kitchen_small_bench/Cupboard"), NodePath("Kitchen/kitchentablelamp/Lamp"), NodePath("Kitchen/kitchentablelamp/Chains"), NodePath("Kitchen/kitchentablelamp/Chains2"), NodePath("Kitchen/kitchenlamp/Lamp"), NodePath("Kitchen/microwave/Microwave"), NodePath("Living Room/tvbench/bench"), NodePath("Living Room/bookshelf/Books"), NodePath("Living Room/bookshelf/Books2"), NodePath("Living Room/bookshelf/Books3"), NodePath("Living Room/bookshelf/Books4"), NodePath("Living Room/bookshelf/Books5"), NodePath("Living Room/bookshelf2/Books"), NodePath("Living Room/bookshelf2/Books2"), NodePath("Living Room/bookshelf2/Books3"), NodePath("Living Room/bookshelf2/Books4"), NodePath("Living Room/bookshelf2/Books5"), NodePath("Living Room/livingroomlamp/Lamp"), NodePath("Bedroom/bed/Bed"), NodePath("Bedroom/bedsidetable/Bedside Table"), NodePath("Bedroom/bookshelf2/Books"), NodePath("Bedroom/bookshelf2/Books2"), NodePath("Bedroom/bookshelf2/Books3"), NodePath("Bedroom/bookshelf2/Books4"), NodePath("Bedroom/bookshelf2/Books5"), NodePath("Bedroom/painting_large2/Painting"), NodePath("Bedroom/painting_large3/Painting"), NodePath("Bedroom/painting_large4/Painting"), NodePath("Bedroom/kitchen_small_bench/Cupboard"), NodePath("Bathroom/toilet/Toilet"), NodePath("Bathroom/bathroomfaucet/Water"), NodePath("Bathroom/bathroomfaucet/Mirror"), NodePath("Bathroom/shower/shower holder"), NodePath("Bathroom/shower/Curtain"), NodePath("Bathroom/towelholder/towel"), NodePath("Bathroom/towelholder/towel_001"), NodePath("Hallway/shoestand/Shoestand"), NodePath("Hallway/shoestand/Hat thing"), NodePath("Hallway/hallamp/Lamp"), NodePath("Hallway/painting_large/Painting"), NodePath("Hallway/painting_large3/Painting"), NodePath("Hallway/painting_large2/Painting"), NodePath("Hallway/doormat/Mat")]
+small_things = [NodePath("Office/Signal Painting/Frame"), NodePath("Office/vase/Vase"), NodePath("Office/vase/Tulip"), NodePath("Office/vase/Tulip_001"), NodePath("Office/vase/Tulip_002"), NodePath("Office/computer/Keyboard"), NodePath("Office/bedlamp2/bedside lamp"), NodePath("Kitchen/fruitbowl/Fruit Bowl"), NodePath("Kitchen/fruitbowl/Apple"), NodePath("Kitchen/fruitbowl/Apple_001"), NodePath("Kitchen/fruitbowl/Apple_002"), NodePath("Kitchen/fruitbowl/Apple_003"), NodePath("Kitchen/vase/Vase"), NodePath("Kitchen/vase/Tulip"), NodePath("Kitchen/vase/Tulip_001"), NodePath("Kitchen/vase/Tulip_002"), NodePath("Kitchen/coffemug/Cylinder"), NodePath("Kitchen/coffemug/Cylinder_001"), NodePath("Kitchen/coffemug2/Cylinder"), NodePath("Kitchen/coffemug2/Cylinder_001"), NodePath("Kitchen/coffemug3/Cylinder"), NodePath("Kitchen/coffemug3/Cylinder_001"), NodePath("Kitchen/coffemug4/Cylinder"), NodePath("Kitchen/coffemug4/Cylinder_001"), NodePath("Kitchen/coffemug5/Cylinder"), NodePath("Kitchen/coffemug5/Cylinder_001"), NodePath("Kitchen/magazine4/Magazine"), NodePath("Living Room/magazine/Magazine"), NodePath("Living Room/magazine2/Magazine"), NodePath("Living Room/magazine3/Magazine"), NodePath("Living Room/magazine4/Magazine"), NodePath("Bedroom/bed/Pillow"), NodePath("Bedroom/bedlamp/bedside lamp"), NodePath("Bedroom/vase/Vase"), NodePath("Bedroom/vase/Tulip"), NodePath("Bedroom/vase/Tulip_001"), NodePath("Bedroom/vase/Tulip_002"), NodePath("Bathroom/bathroomfaucet/Lamp"), NodePath("Bathroom/shower/curtainholder"), NodePath("Bathroom/shower/Water Blender"), NodePath("Bathroom/shower/Shower Head"), NodePath("Bathroom/shower/Curtain Ring_001"), NodePath("Bathroom/shower/Curtain Ring_002"), NodePath("Bathroom/shower/Curtain Ring_003"), NodePath("Bathroom/shower/Curtain Ring_004"), NodePath("Bathroom/shower/Curtain Ring_005"), NodePath("Bathroom/soapcup/Soap Cup"), NodePath("Bathroom/toiletpaperholder/Holder"), NodePath("Bathroom/toiletpaperholder/Paper"), NodePath("Bathroom/towelholder/towel holder"), NodePath("Hallway/hat/Hat"), NodePath("Hallway/shoe/Shoe"), NodePath("Hallway/shoe2/Shoe")]
+signals = [NodePath("Office/Signal Painting/Painting"), NodePath("Kitchen/banana/Banana"), NodePath("Living Room/remote/Remote"), NodePath("Bedroom/bed/phone/Phone"), NodePath("Bedroom/alarmclock/Alarm Clock"), NodePath("Bathroom/soapcup/Shampoo"), NodePath("Hallway/umbrella/Ubrella")]
 
 [node name="TextWriterHelper" type="Node" parent="." unique_id=1929070200]
 script = ExtResource("2_vj7uu")
@@ -2541,14 +2552,18 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5
 mesh = SubResource("BoxMesh_sikar")
 surface_material_override/0 = SubResource("ShaderMaterial_k2cr2")
 
+[node name="Inner Wall Collision4" type="CollisionShape3D" parent="Foundation" unique_id=470884803]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, -3.9)
+shape = SubResource("ConvexPolygonShape3D_eqpja")
+
 [node name="Inner Wall9" type="MeshInstance3D" parent="Foundation" unique_id=617687731]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.3, 1.2, -2.5)
 mesh = SubResource("BoxMesh_l3nmf")
 surface_material_override/0 = SubResource("ShaderMaterial_3f1wm")
 
-[node name="Inner Wall Collision4" type="CollisionShape3D" parent="Foundation" unique_id=470884803]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.5999999, 1.2, -3.9)
-shape = SubResource("ConvexPolygonShape3D_eqpja")
+[node name="Inner Wall Collision9" type="CollisionShape3D" parent="Foundation" unique_id=1986665189]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.3, 1.2, -2.5)
+shape = SubResource("ConvexPolygonShape3D_p0fxa")
 
 [node name="Inner Wall5" type="MeshInstance3D" parent="Foundation" unique_id=641516039]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, 5)
@@ -2591,6 +2606,10 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.40
 mesh = SubResource("BoxMesh_6lvam")
 surface_material_override/0 = SubResource("ShaderMaterial_vkan1")
 
+[node name="Inner Wall Collision10" type="CollisionShape3D" parent="Foundation" unique_id=1070302858]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.4000001, 1.2, 0.099999905)
+shape = SubResource("ConvexPolygonShape3D_e7kvm")
+
 [node name="doorpost" parent="Foundation" unique_id=1934138180 instance=ExtResource("4_sikar")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.6, 0, 1.7)
 
@@ -2631,13 +2650,10 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.6
 [node name="Door Post" parent="Foundation/doorpost6" index="0" unique_id=1545824159]
 surface_material_override/0 = SubResource("ShaderMaterial_6lvam")
 
-[node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=576888300]
-shape = SubResource("ConcavePolygonShape3D_sikar")
-
-[node name="Top Wall" parent="Foundation/doorpost6" index="2" unique_id=1893192431]
+[node name="Top Wall" parent="Foundation/doorpost6" index="1" unique_id=1893192431]
 surface_material_override/0 = SubResource("ShaderMaterial_6lvam")
 
-[node name="Door" parent="Foundation/doorpost6" index="3" unique_id=1339026248]
+[node name="Door" parent="Foundation/doorpost6" index="2" unique_id=1339026248]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5482963, 1.0006874, 0.0071258545)
 surface_material_override/0 = SubResource("ShaderMaterial_ndm35")
 
@@ -2654,6 +2670,9 @@ max_distance = 3.0
 bus = &"Whispers"
 script = ExtResource("10_bpw3g")
 room = NodePath("../../../../Hallway")
+
+[node name="Door Post Collider" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=576888300]
+shape = SubResource("ConcavePolygonShape3D_sikar")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Foundation/doorpost6" unique_id=1814549341]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5482963, 1.0006874, 0.0071258545)
